@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+.navbar{
+    padding: 30px 120px;
+    background-color: rgb(236, 236, 236);
+    border-bottom: 1px black solid;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.336);
+}
+.logo{
+    justify-content: center;
+    
+}/* 
+.logoSpan{
+    font-family: 'Press Start 2P', cursive;
+} */
+.list{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+}
+.links{
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 23px;
+}
+.links:hover{
+    background-color: black;
+    color: blueviolet;
+}
+.links:hover a{
+    color: rgb(255, 255, 255);
+}
+.menuIcons{
+    display: none;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* ESTO CAPAS LO BORRO */
+.close{
+    margin-right: -12px;
+}
+.menu__icon{
+    width: 50px;
+}
+.navbarSocials{
+    display: flex;
+    justify-content: space-between;
+}
+.navbarInstagram,
+.navbarGithub,
+.navbarEmail{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    min-width: 150px
+}
+/* Posiblemente lo borre */
+.navbarInstagram:hover,
+.navbarGithub:hover,
+.navbarEmail:hover{
+    background-color: black;
+    color: white;
+}
+.navbarInstagram img,
+.navbarGithub img,
+.navbarEmail img{
+    transition: all ease 0.3s;
+    image-rendering: pixelated;
+}
+.navbarInstagram p,
+.navbarGithub p,
+.navbarEmail p{
+    transition: all ease 0.3s;;
+}
+.navbarInstagram p:hover{
+    color: rgb(192, 93, 250);
+    text-shadow: 1px 1px 10px rgba(176, 96, 223, 0.329);
+}
+.navbarGithub p:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.329);
+}
+.navbarEmail p:hover{
+    color: crimson;
+    text-shadow: 1px 1px 10px rgba(170, 21, 21, 0.582);
+}
+.navbarInstagram img:hover,
+.navbarGithub img:hover,
+.navbarEmail img:hover{
+    transform: scale(1.2);
+}
+.menu_link{
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    .navbar{
+        padding: 30px 100px 30px 10px;
+    }
+    .list{
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        z-index: 100;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+    }
+    .links{
+        width: 100%;
+        height: 20vh;
+        margin-right: 0;
+        padding: 20px 0px;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        transition: 0.4s all ease;
+    }
+    .links a{
+        color: white;
+    }
+    .links:hover{
+        background-color: rgb(34, 33, 33);
+    }
+    .menuIcons{
+        display: block;
+    }
+    .navbarSocials{
+        margin-right: 6vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .navbarSocials{
+        display: none;
+    }
+    .menu_link{
+        display: block;
+    }
+}
