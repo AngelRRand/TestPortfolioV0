@@ -1,0 +1,49 @@
+.about {
+    scrollbar-width: none;
+}
+
+.presentation-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-img {
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+}
+
+.cafe-gif {
+    position: absolute;
+}
+
+.containerAnimated {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.137);
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
+
+.movimiento {
+    width: 150px;
+    height: 150px;
+    top: calc(50% - 150px / 2);
+    left: calc(50% - 150px / 2);
+    background-color: rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+}

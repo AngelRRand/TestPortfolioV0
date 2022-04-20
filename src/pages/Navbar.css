@@ -1,4 +1,40 @@
-nav{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,17 +43,8 @@ nav{
 }
 .navbar{
     padding: 30px 120px;
-    background-color: rgb(236, 236, 236);
-    border-bottom: 1px black solid;
-    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.336);
+    position: absolute;
 }
-.logo{
-    justify-content: center;
-    
-}/* 
-.logoSpan{
-    font-family: 'Press Start 2P', cursive;
-} */
 .list{
     list-style-type: none;
     height: 100%;
@@ -25,22 +52,19 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
-.links a{
-    color: black;
+.active{
+    background-color: rgba(139, 139, 139, 0.233);
+    text-decoration: none;
+}
+.off{
     text-decoration: none;
 }
 .links{
+    color: rgb(0, 0, 0);
     font-size: 16px;
     transition: all 0.4s ease;
     padding: 23px;
-}
-.links:hover{
-    background-color: black;
-    color: blueviolet;
-}
-.links:hover a{
-    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .menuIcons{
     display: none;
@@ -50,7 +74,7 @@ nav{
 }
 
 /* ESTO CAPAS LO BORRO */
-.close{
+/* .close{
     margin-right: -12px;
 }
 .menu__icon{
@@ -70,11 +94,14 @@ nav{
     min-width: 150px
 }
 /* Posiblemente lo borre */
+
+
+/* 
+
 .navbarInstagram:hover,
 .navbarGithub:hover,
 .navbarEmail:hover{
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.055);
 }
 .navbarInstagram img,
 .navbarGithub img,
@@ -153,4 +180,4 @@ nav{
     .menu_link{
         display: block;
     }
-}
+}  */

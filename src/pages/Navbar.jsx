@@ -1,12 +1,44 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
 import bars from "../img/bars.png"
 import close from "../img/close.png"
 import github from "../img/Git.png"
 import email from "../img/email.png"
 import instagram from "../img/Instagram.png"
-import logo from "../img/logo.png"
+import { Link, NavLink } from 'react-router-dom';
+import Logo from '../component/Logo';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 const Navbar = () => {
 
 
@@ -27,21 +59,33 @@ const Navbar = () => {
     return (
 
         <nav className='navbar'>
-            <div className='logo'>
-                 <img src={logo}/> 
-
-            </div>
+            <Link to="/">
+                <Logo></Logo>
+            </Link>
             {(toggleMenu || screenWidth > 1024) && (
                 <ul className='list'>
-                    <li className='links'>
-                        <a href="#about">About</a>
-                    </li>
-                    <li className='links'>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li className='links'>
-                        <a href="#contact">Contact</a>
-                    </li>
+
+
+                    <NavLink to="/About" className={(navData) => navData.isActive ? "active" : "off" }>
+                        <li className='links'>
+                            About
+                        </li>
+
+                    </NavLink>
+
+                    <NavLink to="/Education" className={(navData) => navData.isActive ? "active" : "off" }>
+                        <li className='links'>
+                            Education
+                        </li>
+
+                    </NavLink>
+
+                    <NavLink to="/Projects" className={(navData) => navData.isActive ? "active" : "off" }>
+                        <li className='links'>
+                            Projects
+                        </li>
+
+                    </NavLink>
                     <li className='links menu_link'>
                         <a href="#contact">Github</a>
                     </li>
@@ -85,5 +129,5 @@ const Navbar = () => {
         </nav>
     )
 }
-
+ */
 export default Navbar
