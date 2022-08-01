@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import cafe from '../../img/cafe.gif'
 import './About.css'
 import { motion } from "framer-motion";
-import home from '../../img/NavImg/home.gif'
+import flecha from '../../img/Mator3.png'
 import { NavLink } from 'react-router-dom';
 import EducationIcons from './EducationIcons.jsx'
 const Education = () => {
@@ -31,17 +31,12 @@ const Education = () => {
     justify-content: space-between;
   `
   const Item = styled(NavLink)`
-  width: 9rem;
+  position: absolute;
+  width: 5rem;
   cursor: pointer;
-  display: flex;
-  color: black;
   text-decoration: none;
   image-rendering: pixelated;
-  transition: all 0.2s ease;
-  background: transparent;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  bottom: 0px;
   img{
     background: transparent;
     width: 5rem;
@@ -50,17 +45,8 @@ const Education = () => {
     transform: scale(1.05);
   }
 `
-  const Text = styled.span`
-  padding-top: 10px;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  background: transparent;
-  text-align: center;
-`
   const Icon = styled.img`
-    width: 3.5rem;
+    width: 2.5rem;
   
   `
 
@@ -77,47 +63,42 @@ const Education = () => {
           opacity: 0,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}>
-        <Item to='/'>
-          <img src={home} alt='Home' />
-          <Text >Home</Text>
-        </Item>
+        <ContainerText>
+          <div>
+            <h4>BackEnd</h4>
+
+          </div>
+
+        </ContainerText>
       </motion.div>
 
 
       <motion.div
-        initial={{ x: -1000 }}
+        initial={{ y: -1000 }}
         animate={{
-          x: 0,
+          y: 0,
           transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
         }}
         exit={{
-          x: -500,
+          y: -500,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}
       >
 
         <div className="presentation-about">
-          <motion.div
-            initial={{ y: -1000 }}
-            animate={{
-              y: -10,
-              transition: { duration: 3.5, type: "tween" },
-            }}
-            exit={{
-              x: -500,
-              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-            }}
-          >
-            <h3>My technologies</h3>
-          </motion.div>
+          <h3>My technologies</h3>
 
           <div className='containerAnimated' ref={constraintsRef}>
 
             <div className="presentation-img">
               <img src={granImagen} alt="" className="imagen" />
               <img src={cafe} alt="" className="cafe-gif" />
+        <Item to='/about'>
+
+          <Icon src={flecha} />
+        </Item>
             </div>
-            <EducationIcons/>
+            <EducationIcons />
           </div>
         </div>
       </motion.div>

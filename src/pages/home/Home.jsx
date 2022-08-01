@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import cafe from '../../img/NavImg/cafe.gif'
-import education from '../../img/NavImg/libro.gif'
-/*import projects from '../../NavImg/Git.gif'
-import prueba from '../../NavImg/prueba.png' */
+import projects from '../../img/NavImg/Git.gif'
+/*import prueba from '../../NavImg/prueba.png' */
 export const Home = () => {
   const Home = styled.div`
     display: flex;
@@ -85,9 +84,9 @@ export const Home = () => {
         </div>
       </Container>
       
-      <Item to='/education'>
-        <img src={education} alt='About' />
-        <Text >technologies</Text>
+      <Item to='/project'>
+        <img src={projects} alt='About' />
+        <Text >Projects</Text>
       </Item>
     </Home>
 
