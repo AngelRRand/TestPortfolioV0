@@ -13,6 +13,7 @@ export const Home = () => {
     height: 70vh;
     align-items: center;
     justify-content: space-between;
+    color: white;
   `
   const Container = styled.div`
     flex-direction: column;
@@ -25,7 +26,7 @@ export const Home = () => {
   padding: 10px;
   cursor: pointer;
   display: flex;
-  color: black;
+  color: white;
   text-decoration: none;
   image-rendering: pixelated;
   transition: all 0.2s ease;

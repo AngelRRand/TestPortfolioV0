@@ -11,14 +11,30 @@ const NavRPG = () => {
     background-color: black;
     color: white;
     `
-    const Perfil = styled.img`
+    const Perfil = styled.div`
         position: absolute;
+        bottom: 5px;
+        image-rendering: pixelated;
+        color: white;
+        text-align: center;
+        padding: 5px;
     `
-  return (
-    <Container>
-        <Perfil src={logo}/>
-    </Container>
-  )
+    const PerfilImg = styled.img`
+        width: 200px;
+        image-rendering: pixelated;
+    `
+    return (
+        <>
+            <Perfil>
+                <PerfilImg src={logo} />
+                <h1>Hori</h1>
+
+            </Perfil>
+            <Container>
+            </Container>
+
+        </>
+    )
 }
 
 export default NavRPG
