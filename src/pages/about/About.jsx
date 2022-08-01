@@ -40,10 +40,23 @@ const About = () => {
 
 
   return (
-    <Item to='/education'>
-      <img src={education} alt='Education' />
-      <Text >Education</Text>
-    </Item>
+    <motion.div
+      initial={{ x: 1000 }}
+      animate={{
+        x: 0,
+        transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+      }}
+      exit={{
+        x: -500,
+        transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+      }}
+    >
+      <Item to='/education'>
+        <img src={education} alt='Education' />
+        <Text >Education</Text>
+      </Item>
+
+    </motion.div>
   )
 }
 

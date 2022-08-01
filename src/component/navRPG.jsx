@@ -41,11 +41,11 @@ const NavRPG = () => {
         justify-content: space-around;
     `
     const Buttom = styled.button`
-        color: white;
+        color: #000000;
         border: none;
         padding: 10px;
         text-align: center;
-        background-color: transparent;
+        background-color: white;
         font-size: 1.2rem;
         cursor: pointer;
     `

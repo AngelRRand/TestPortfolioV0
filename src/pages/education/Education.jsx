@@ -53,24 +53,6 @@ const Education = () => {
   return (
     <EducationContainer>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { duration: 8.5, type: "spring" },
-        }}
-        exit={{
-          opacity: 0,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}>
-        <ContainerText>
-          <div>
-            <h4>BackEnd</h4>
-
-          </div>
-
-        </ContainerText>
-      </motion.div>
 
 
       <motion.div
