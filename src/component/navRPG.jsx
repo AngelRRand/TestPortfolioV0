@@ -8,7 +8,7 @@ const NavRPG = () => {
     const sampleLocation = useLocation();
     console.log(sampleLocation.pathname)
     const goBack = () => {
-        navigate.goBack('/about')
+        navigate('/about')
     }
     const Container = styled.nav`
     width: 100vw;
@@ -65,7 +65,9 @@ const NavRPG = () => {
                     'Its in my personal zone, my about... in it you can know more about me!':
                     sampleLocation.pathname.toString() === '/education'?
                     <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>:
-                    'no hay mensaje'
+                    sampleLocation.pathname.toString() === '/projects'?
+                    'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)':
+                    'no hayt nada'
                 }</h4>
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?

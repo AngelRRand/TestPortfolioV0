@@ -84,7 +84,7 @@ export const Home = () => {
         </div>
       </Container>
       
-      <Item to='/project'>
+      <Item to='/projects'>
         <img src={projects} alt='About' />
         <Text >Projects</Text>
       </Item>
