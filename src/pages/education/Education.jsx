@@ -25,10 +25,11 @@ const Education = () => {
     `
   const ContainerText = styled.div`
     display:flex;
-    height: 100vh;
+    height: 50vh;
     width:35vw;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 
   `
   const Item = styled(NavLink)`
@@ -84,10 +85,10 @@ const Education = () => {
 
 
       <motion.div
-        initial={{ y: -1000 }}
+        initial={{ y: 1000 }}
         animate={{
           y: 0,
-          transition: { duration: 4.5, type: "tween" },
+          transition: { duration: 2.5, type: "spring" },
         }}
         exit={{
           x: -500,
