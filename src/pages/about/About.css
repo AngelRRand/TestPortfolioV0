@@ -26,8 +26,8 @@
 .containerAnimated {
     background: white;
     display: flex;
-    width: 420px;
-    height: 420px;
+    width: 450px;
+    height: 450px;
     place-content: center;
     place-items: center;
     overflow: hidden;

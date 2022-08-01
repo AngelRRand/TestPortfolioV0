@@ -1,21 +1,13 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Route, Routes } from 'react-router-dom';
-
 import './Navbar.css'
-
-import Logo from './Logo.jsx'
 import home from './NavImg/home.gif'
 import cafe from './NavImg/cafe.gif'
 import education from './NavImg/libro.gif'
-import luna from './NavImg/Luna.gif'
 import projects from './NavImg/Git.gif'
 import prueba from './NavImg/prueba.png'
 import { Link, NavLink } from 'react-router-dom';
-import LogoAbout from './LogoAbout';
-import LogoEducation from './Logo.Education';
-import LogoProject from './LogoProject';
-import LogoError from './LogoError';
 
 
 const Button = styled.button`

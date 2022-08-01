@@ -25,7 +25,7 @@ const Pages = styled.div`
 function App() {
   return (
     <Fragment>
-      <Nav></Nav>
+      {/* <Nav></Nav> */}
       <Pages>
         <AnimatePresence>
           <Routes>
