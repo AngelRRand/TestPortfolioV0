@@ -5,7 +5,6 @@ import About from './pages/about/About';
 import { Home } from './pages/home/Home';
 import Education from './pages/education/Education';
 import Projects from './pages/project/Projects';
-import Nav from './component/navbar/Nav';
 import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 
@@ -25,7 +24,6 @@ const Pages = styled.div`
 function App() {
   return (
     <Fragment>
-      {/* <Nav></Nav> */}
       <Pages>
         <AnimatePresence>
           <Routes>

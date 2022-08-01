@@ -9,7 +9,7 @@ import HTML from './img/HTML.png'
 import JS from './img/JavaScript.png'
 import REDUX from './img/Redux.png'
 import REACT from './img/React.png'
-import home from '../../component/navbar/NavImg/home.gif'
+import home from '../../img/NavImg/home.gif'
 import { Link, NavLink } from 'react-router-dom';
 
 const About = () => {
