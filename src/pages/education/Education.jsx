@@ -26,12 +26,9 @@ const Education = () => {
     `
   const ContainerText = styled.div`
     display:flex;
-    border:3px solid black;
     height: 100vh;
     width:15vw;
     align-items: center;
-    background-color:black;
-    color:white;
     justify-content: space-between;
   `
   const Item = styled(NavLink)`
@@ -62,6 +59,7 @@ const Education = () => {
   align-items: center;
   background: transparent;
   text-align: center;
+  color: white;
 `
   const Icon = styled.img`
     width: 3.5rem;

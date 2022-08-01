@@ -8,6 +8,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    color: white;
 }
 
 .presentation-img {
@@ -26,7 +27,7 @@
 }
 
 .containerAnimated {
-    background: white;
+    background: rgb(0, 0, 0);
     display: flex;
     width: 400px;
     height: 400px;
@@ -35,7 +36,7 @@
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.041);
-    border: 3px solid black;
+    border: 3px solid rgb(22, 22, 22);
 }
 
 .movimiento {

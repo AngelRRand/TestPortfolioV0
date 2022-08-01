@@ -7,10 +7,13 @@ const NavRPG = () => {
     bottom: 0;
     width: 100vw;
     border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 15vh;
     `
   return (
     <Container>
-        <h1>MAP</h1>
+        <h2>MAP</h2>
     </Container>
   )
 }
