@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
-import cafe from '../../img/cafe.gif'/* 
-import education from '../../NavImg/libro.gif'
-import projects from '../../NavImg/Git.gif'
+import cafe from '../../component/navbar/NavImg/cafe.gif'
+import education from '../../component/navbar/NavImg/libro.gif'
+/*import projects from '../../NavImg/Git.gif'
 import prueba from '../../NavImg/prueba.png' */
 export const Home = () => {
   const Home = styled.div`
@@ -17,10 +17,12 @@ export const Home = () => {
   const Container = styled.div`
     flex-direction: column;
     width: 60vw;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
   `
   const Item = styled(NavLink)`
-  width: 100%;
-  padding: 1.3rem 0;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   color: black;
@@ -28,18 +30,28 @@ export const Home = () => {
   image-rendering: pixelated;
   transition: all 0.2s ease;
   background: transparent;
+  flex-direction: column;
   img{
     background: transparent;
   }
   &:hover{
     transform: scale(1.05);
   }
+  
+`
+  const Text = styled.span`
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  text-align: center;
 `
   return (
     <Home className="home">
-      <Item >
+      <Item to='/about'>
         <img src={cafe} alt='About' />
-        <span >About</span>
+        <Text >About</Text>
       </Item>
       <Container className="text-presentation">
         <h1>Welcome to my portfolio</h1>
@@ -51,7 +63,10 @@ export const Home = () => {
           This website is designed for those who want to know more about my education, the projects that I have prepared and those that I will sell in the future. I hope you like it.
         </p>
       </Container>
-      <h1>a</h1>
+      <Item to='/about'>
+        <img src={education} alt='About' />
+        <Text >About</Text>
+      </Item>
     </Home>
   )
 }
