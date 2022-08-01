@@ -16,12 +16,13 @@ export const Home = () => {
   `
   const Container = styled.div`
     flex-direction: column;
-    width: 60vw;
+    width: 70vw;
     height: 100vh;
     padding: 1rem;
     text-align: center;
   `
   const Item = styled(NavLink)`
+  width: 9rem;
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -31,8 +32,11 @@ export const Home = () => {
   transition: all 0.2s ease;
   background: transparent;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
   img{
     background: transparent;
+    width: 5rem;
   }
   &:hover{
     transform: scale(1.05);
@@ -40,7 +44,8 @@ export const Home = () => {
   
 `
   const Text = styled.span`
-  font-size: 2rem;
+  padding-top: 10px;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -60,11 +65,11 @@ export const Home = () => {
     }}>
     
     <Home className="home">
-      <Item to='/about'>
-        <img src={cafe} alt='About' />
-        <Text >About</Text>
+      <Item to='/education'>
+        <img src={education} alt='About' />
+        <Text >technologies</Text>
       </Item>
-      <Container className="text-presentation">
+      <Container>
         <h1>Welcome to my portfolio</h1>
         <p>
           My name is Horacio, full stack web developer. Specialized in the area of front end and animation
@@ -77,12 +82,12 @@ export const Home = () => {
           <h4>Map</h4>
         </div>
         <div>
-          
+
         </div>
       </Container>
       <Item to='/about'>
-        <img src={education} alt='About' />
-        <Text >About</Text>
+        <img src={cafe} alt='About' />
+        <Text>About</Text>
       </Item>
     </Home>
 
