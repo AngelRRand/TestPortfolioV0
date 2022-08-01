@@ -76,7 +76,9 @@ const SlickBar = styled.ul`
   position: absolute;
   top: 4rem;
   left: 0;
-  border-right: 3px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom:2px solid black;
   width: ${(props) => (props.clicked ? "15rem" : "4.44rem")};
   transition:all 0.3s ease;
 `;
@@ -128,6 +130,7 @@ const Nav = () => {
               <div className='button-url'>
               </div>
             </Button>
+            <div className='white '></div>
           <SlickBar clicked={click}>
             <Item to="/" className={(navData) => navData.isActive ? "active" : ""} onClick={() => setClick(false)}>
               <img src={home} alt='Home' />
@@ -146,7 +149,7 @@ const Nav = () => {
               <Text clicked={click}>Projects</Text>
             </Item>
           </SlickBar>
-
+          <div className='white2 '></div>
         </SidebarContainer>
       </>
 
