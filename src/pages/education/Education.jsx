@@ -5,11 +5,10 @@ import cafe from '../../img/cafe.gif'
 import './About.css'
 import { motion } from "framer-motion";
 import home from '../../img/NavImg/home.gif'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import EducationIcons from './EducationIcons.jsx'
 const Education = () => {
 
-  const [none, setNone] = useState(false);
 
   const constraintsRef = {
     top: -230,
@@ -59,7 +58,6 @@ const Education = () => {
   align-items: center;
   background: transparent;
   text-align: center;
-  color: white;
 `
   const Icon = styled.img`
     width: 3.5rem;

@@ -9,6 +9,9 @@ const NavRPG = () => {
     padding-bottom: 5px;
     height: 15vh;
     background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: white;
     `
     const Perfil = styled.div`
@@ -31,6 +34,9 @@ const NavRPG = () => {
 
             </Perfil>
             <Container>
+                <div>
+                    <p>holaa</p>
+                </div>
             </Container>
 
         </>
