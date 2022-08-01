@@ -35,7 +35,9 @@ const Education = () => {
     height: 100vh;
     width:15vw;
     align-items: center;
-    background-color:black
+    background-color:black;
+    color:white;
+    justify-content: space-between;
   `
   const Item = styled(NavLink)`
   width: 9rem;
@@ -69,26 +71,24 @@ const Education = () => {
 
   return (
     <EducationContainer>
+      
       <motion.div
-        initial={{ y: -1000 }}
+        initial={{ opacity: 0 }}
         animate={{
-          y: 0,
-          transition: { duration: 4.5, type: "tween" },
+          opacity: 1,
+          transition: { duration: 7.5, type: "spring" },
         }}
         exit={{
-          x: -500,
+          opacity: 0,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
-        <ContainerText>
-
-          <h4>FrontEnd</h4>
-
-        </ContainerText>
+        }}>
+        <Item to='/'>
+          <img src={home} alt='Home' />
+          <Text >Home</Text>
+        </Item>
       </motion.div>
-
       <motion.div
-        initial={{ x: 1000 }}
+        initial={{ x: -1000 }}
         animate={{
           x: 0,
           transition: { duration: 2.5, type: "spring", delayChildren: 2.5 },
@@ -195,19 +195,23 @@ const Education = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ y: -1000 }}
         animate={{
-          opacity: 1,
-          transition: { duration: 7.5, type: "spring" },
+          y: 0,
+          transition: { duration: 4.5, type: "tween" },
         }}
         exit={{
-          opacity: 0,
+          x: -500,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}>
-        <Item to='/'>
-          <img src={home} alt='Home' />
-          <Text >Home</Text>
-        </Item>
+        }}
+      >
+        <ContainerText>
+          <div>
+            <h4>FrontEnd</h4>
+
+          </div>
+
+        </ContainerText>
       </motion.div>
     </EducationContainer>
   )

@@ -65,9 +65,9 @@ export const Home = () => {
     }}>
     
     <Home className="home">
-      <Item to='/education'>
-        <img src={education} alt='About' />
-        <Text >technologies</Text>
+    <Item to='/about'>
+        <img src={cafe} alt='About' />
+        <Text>About</Text>
       </Item>
       <Container>
         <h1>Welcome to my portfolio</h1>
@@ -85,9 +85,10 @@ export const Home = () => {
 
         </div>
       </Container>
-      <Item to='/about'>
-        <img src={cafe} alt='About' />
-        <Text>About</Text>
+      
+      <Item to='/education'>
+        <img src={education} alt='About' />
+        <Text >technologies</Text>
       </Item>
     </Home>
 
