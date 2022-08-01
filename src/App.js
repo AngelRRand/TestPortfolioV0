@@ -7,6 +7,7 @@ import Education from './pages/education/Education';
 import Projects from './pages/project/Projects';
 import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
+import NavRPG from './component/navRPG';
 
 
 const Pages = styled.div`
@@ -38,6 +39,7 @@ function App() {
               </main>
             } />
           </Routes>
+          <NavRPG></NavRPG>
         </AnimatePresence>
       </Pages>
     </Fragment>
