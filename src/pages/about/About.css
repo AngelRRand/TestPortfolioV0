@@ -12,25 +12,27 @@
     justify-content: center;
     display: flex;
     position: relative;
-
+    
 }
-
+.presentation-img img{
+    width: 400px;
+    image-rendering: pixelated;
+}
 .cafe-gif {
+    background: transparent;
     position: absolute;
 }
 
 .containerAnimated {
+    background: white;
     display: flex;
-    width: 600px;
-    height: 600px;
-    margin-top: 50px;
+    width: 520px;
+    height: 520px;
     place-content: center;
     place-items: center;
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.137);
-    top: calc(50% - 150px);
-    left: calc(50% - 150px);
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.041);
 }
 
 .movimiento {
@@ -38,12 +40,15 @@
     height: 150px;
     top: calc(50% - 150px / 2);
     left: calc(50% - 150px / 2);
-    background-color: rgba(255, 255, 255, 0.021);
-    backdrop-filter: blur(1px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
     position: absolute;
     border-radius: 50%;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
 }

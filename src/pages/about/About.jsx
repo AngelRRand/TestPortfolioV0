@@ -1,6 +1,5 @@
 import React from 'react'
-import { useRef } from "react";
-import granImagen from '../../img/cuarto2.gif'
+import granImagen from '../../img/cuarto96.gif'
 import cafe from '../../img/cafe.gif'
 import './About.css'
 import { motion } from "framer-motion";
@@ -21,34 +20,101 @@ const About = () => {
     bottom: 210,
   }
   return (
-    <div className="about">
+    <motion.div
+      initial={{ y: 700 }}
+      animate={{
+        y: 0,
+        transition: { duration: 2.5, type: "spring" },
+      }}
+      exit={{
+        y: -500,
+        transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+      }}
+    >
+
       <div className="presentation-about">
 
 
-        <motion.div className='containerAnimated' ref={constraintsRef}>
+        <div className='containerAnimated' ref={constraintsRef}>
 
           <div className="presentation-img">
             <img src={granImagen} alt="" className="imagen" />
             <img src={cafe} alt="" className="cafe-gif" />
           </div>
-          <motion.div className='movimiento' drag dragConstraints={constraintsRef}>
-            <img src={CSS} alt="" srcset="" />
+          <motion.div
+            animate={{
+              y: 0,
+              transition: { duration: 6, type: "spring" },
+              x: 250
+            }}
+            exit={{
+              x: 100,
+              y: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+            className='movimiento' drag dragConstraints={constraintsRef}>
+            <img className='icon' src={CSS} alt="" srcset="" />
+          </motion.div
+          >
+          <motion.div
+            animate={{
+              y: 150,
+              transition: { duration: 6, type: "spring" },
+              x: 200
+            }}
+            exit={{
+              x: 100,
+              y: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+            className='movimiento' drag dragConstraints={constraintsRef}>
+            <img className='icon' src={HTML} alt="" srcset="" />
+          </motion.div >
+          <motion.div
+            animate={{
+              y: -150,
+              transition: { duration: 6, type: "spring" },
+              x: 200
+            }}
+            exit={{
+              x: 100,
+              y: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+            className='movimiento' drag dragConstraints={constraintsRef}>
+            <img className='icon' src={JS} alt="" srcset="" />
           </motion.div>
-          <motion.div className='movimiento' drag dragConstraints={constraintsRef}>
-            <img src={HTML} alt="" srcset="" />
+          <motion.div
+            animate={{
+              y: -150,
+              transition: { duration: 6, type: "spring" },
+              x: -200
+            }}
+            exit={{
+              x: 100,
+              y: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+            className='movimiento' drag dragConstraints={constraintsRef}>
+            <img className='icon' src={REDUX} alt="" srcset="" />
           </motion.div>
-          <motion.div className='movimiento' drag dragConstraints={constraintsRef}>
-            <img src={JS} alt="" srcset="" />
+          <motion.div
+            animate={{
+              y: 0,
+              transition: { duration: 6, type: "spring" },
+              x: -250
+            }}
+            exit={{
+              x: 100,
+              y: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+            className='movimiento' drag dragConstraints={constraintsRef}>
+            <img className='icon' src={REACT} alt="" srcset="" />
           </motion.div>
-          <motion.div className='movimiento' drag dragConstraints={constraintsRef}>
-            <img src={REDUX} alt="" srcset="" />
-          </motion.div>
-          <motion.div className='movimiento' drag dragConstraints={constraintsRef}>
-            <img src={REACT} alt="" srcset="" />
-          </motion.div>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
