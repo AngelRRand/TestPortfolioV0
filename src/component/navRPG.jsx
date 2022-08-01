@@ -60,8 +60,10 @@ const NavRPG = () => {
             <Container>
                 <ContainerButtoms>
                 <h4>{sampleLocation.pathname.toString() === '/' ?
-                    'Bienvenido al Home!' :
-                    'no estas en home'
+                    'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' :
+                    sampleLocation.pathname.toString() === '/about'?
+                    'Its in my personal zone, my about... in it you can know more about me!':
+                    'no hay mensaje aun'
                 }</h4>
                     {
                         sampleLocation.pathname.toString() === '/' ?
