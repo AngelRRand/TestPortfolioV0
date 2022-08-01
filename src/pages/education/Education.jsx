@@ -33,7 +33,9 @@ const Education = () => {
     display:flex;
     border:3px solid black;
     height: 100vh;
-    width:20vw;
+    width:15vw;
+    align-items: center;
+    background-color:black
   `
   const Item = styled(NavLink)`
   width: 9rem;
