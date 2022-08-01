@@ -28,9 +28,12 @@ const Education = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  `
+    `
   const ContainerText = styled.div`
     display:flex;
+    border:3px solid black;
+    height: 100vh;
+    width:20vw;
   `
   const Item = styled(NavLink)`
   width: 9rem;
@@ -64,15 +67,29 @@ const Education = () => {
 
   return (
     <EducationContainer>
-      <ContainerText>
+      <motion.div
+        initial={{ y: -1000 }}
+        animate={{
+          y: 0,
+          transition: { duration: 4.5, type: "tween" },
+        }}
+        exit={{
+          x: -500,
+          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+        }}
+      >
+        <ContainerText>
 
-      </ContainerText>
+          <h4>FrontEnd</h4>
+
+        </ContainerText>
+      </motion.div>
 
       <motion.div
         initial={{ x: 1000 }}
         animate={{
           x: 0,
-          transition: { duration: 2.5, type: "spring", delayChildren: 2.5},
+          transition: { duration: 2.5, type: "spring", delayChildren: 2.5 },
         }}
         exit={{
           x: -500,
