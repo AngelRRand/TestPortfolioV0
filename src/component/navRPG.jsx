@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavImg/rostro.png'
-import {useNavigate} from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom"
 const NavRPG = () => {
     const navigate = useNavigate()
-    const goBack = ()=>{
-        navigate('/about')
+    const sampleLocation = useLocation();
+    console.log(sampleLocation.pathname)
+    const goBack = () => {
+        navigate.goBack()
     }
     const Container = styled.nav`
     width: 100vw;
@@ -32,7 +34,21 @@ const NavRPG = () => {
         width: 200px;
         image-rendering: pixelated;
     `
-
+    const ContainerButtoms = styled.div`
+        flex-direction: row;
+        display: flex;
+        width: 400px;
+        justify-content: space-around;
+    `
+    const Buttom = styled.button`
+        color: white;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        background-color: transparent;
+        font-size: 1.2rem;
+        cursor: pointer;
+    `
 
     return (
         <>
@@ -42,9 +58,23 @@ const NavRPG = () => {
 
             </Perfil>
             <Container>
-                <div>
-                    <button onClick={()=>goBack()}><p>Volver?</p></button>
-                </div>
+                <ContainerButtoms>
+                <h4>{sampleLocation.pathname.toString() === '/' ?
+                    'Bienvenido al Home!' :
+                    'no estas en home'
+                }</h4>
+                    {
+                        sampleLocation.pathname.toString() === '/' ?
+                            ''
+                            :
+                            <>
+                                <Buttom onClick={() => goBack()}><p>Volver?</p></Buttom>
+                                <Buttom onClick={() => goBack()}><p>Volver?</p></Buttom>
+                                <Buttom onClick={() => goBack()}><p>Volver?</p></Buttom>
+                            </>
+                    }
+
+                </ContainerButtoms>
             </Container>
 
         </>
