@@ -93,10 +93,10 @@ const Education = () => {
             <div className="presentation-img">
               <img src={granImagen} alt="" className="imagen" />
               <img src={cafe} alt="" className="cafe-gif" />
-        <Item to='/about'>
+        {/* <Item to='/about'>
 
           <Icon src={flecha} />
-        </Item>
+        </Item> */}
             </div>
             <EducationIcons />
           </div>

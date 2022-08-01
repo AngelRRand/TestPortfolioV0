@@ -1,7 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavImg/rostro.png'
+import {useNavigate} from "react-router-dom";
+
 const NavRPG = () => {
+    const navigate = useNavigate()
+    const goBack = ()=>{
+        navigate('/about')
+    }
     const Container = styled.nav`
     width: 100vw;
     border-top: 1px solid black;
@@ -26,6 +32,8 @@ const NavRPG = () => {
         width: 200px;
         image-rendering: pixelated;
     `
+
+
     return (
         <>
             <Perfil>
@@ -35,7 +43,7 @@ const NavRPG = () => {
             </Perfil>
             <Container>
                 <div>
-                    <p>holaa</p>
+                    <button onClick={()=>goBack()}><p>Volver?</p></button>
                 </div>
             </Container>
 
