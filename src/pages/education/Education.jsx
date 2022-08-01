@@ -26,9 +26,10 @@ const Education = () => {
   const ContainerText = styled.div`
     display:flex;
     height: 100vh;
-    width:15vw;
+    width:35vw;
     align-items: center;
     justify-content: space-between;
+
   `
   const Item = styled(NavLink)`
   position: absolute;
@@ -75,10 +76,6 @@ const Education = () => {
             <div className="presentation-img">
               <img src={granImagen} alt="" className="imagen" />
               <img src={cafe} alt="" className="cafe-gif" />
-        {/* <Item to='/about'>
-
-          <Icon src={flecha} />
-        </Item> */}
             </div>
             <EducationIcons />
           </div>
@@ -99,8 +96,30 @@ const Education = () => {
       >
         <ContainerText>
           <div>
-            <h4>FrontEnd</h4>
-
+            <h3>FrontEnd</h3>
+            <div>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javacript</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>React Framer Motion</li>
+                <li>Redux</li>
+                <li>ReduxToolkit</li>
+                <li>Boostrap</li>
+                <li>Tailwind</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h2>BackEnd</h2>
+            <div>
+              <ul>
+                <li>Node</li>
+                <li>Express</li>
+              </ul>
+            </div>
           </div>
 
         </ContainerText>
