@@ -29,11 +29,11 @@ const Education = () => {
     justify-content: space-between;
     align-items: center;
   `
-  const Itemnull = styled.div`
-  padding: 10px;
+  const ContainerText = styled.div`
+    display:flex;
   `
   const Item = styled(NavLink)`
-  padding: 10px;
+  width: 9rem;
   cursor: pointer;
   display: flex;
   color: black;
@@ -42,44 +42,37 @@ const Education = () => {
   transition: all 0.2s ease;
   background: transparent;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
   img{
     background: transparent;
+    width: 5rem;
   }
   &:hover{
     transform: scale(1.05);
   }
 `
   const Text = styled.span`
-font-size: 2rem;
-transition: all 0.3s ease;
-display: flex;
-align-items: center;
-background: transparent;
-text-align: center;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  text-align: center;
 `
 
   return (
     <EducationContainer>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { duration: 7.5, type: "spring" },
-        }}
-        exit={{
-          opacity: 0,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}>
-        <Itemnull to='/about'>
-        <img src={home} alt='Home' />
-          <Text >Home</Text>
-        </Itemnull>
-      </motion.div>
+      <ContainerText>
+
+      </ContainerText>
+
       <motion.div
         initial={{ x: 1000 }}
         animate={{
           x: 0,
-          transition: { duration: 2.5, type: "spring" },
+          transition: { duration: 2.5, type: "spring", delayChildren: 2.5},
         }}
         exit={{
           x: -500,
@@ -88,7 +81,19 @@ text-align: center;
       >
 
         <div className="presentation-about">
-
+          <motion.div
+            initial={{ y: -1000 }}
+            animate={{
+              y: 0,
+              transition: { duration: 4.5, type: "spring" },
+            }}
+            exit={{
+              x: -500,
+              transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            }}
+          >
+            <h3>My technologies</h3>
+          </motion.div>
 
           <div className='containerAnimated' ref={constraintsRef}>
 

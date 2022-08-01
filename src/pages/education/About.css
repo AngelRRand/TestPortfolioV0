@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .presentation-img {
@@ -39,8 +41,6 @@
 .movimiento {
     width: 150px;
     height: 150px;
-    top: calc(50% - 150px / 2);
-    left: calc(50% - 150px / 2);
     display: flex;
     justify-content: center;
     align-items: center;
