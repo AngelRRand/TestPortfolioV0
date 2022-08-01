@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
-
-import cafe from '../../component/navbar/NavImg/cafe.gif'
-import education from '../../component/navbar/NavImg/libro.gif'
+import { motion } from "framer-motion";
+import cafe from '../../img/NavImg/cafe.gif'
+import education from '../../img/NavImg/libro.gif'
 /*import projects from '../../NavImg/Git.gif'
 import prueba from '../../NavImg/prueba.png' */
 export const Home = () => {
@@ -48,6 +48,17 @@ export const Home = () => {
   text-align: center;
 `
   return (
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{
+      opacity: 1,
+      transition: { duration: 3.5, type: "spring" },
+    }}
+    exit={{
+      opacity: 0,
+      transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+    }}>
+    
     <Home className="home">
       <Item to='/about'>
         <img src={cafe} alt='About' />
@@ -62,11 +73,19 @@ export const Home = () => {
         <p >
           This website is designed for those who want to know more about my education, the projects that I have prepared and those that I will sell in the future. I hope you like it.
         </p>
+        <div>
+          <h4>Map</h4>
+        </div>
+        <div>
+          
+        </div>
       </Container>
       <Item to='/about'>
         <img src={education} alt='About' />
         <Text >About</Text>
       </Item>
     </Home>
+
+    </motion.div>
   )
 }
