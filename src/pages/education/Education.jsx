@@ -1,4 +1,4 @@
-import React from 'react'
+import React,  {useState} from 'react'
 import granImagen from '../../img/cuarto96.gif'
 import styled from 'styled-components';
 import cafe from '../../img/cafe.gif'
@@ -14,7 +14,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Education = () => {
 
-
+  const [none, setNone] = useState(false);
 
   const constraintsRef = {
     top: -230,
@@ -68,10 +68,14 @@ const Education = () => {
   background: transparent;
   text-align: center;
 `
+  const Icon = styled.img`
+    width: 3.5rem;
+  
+  `
 
   return (
     <EducationContainer>
-      
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -132,9 +136,9 @@ const Education = () => {
                 transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
               }}
               className='movimiento' drag dragConstraints={constraintsRef}>
-              <img className='icon' src={CSS} alt="" srcset="" />
-            </motion.div
-            >
+              <Icon className='icon' src={CSS} alt="" />
+              
+            </motion.div>
             <motion.div
               animate={{
                 y: 150,
@@ -147,7 +151,7 @@ const Education = () => {
                 transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
               }}
               className='movimiento' drag dragConstraints={constraintsRef}>
-              <img className='icon' src={HTML} alt="" srcset="" />
+              <Icon className='icon' src={HTML} alt="" />
             </motion.div >
             <motion.div
               animate={{
@@ -161,7 +165,7 @@ const Education = () => {
                 transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
               }}
               className='movimiento' drag dragConstraints={constraintsRef}>
-              <img className='icon' src={JS} alt="" srcset="" />
+              <Icon className='icon' src={JS} alt="" />
             </motion.div>
             <motion.div
               animate={{
@@ -175,7 +179,7 @@ const Education = () => {
                 transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
               }}
               className='movimiento' drag dragConstraints={constraintsRef}>
-              <img className='icon' src={REDUX} alt="" srcset="" />
+              <Icon className='icon' src={REDUX} alt="" />
             </motion.div>
             <motion.div
               animate={{
@@ -189,7 +193,7 @@ const Education = () => {
                 transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
               }}
               className='movimiento' drag dragConstraints={constraintsRef}>
-              <img className='icon' src={REACT} alt="" srcset="" />
+              <Icon className='icon' src={REACT} alt="" />
             </motion.div>
           </div>
         </div>
