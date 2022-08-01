@@ -18,7 +18,7 @@
     
 }
 .presentation-img img{
-    width: 350px;
+    width: 370px;
     image-rendering: pixelated;
 }
 .cafe-gif {
@@ -29,8 +29,8 @@
 .containerAnimated {
     background: rgb(0, 0, 0);
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     place-content: center;
     place-items: center;
     overflow: hidden;

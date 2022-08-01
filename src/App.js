@@ -8,11 +8,13 @@ import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 import NavRPG from './component/navRPG';
 
-
+const ContainerApp = styled.div`
+  height: 100vh;
+`
 const Pages = styled.div`
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   justify-content: center;
   align-items: center;
   h1{
@@ -22,25 +24,32 @@ const Pages = styled.div`
 
 
 function App() {
+  
   return (
     <Fragment>
-      <Pages>
-        <AnimatePresence>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/About' element={<About />} />
-            <Route path='/Education' element={<Education />} />
-            <Route path='/Projects' element={<Projects />} />
+      <ContainerApp>
 
-            <Route path='*' element={
-              <main>
-                <p>No se encontro la ruta buscada</p>
-              </main>
-            } />
-          </Routes>
-          <NavRPG></NavRPG>
-        </AnimatePresence>
-      </Pages>
+        <div>
+          <Pages>
+            <AnimatePresence>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/Education' element={<Education />} />
+                <Route path='/Projects' element={<Projects />} />
+
+                <Route path='*' element={
+                  <main>
+                    <p>No se encontro la ruta buscada</p>
+                  </main>
+                } />
+              </Routes>
+            </AnimatePresence>
+          </Pages>
+        </div>
+        <NavRPG></NavRPG>
+      </ContainerApp>
+
     </Fragment>
   );
 }

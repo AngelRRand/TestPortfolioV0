@@ -10,14 +10,13 @@ export const Home = () => {
   const Home = styled.div`
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
     justify-content: space-between;
   `
   const Container = styled.div`
     flex-direction: column;
     width: 70vw;
-    height: 100vh;
     padding: 1rem;
     text-align: center;
   `
