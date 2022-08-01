@@ -8,7 +8,6 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    
 }
 
 .presentation-img {
@@ -29,8 +28,8 @@
 .containerAnimated {
     background: white;
     display: flex;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     place-content: center;
     place-items: center;
     overflow: hidden;
@@ -40,8 +39,8 @@
 }
 
 .movimiento {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

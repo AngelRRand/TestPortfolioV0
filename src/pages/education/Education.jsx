@@ -1,17 +1,12 @@
-import React,  {useState} from 'react'
+import React, { useState } from 'react'
 import granImagen from '../../img/cuarto96.gif'
 import styled from 'styled-components';
 import cafe from '../../img/cafe.gif'
 import './About.css'
 import { motion } from "framer-motion";
-import CSS from './img/CSS.png'
-import HTML from './img/HTML.png'
-import JS from './img/JavaScript.png'
-import REDUX from './img/Redux.png'
-import REACT from './img/React.png'
 import home from '../../img/NavImg/home.gif'
 import { Link, NavLink } from 'react-router-dom';
-
+import EducationIcons from './EducationIcons.jsx'
 const Education = () => {
 
   const [none, setNone] = useState(false);
@@ -80,7 +75,7 @@ const Education = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { duration: 7.5, type: "spring" },
+          transition: { duration: 8.5, type: "spring" },
         }}
         exit={{
           opacity: 0,
@@ -91,11 +86,13 @@ const Education = () => {
           <Text >Home</Text>
         </Item>
       </motion.div>
+
+
       <motion.div
         initial={{ x: -1000 }}
         animate={{
           x: 0,
-          transition: { duration: 2.5, type: "spring", delayChildren: 2.5 },
+          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
         }}
         exit={{
           x: -500,
@@ -107,8 +104,8 @@ const Education = () => {
           <motion.div
             initial={{ y: -1000 }}
             animate={{
-              y: 0,
-              transition: { duration: 4.5, type: "spring" },
+              y: -10,
+              transition: { duration: 3.5, type: "tween" },
             }}
             exit={{
               x: -500,
@@ -124,80 +121,12 @@ const Education = () => {
               <img src={granImagen} alt="" className="imagen" />
               <img src={cafe} alt="" className="cafe-gif" />
             </div>
-            <motion.div
-              animate={{
-                y: 0,
-                transition: { duration: 6, type: "spring" },
-                x: 200
-              }}
-              exit={{
-                x: 100,
-                y: -500,
-                transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-              }}
-              className='movimiento' drag dragConstraints={constraintsRef}>
-              <Icon className='icon' src={CSS} alt="" />
-              
-            </motion.div>
-            <motion.div
-              animate={{
-                y: 150,
-                transition: { duration: 6, type: "spring" },
-                x: 150
-              }}
-              exit={{
-                x: 100,
-                y: -500,
-                transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-              }}
-              className='movimiento' drag dragConstraints={constraintsRef}>
-              <Icon className='icon' src={HTML} alt="" />
-            </motion.div >
-            <motion.div
-              animate={{
-                y: -150,
-                transition: { duration: 6, type: "spring" },
-                x: 150
-              }}
-              exit={{
-                x: 100,
-                y: -500,
-                transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-              }}
-              className='movimiento' drag dragConstraints={constraintsRef}>
-              <Icon className='icon' src={JS} alt="" />
-            </motion.div>
-            <motion.div
-              animate={{
-                y: -150,
-                transition: { duration: 6, type: "spring" },
-                x: -150
-              }}
-              exit={{
-                x: 100,
-                y: -500,
-                transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-              }}
-              className='movimiento' drag dragConstraints={constraintsRef}>
-              <Icon className='icon' src={REDUX} alt="" />
-            </motion.div>
-            <motion.div
-              animate={{
-                y: 0,
-                transition: { duration: 6, type: "spring" },
-                x: -200
-              }}
-              exit={{
-                x: 100,
-                y: -500,
-                transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-              }}
-              className='movimiento' drag dragConstraints={constraintsRef}>
-              <Icon className='icon' src={REACT} alt="" />
-            </motion.div>
+            <EducationIcons/>
           </div>
         </div>
       </motion.div>
+
+
       <motion.div
         initial={{ y: -1000 }}
         animate={{
