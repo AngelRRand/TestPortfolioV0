@@ -15,7 +15,7 @@
     
 }
 .presentation-img img{
-    width: 400px;
+    width: 350px;
     image-rendering: pixelated;
 }
 .cafe-gif {
@@ -26,13 +26,14 @@
 .containerAnimated {
     background: white;
     display: flex;
-    width: 520px;
-    height: 520px;
+    width: 420px;
+    height: 420px;
     place-content: center;
     place-items: center;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.041);
+    border: 3px solid black;
 }
 
 .movimiento {
@@ -49,6 +50,5 @@
 }
 
 .icon{
-    width: 70px;
-    height: 70px;
+    width: 3.5rem;
 }

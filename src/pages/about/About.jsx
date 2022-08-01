@@ -45,7 +45,7 @@ const About = () => {
             animate={{
               y: 0,
               transition: { duration: 6, type: "spring" },
-              x: 250
+              x: 200
             }}
             exit={{
               x: 100,
@@ -60,7 +60,7 @@ const About = () => {
             animate={{
               y: 150,
               transition: { duration: 6, type: "spring" },
-              x: 200
+              x: 150
             }}
             exit={{
               x: 100,
@@ -74,7 +74,7 @@ const About = () => {
             animate={{
               y: -150,
               transition: { duration: 6, type: "spring" },
-              x: 200
+              x: 150
             }}
             exit={{
               x: 100,
@@ -88,7 +88,7 @@ const About = () => {
             animate={{
               y: -150,
               transition: { duration: 6, type: "spring" },
-              x: -200
+              x: -150
             }}
             exit={{
               x: 100,
@@ -102,7 +102,7 @@ const About = () => {
             animate={{
               y: 0,
               transition: { duration: 6, type: "spring" },
-              x: -250
+              x: -200
             }}
             exit={{
               x: 100,
