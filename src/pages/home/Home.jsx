@@ -33,7 +33,7 @@ export const Home = () => {
   color: #000000;
   text-decoration: none;
   image-rendering: pixelated;
-  transition: all 3s ease;
+  transition: all 1.5s linear;
   background: transparent;
   flex-direction: column;
   text-align: center;
@@ -42,10 +42,17 @@ export const Home = () => {
   z-index: 99;
   img{
     background: transparent;
-    width: 0.5rem;
+    width: 3.5rem;
+    display: none;
   }
   &:hover{
-    transform: scale(20);
+    transform: scale(2);
+  }
+  &:hover img{
+    display: inline;
+  }
+  &:hover span{
+    display: none;
   }
   
 `
@@ -65,12 +72,19 @@ align-items: center;
 position: absolute;
 z-index: 99;
 img{
-  background: transparent;
-  width: 0.5rem;
-}
-&:hover{
-  transform: scale(20);
-}
+    background: transparent;
+    width: 3.5rem;
+    display: none;
+  }
+  &:hover{
+    transform: scale(2);
+  }
+  &:hover img{
+    display: inline;
+  }
+  &:hover span{
+    display: none;
+    }
 
 `
   const Text = styled.span`
