@@ -57,6 +57,8 @@ export const Home = () => {
   
 `
   const ItemProject = styled(NavLink)`
+  top: 50px;
+  left: 370px;
 width: 9rem;
 padding: 10px;
 cursor: pointer;
