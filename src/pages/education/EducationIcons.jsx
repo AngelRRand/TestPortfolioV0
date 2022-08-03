@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import CSS from './img/CSS.png'
-import HTML from './img/HTML.png'
-import JS from './img/JavaScript.png'
-import REDUX from './img/Redux.png'
-import REACT from './img/React.png'
+import CSS from '../../img/imgTecnologis/CSS.png'
+import HTML from '../../img/imgTecnologis/HTML.png'
+import JS from '../../img/imgTecnologis/JavaScript.png'
+import REDUX from '../../img/imgTecnologis/Redux.png'
+import REACT from '../../img/imgTecnologis/React.png'
 const EducationIcons = () => {
     const constraintsRef = {
         top: -230,

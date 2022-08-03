@@ -27,7 +27,7 @@ export const Home = () => {
   bottom: 234px;
   right: 582px;
   width: 9rem;
-  padding: 1220px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   color: #000000;
