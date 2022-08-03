@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import estrellas from '../../img/estrellas.gif'
-import cafe from '../../img/NavImg/cafe.gif'
+import cafe from '../../img/NavImg/tierra.png'
 import projects from '../../img/NavImg/libro.gif'
 import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
