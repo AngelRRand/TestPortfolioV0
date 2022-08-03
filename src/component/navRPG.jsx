@@ -12,7 +12,7 @@ const NavRPG = () => {
     }
     const Container = styled.nav`
     width: 100vw;
-    border-top: 1px solid black;
+    border-top: 6px solid black;
     padding-top: 10px;
     padding-bottom: 5px;
     height: 15vh;
@@ -28,7 +28,6 @@ font-family: 'PF Tempesta Seven Compressed', sans-serif;
 image-rendering: pixelated;                            
     position: fixed;
     z-index: 100;
-    border-top: 1px solid white;
     `
     const Perfil = styled.div`
         position: absolute;
