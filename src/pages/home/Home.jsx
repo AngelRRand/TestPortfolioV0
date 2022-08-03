@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import estrellas from '../../img/estrellas.gif'
 import cafe from '../../img/NavImg/tierra.png'
-import projects from '../../img/NavImg/libro.gif'
+import projects from '../../img/NavImg/planetaProjects.png'
 import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
