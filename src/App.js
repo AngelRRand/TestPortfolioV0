@@ -13,7 +13,6 @@ const ContainerApp = styled.div`
 `
 const Pages = styled.div`
   display: flex;
-  width: 100vw;
   height: 85vh;
   justify-content: center;
   align-items: center;
