@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom"
 const NavRPG = () => {
     const navigate = useNavigate()
     const sampleLocation = useLocation();
-    console.log(sampleLocation.pathname)
     const goBack = () => {
         navigate('/')
     }

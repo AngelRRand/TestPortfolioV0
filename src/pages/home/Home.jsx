@@ -154,14 +154,6 @@ position: absolute;
   z-index: 11;
 `
 
-  const IMGAbolute = styled.img`
-  width: 95vw;
-  margin-top: 60vh;
-  image-rendering: pixelated;
-  height: 180vh;
-  position: absolute;
-  z-index: 1;
-`
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -177,7 +169,6 @@ position: absolute;
       <Home className="home">
 
         <IMG src={Galaxy} alt="" />
-        <IMGAbolute src={estrellas} />
         <SeñalesAbolute src={señales} />
         <ItemAbout to='/about'>
           <img src={terra} alt='About' />

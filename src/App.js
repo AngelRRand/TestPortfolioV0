@@ -8,13 +8,17 @@ import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 import NavRPG from './component/navRPG';
 import estrellas from './img/estrellas.gif'
-import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-const ContainerApp = styled.div`
+
+
+function App() {
+  const sampleLocation = useLocation();
+
+  const ContainerApp = styled.div`
   height: 100vh;
 `
-const Pages = styled.div`
+  const Pages = styled.div`
   display: flex;
   height: 85vh;
   justify-content: center;
@@ -23,21 +27,18 @@ const Pages = styled.div`
     font-size: calc(2rem + 2vw);
   }
 `
-const IMGAbolute = styled.img`
+  const IMGAbolute = styled.img`
 width: 95vw;
-margin-top: 60vh;
+margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
 image-rendering: pixelated;
-height: 180vh;
+height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '90vh'};
 position: absolute;
-z-index: 1;
+z-index: 0;
 `
-
-function App() {
-  
   return (
     <Fragment>
       <ContainerApp>
-      <IMGAbolute src={estrellas} />
+        <IMGAbolute src={estrellas} />
         <div>
           <Pages>
             <AnimatePresence>
