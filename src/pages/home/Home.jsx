@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import estrellas from '../../img/estrellas.gif'
-import cafe from '../../img/NavImg/tierra.png'
-import projects from '../../img/NavImg/planetaProjects.png'
+import terra from '../../img/NavImg/tierra.png'
+import planetIce from '../../img/NavImg/planetIce.png'
+import planetLava from '../../img/NavImg/planetLava.png'
 import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
@@ -33,7 +34,7 @@ export const Home = () => {
   color: #000000;
   text-decoration: none;
   image-rendering: pixelated;
-  transition: all 1.5s linear;
+  transition: all 0.5s ease;
   background: transparent;
   flex-direction: column;
   text-align: center;
@@ -66,7 +67,40 @@ display: flex;
 color: #000000;
 text-decoration: none;
 image-rendering: pixelated;
-transition: all 3s ease;
+transition: all 0.5s ease;
+background: transparent;
+flex-direction: column;
+text-align: center;
+align-items: center;
+position: absolute;
+z-index: 99;
+img{
+    background: transparent;
+    width: 3.5rem;
+    display: none;
+  }
+  &:hover{
+    transform: scale(2);
+  }
+  &:hover img{
+    display: inline;
+  }
+  &:hover span{
+    display: none;
+    }
+
+`
+  const ItemEducation = styled(NavLink)`
+  bottom: -120px;
+  left: 500px;
+width: 9rem;
+padding: 10px;
+cursor: pointer;
+display: flex;
+color: #000000;
+text-decoration: none;
+image-rendering: pixelated;
+transition: all 0.5s ease;
 background: transparent;
 flex-direction: column;
 text-align: center;
@@ -142,45 +176,25 @@ position: absolute;
 
       <Home className="home">
 
-        {/* <Item to='/about'>
-        <img src={cafe} alt='About' />
-        <Text>About</Text>
-      </Item>
-      <Container>
-        <h1>Welcome to my portfolio</h1>
-        <p>
-          My name is Horacio, full stack web developer. Specialized in the area of front end and animation
-        </p>
-        <br />
-        <p >
-          This website is designed for those who want to know more about my education, the projects that I have prepared and those that I will sell in the future. I hope you like it.
-        </p>
-        <div>
-          <h4>Map</h4>
-        </div>
-        <div>
-
-        </div>
-      </Container>
-      
-      <Item to='/projects'>
-        <img src={projects} alt='About' />
-        <Text >Projects</Text>
-      </Item> */}
         <IMG src={Galaxy} alt="" />
         <IMGAbolute src={estrellas} />
         <SeñalesAbolute src={señales} />
         <ItemAbout to='/about'>
-          <img src={cafe} alt='About' />
+          <img src={terra} alt='About' />
           <div>
 
             <Text>About</Text>
           </div>
         </ItemAbout>
         <ItemProject to='/projects'>
-          <img src={projects} alt='About' />
+          <img src={planetLava} alt='About' />
           <Text >Projects</Text>
         </ItemProject>
+
+        <ItemEducation to='/education'>
+          <img src={planetIce} alt='About' />
+          <Text >Education</Text>
+        </ItemEducation>
       </Home>
 
     </motion.div>

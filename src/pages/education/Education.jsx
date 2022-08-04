@@ -58,13 +58,13 @@ const Education = () => {
 
 
       <motion.div
-        initial={{ y: 1000 }}
+        initial={{ x: 1000 }}
         animate={{
-          y: 0,
+          x: 0,
           transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
         }}
         exit={{
-          y: -500,
+          x: -500,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}
       >
