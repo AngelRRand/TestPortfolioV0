@@ -21,34 +21,7 @@ const Education = () => {
     justify-content: center;
     align-items: center;
     `
-  const ContainerText = styled.div`
-    display:flex;
-    height: 50vh;
-    width:35vw;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-  `
-  const Item = styled(NavLink)`
-  position: absolute;
-  width: 5rem;
-  cursor: pointer;
-  text-decoration: none;
-  image-rendering: pixelated;
-  bottom: 0px;
-  img{
-    background: transparent;
-    width: 5rem;
-  }
-  &:hover{
-    transform: scale(1.05);
-  }
-`
-  const Icon = styled.img`
-    width: 2.5rem;
   
-  `
 
   return (
     <EducationContainer>

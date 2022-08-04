@@ -28,12 +28,12 @@ function App() {
   }
 `
   const IMGAbolute = styled.img`
-width: 95vw;
-margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
-image-rendering: pixelated;
-height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '90vh'};
-position: absolute;
-z-index: 0;
+  width:95vw;
+  margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
+  image-rendering: pixelated;
+  height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'};
+  position: absolute;
+  z-index: 0;
 `
   return (
     <Fragment>
