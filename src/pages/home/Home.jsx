@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
-import estrellas from '../../img/estrellas.gif'
 import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'

@@ -67,8 +67,9 @@ const NavRPG = () => {
     const ContainerIMG = styled.div`
     display:flex
         width: 6vw;
-        height: 5vw;
+        height: 5.5vw;
         border: 2px solid white;
+        border-bottom: 1vh solid white;
         margin-left:3vw;
         justify-content: center;
         align-items: center;
