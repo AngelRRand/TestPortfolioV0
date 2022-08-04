@@ -12,7 +12,7 @@ const NavRPG = () => {
     }
     const Container = styled.nav`
     width: 100vw;
-    border-top: 6px solid black;
+    border-top: 3px solid black;
     padding-top: 10px;
     padding-bottom: 5px;
     height: 15vh;
@@ -65,11 +65,16 @@ const NavRPG = () => {
         cursor: pointer;
     `
     const ContainerIMG = styled.div`
-        width: 5vw;
-        height:10vh
-        border: 1px solid white;
+    display:flex
+        width: 6vw;
+        height: 5vw;
+        border: 2px solid white;
+        margin-left:3vw;
+        justify-content: center;
+        align-items: center;
         img{
             width:5vw;
+            height: 5vw;
             image-rendering: pixelated;
         }
     `
@@ -88,13 +93,13 @@ const NavRPG = () => {
                         sampleLocation.pathname.toString() === '/about' ?
                             'Its in my personal zone, my about... in it you can know more about me!' :
                             sampleLocation.pathname.toString() === '/education' ?
-                            'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
+                                'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
                                 :
                                 sampleLocation.pathname.toString() === '/projects' ?
                                     'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
                                     'no hayt nada'
                     }</h4>
-                    
+
                     {/* <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>  */}
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?
@@ -109,7 +114,7 @@ const NavRPG = () => {
                 <ContainerIMG>
 
                     <img src={nutriaRobot} alt="" />
-                    </ContainerIMG>
+                </ContainerIMG>
             </Container>
 
         </>
