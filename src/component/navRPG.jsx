@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavImg/rostro.png'
+import nutriaRobot from '../img/robo.png'
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
 const NavRPG = () => {
@@ -49,6 +50,10 @@ const NavRPG = () => {
         border: 1px solid white;
         padding: 5px;
         border-radius: 10px;
+        img{
+            width: 200px
+            border: 1px solid white;
+        }
     `
     const Buttom = styled.button`
         color: #000000;
@@ -58,6 +63,15 @@ const NavRPG = () => {
         background-color: white;
         font-size: 1.2rem;
         cursor: pointer;
+    `
+    const ContainerIMG = styled.div`
+        width: 5vw;
+        height:10vh
+        border: 1px solid white;
+        img{
+            width:5vw;
+            image-rendering: pixelated;
+        }
     `
 
     return (
@@ -80,7 +94,8 @@ const NavRPG = () => {
                                     'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
                                     'no hayt nada'
                     }</h4>
-                    <Buttom onClick={() => goBack()}><p>Return?</p></Buttom> 
+                    
+                    {/* <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>  */}
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?
                         
@@ -90,8 +105,11 @@ const NavRPG = () => {
                             :
                             ''
                     } */}
-
                 </ContainerButtoms>
+                <ContainerIMG>
+
+                    <img src={nutriaRobot} alt="" />
+                    </ContainerIMG>
             </Container>
 
         </>
