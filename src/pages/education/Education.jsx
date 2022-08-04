@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './About.css'
 import { motion } from "framer-motion";
 import EducationIcons from './EducationIcons.jsx'
-import planetIce from '../../img/NavImg/planetIce.png'
+import planetIce from '../../img/Planet/IcePlanetZOOM2.png'
 const Education = () => {
 
 
@@ -26,6 +26,7 @@ const Education = () => {
       width: 100vw;
       image-rendering: pixelated;
     }
+    z-index: 1;
   `
 
   return (

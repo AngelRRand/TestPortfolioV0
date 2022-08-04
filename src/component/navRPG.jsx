@@ -21,10 +21,10 @@ const NavRPG = () => {
     display: flex;
     color: #ebeceb;
     font-family: 'PF Tempesta Seven', sans-serif;
-font-family: 'PF Tempesta Seven Extended', sans-serif;
-font-family: 'PF Tempesta Seven Condensed', sans-serif;
-font-family: 'PF Tempesta Seven Compressed', sans-serif;
-image-rendering: pixelated;                            
+    font-family: 'PF Tempesta Seven Extended', sans-serif;
+    font-family: 'PF Tempesta Seven Condensed', sans-serif;
+    font-family: 'PF Tempesta Seven Compressed', sans-serif;
+    image-rendering: pixelated;                            
     position: fixed;
     z-index: 100;
     `
