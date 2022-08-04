@@ -1,5 +1,6 @@
 import React from 'react'
-import education from '../../img/NavImg/libro.gif'
+import granImagen from '../../img/cuarto96.gif'
+import cafe from '../../img/cafe.gif'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
@@ -51,10 +52,10 @@ const About = () => {
         transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
       }}
     >
-      <Item to='/education'>
-        <img src={education} alt='Education' />
-        <Text >Education</Text>
-      </Item>
+     <div className="presentation-img">
+              <img src={granImagen} alt="" className="imagen" />
+              <img src={cafe} alt="" className="cafe-gif" />
+            </div>
 
     </motion.div>
   )

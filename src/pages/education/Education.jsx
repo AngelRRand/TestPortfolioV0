@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import granImagen from '../../img/cuarto96.gif'
 import styled from 'styled-components';
-import cafe from '../../img/cafe.gif'
 import './About.css'
 import { motion } from "framer-motion";
 import flecha from '../../img/Mator3.png'
@@ -20,7 +18,7 @@ const Education = () => {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     `
   const ContainerText = styled.div`
@@ -74,10 +72,7 @@ const Education = () => {
 
           <div className='containerAnimated' ref={constraintsRef}>
 
-            <div className="presentation-img">
-              <img src={granImagen} alt="" className="imagen" />
-              <img src={cafe} alt="" className="cafe-gif" />
-            </div>
+            
             <EducationIcons />
           </div>
         </div>
@@ -95,35 +90,7 @@ const Education = () => {
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}
       >
-        <ContainerText>
-          <div>
-            <h3>FrontEnd</h3>
-            <div>
-              <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Javacript</li>
-                <li>React</li>
-                <li>React Native</li>
-                <li>React Framer Motion</li>
-                <li>Redux</li>
-                <li>ReduxToolkit</li>
-                <li>Boostrap</li>
-                <li>Tailwind</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h2>BackEnd</h2>
-            <div>
-              <ul>
-                <li>Node</li>
-                <li>Express</li>
-              </ul>
-            </div>
-          </div>
-
-        </ContainerText>
+        
       </motion.div>
     </EducationContainer>
   )
