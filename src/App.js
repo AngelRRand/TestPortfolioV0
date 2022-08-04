@@ -35,7 +35,7 @@ function App() {
   /* height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'}; */
   height: 180vh;
   position: absolute;
-  bottom:  ${sampleLocation.pathname.toString() === '/' ? '' : '30vh'};
+  bottom:  ${sampleLocation.pathname.toString() === '/' ? '0' : '30vh'};
   z-index: 0;
 `
   return (
