@@ -15,6 +15,7 @@ const Education = () => {
     bottom: 210,
   }
   const EducationContainer = styled.div`
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     display: flex;

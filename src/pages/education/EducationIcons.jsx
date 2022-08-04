@@ -7,12 +7,7 @@ import JS from '../../img/imgTecnologis/JavaScript.png'
 import REDUX from '../../img/imgTecnologis/Redux.png'
 import REACT from '../../img/imgTecnologis/React.png'
 const EducationIcons = () => {
-    const constraintsRef = {
-        top: -230,
-        left: -250,
-        right: 250,
-        bottom: 210,
-      }
+    
     const Icon = styled.img`
     width: 3.5rem;
   
@@ -30,7 +25,7 @@ const EducationIcons = () => {
                     y: -500,
                     transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
                 }}
-                className='movimiento' drag dragConstraints={constraintsRef}>
+                className='movimiento' >
                 <Icon className='icon' src={CSS} alt="" />
 
             </motion.div>
@@ -45,7 +40,7 @@ const EducationIcons = () => {
                     y: -500,
                     transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
                 }}
-                className='movimiento' drag dragConstraints={constraintsRef}>
+                className='movimiento' >
                 <Icon className='icon' src={HTML} alt="" />
             </motion.div >
             <motion.div
@@ -59,7 +54,7 @@ const EducationIcons = () => {
                     y: -500,
                     transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
                 }}
-                className='movimiento' drag dragConstraints={constraintsRef}>
+                className='movimiento' >
                 <Icon className='icon' src={JS} alt="" />
             </motion.div>
             <motion.div
@@ -73,7 +68,7 @@ const EducationIcons = () => {
                     y: -500,
                     transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
                 }}
-                className='movimiento' drag dragConstraints={constraintsRef}>
+                className='movimiento' >
                 <Icon className='icon' src={REDUX} alt="" />
             </motion.div>
             <motion.div
@@ -87,7 +82,7 @@ const EducationIcons = () => {
                     y: -500,
                     transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
                 }}
-                className='movimiento' drag dragConstraints={constraintsRef}>
+                className='movimiento' >
                 <Icon className='icon' src={REACT} alt="" />
             </motion.div>
         </>

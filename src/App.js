@@ -17,6 +17,7 @@ function App() {
 
   const ContainerApp = styled.div`
   height: 100vh;
+  
 `
   const Pages = styled.div`
   display: flex;
