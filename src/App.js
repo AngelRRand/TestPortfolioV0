@@ -32,8 +32,10 @@ function App() {
   width:95vw;
   margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
   image-rendering: pixelated;
-  height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'};
+  /* height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'}; */
+  height: 180vh;
   position: absolute;
+  bottom:  ${sampleLocation.pathname.toString() === '/' ? '' : '30vh'};
   z-index: 0;
 `
   return (

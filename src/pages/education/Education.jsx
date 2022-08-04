@@ -1,19 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import './About.css'
 import { motion } from "framer-motion";
-import flecha from '../../img/Mator3.png'
-import { NavLink } from 'react-router-dom';
 import EducationIcons from './EducationIcons.jsx'
+import planetIce from '../../img/NavImg/planetIce.png'
 const Education = () => {
 
 
-  const constraintsRef = {
-    top: -230,
-    left: -230,
-    right: 230,
-    bottom: 210,
-  }
   const EducationContainer = styled.div`
     overflow: hidden;
     width: 100vw;
@@ -22,7 +15,18 @@ const Education = () => {
     justify-content: center;
     align-items: center;
     `
-  
+  const PlanetContainer = styled.div`
+    display: flex;
+    width: 450px;
+    height: 450px;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    img{
+      width: 100vw;
+      image-rendering: pixelated;
+    }
+  `
 
   return (
     <EducationContainer>
@@ -30,7 +34,7 @@ const Education = () => {
 
 
       <motion.div
-        initial={{ x: 1000 }}
+        initial={{ x: -1000 }}
         animate={{
           x: 0,
           transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
@@ -44,11 +48,11 @@ const Education = () => {
         <div className="presentation-about">
           <h3>My technologies</h3>
 
-          <div className='containerAnimated' ref={constraintsRef}>
-
+          <PlanetContainer className='containerAnimated' >
+            <img src={planetIce} alt="" />
             
-            <EducationIcons />
-          </div>
+            {/* <EducationIcons /> */}
+          </PlanetContainer>
         </div>
       </motion.div>
 
