@@ -8,7 +8,7 @@ const NavRPG = () => {
     const sampleLocation = useLocation();
     console.log(sampleLocation.pathname)
     const goBack = () => {
-        navigate('/about')
+        navigate('/')
     }
     const Container = styled.nav`
     width: 100vw;
