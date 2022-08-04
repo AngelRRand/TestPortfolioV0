@@ -75,11 +75,13 @@ image-rendering: pixelated;
                         sampleLocation.pathname.toString() === '/about' ?
                             'Its in my personal zone, my about... in it you can know more about me!' :
                             sampleLocation.pathname.toString() === '/education' ?
-                                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom> :
+                            'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
+                                :
                                 sampleLocation.pathname.toString() === '/projects' ?
                                     'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
                                     'no hayt nada'
                     }</h4>
+                    <Buttom onClick={() => goBack()}><p>Return?</p></Buttom> 
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?
                         
