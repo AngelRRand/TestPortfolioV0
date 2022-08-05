@@ -7,7 +7,7 @@ import Projects from './pages/project/Projects';
 import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 import NavRPG from './component/navRPG';
-import estrellas from './img/estrellas.gif'
+import estrellas from './img/Starts.gif'
 import { useLocation } from "react-router-dom";
 
 
@@ -29,13 +29,14 @@ function App() {
   }
 `
   const IMGAbolute = styled.img`
-  width:95vw;
-  margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
   image-rendering: pixelated;
-  /* height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'}; */
-  height: 180vh;
+  overflow-x: hidden;
   position: absolute;
-  bottom:  ${sampleLocation.pathname.toString() === '/' ? '0' : '30vh'};
+  width:90vw;
+  height: 250vh;
+  margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
+  bottom:  ${sampleLocation.pathname.toString() === '/' ? '-50vh' : '0vh'};
+  left: 5vw;
   z-index: 0;
 `
   return (

@@ -24,8 +24,8 @@ export const Home = () => {
     text-align: center;
   `
   const ItemAbout = styled(NavLink)`
-  bottom: 234px;
-  right: 582px;
+  bottom: 37vh;
+  right: 47vw;
   width: 9rem;
   padding: 10px;
   cursor: pointer;
@@ -57,22 +57,22 @@ export const Home = () => {
   
 `
   const ItemProject = styled(NavLink)`
-  top: 50px;
-  left: 370px;
-width: 9rem;
-padding: 10px;
-cursor: pointer;
-display: flex;
-color: #000000;
-text-decoration: none;
-image-rendering: pixelated;
-transition: all 0.5s ease;
-background: transparent;
-flex-direction: column;
-text-align: center;
-align-items: center;
-position: absolute;
-z-index: 99;
+  top: 7.6vh;
+  left: 28vw;
+  width: 9rem;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  image-rendering: pixelated;
+  transition: all 0.5s ease;
+  background: transparent;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
 img{
     background: transparent;
     width: 3.5rem;
@@ -158,7 +158,7 @@ position: absolute;
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 4.5, type: "spring" },
+        transition: { duration: 1.5, type: "spring" },
       }}
       exit={{
         opacity: 0,
@@ -180,7 +180,6 @@ position: absolute;
           <img src={planetLava} alt='About' />
           <Text >Projects</Text>
         </ItemProject>
-
         <ItemEducation to='/education'>
           <img src={planetIce} alt='About' />
           <Text >Education</Text>

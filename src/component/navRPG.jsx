@@ -51,7 +51,7 @@ const NavRPG = () => {
         padding: 5px;
         border-radius: 10px;
         img{
-            width: 200px
+            width: 200px;
             border: 1px solid white;
         }
     `
@@ -65,7 +65,7 @@ const NavRPG = () => {
         cursor: pointer;
     `
     const ContainerIMG = styled.div`
-    display:flex
+    display:flex;
         width: 6vw;
         height: 5.5vw;
         border: 2px solid white;
