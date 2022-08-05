@@ -38,8 +38,17 @@ const NavRPG = () => {
         padding: 5px;
         left: 0px;
     `
+    const PerfilNutrie = styled.div`
+        position: absolute;
+        bottom: 5px;
+        image-rendering: pixelated;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        right: 0px;
+    `
     const PerfilImg = styled.img`
-        width: 200px;
+        width: 20vw;
         image-rendering: pixelated;
     `
     const ContainerButtoms = styled.div`
@@ -50,10 +59,7 @@ const NavRPG = () => {
         border: 1px solid white;
         padding: 5px;
         border-radius: 10px;
-        img{
-            width: 200px;
-            border: 1px solid white;
-        }
+        
     `
     const Buttom = styled.button`
         color: #000000;
@@ -63,21 +69,6 @@ const NavRPG = () => {
         background-color: white;
         font-size: 1.2rem;
         cursor: pointer;
-    `
-    const ContainerIMG = styled.div`
-    display:flex;
-        width: 6vw;
-        height: 5.5vw;
-        border: 2px solid white;
-        border-bottom: 1vh solid white;
-        margin-left:3vw;
-        justify-content: center;
-        align-items: center;
-        img{
-            width:5vw;
-            height: 5vw;
-            image-rendering: pixelated;
-        }
     `
 
     return (
@@ -90,15 +81,17 @@ const NavRPG = () => {
                 </Perfil>
                 <ContainerButtoms>
                     <h4>{sampleLocation.pathname.toString() === '/' ?
-                        'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' :
+                        'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' 
+                        :
                         sampleLocation.pathname.toString() === '/about' ?
-                            'Its in my personal zone, my about... in it you can know more about me!' :
-                            sampleLocation.pathname.toString() === '/education' ?
-                                'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
-                                :
-                                sampleLocation.pathname.toString() === '/projects' ?
-                                    'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
-                                    'no hayt nada'
+                        'Its in my personal zone, my about... in it you can know more about me!' 
+                        :
+                        sampleLocation.pathname.toString() === '/education' ?
+                        'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
+                        :
+                        sampleLocation.pathname.toString() === '/projects' ?
+                        'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
+                        'no hay nada'
                     }</h4>
 
                     {/* <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>  */}
@@ -112,10 +105,10 @@ const NavRPG = () => {
                             ''
                     } */}
                 </ContainerButtoms>
-                <ContainerIMG>
-
-                    <img src={nutria} alt="" />
-                </ContainerIMG>
+                <PerfilNutrie>
+                    <PerfilImg src={nutria} />
+                    <h1>nutria</h1>
+                </PerfilNutrie>
             </Container>
 
         </>
