@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavImg/rostro.png'
-import nutriaRobot from '../img/robo.png'
+import nutria from '../img/nutria.gif'
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
 const NavRPG = () => {
@@ -114,7 +114,7 @@ const NavRPG = () => {
                 </ContainerButtoms>
                 <ContainerIMG>
 
-                    <img src={nutriaRobot} alt="" />
+                    <img src={nutria} alt="" />
                 </ContainerIMG>
             </Container>
 
