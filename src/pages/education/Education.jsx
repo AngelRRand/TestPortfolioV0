@@ -28,6 +28,7 @@ const Education = () => {
     }
     z-index: 1;
   `
+  
 
   return (
     <EducationContainer>

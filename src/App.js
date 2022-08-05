@@ -7,7 +7,7 @@ import Projects from './pages/project/Projects';
 import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 import NavRPG from './component/navRPG';
-import estrellas from './img/Sprite-0006.png'
+import estrellas from './img/estrellas.gif'
 import { useLocation } from "react-router-dom";
 
 
@@ -33,9 +33,9 @@ function App() {
   margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
   image-rendering: pixelated;
   /* height: ${sampleLocation.pathname.toString() === '/' ? '180vh' : '140vh'}; */
-  height: 200vh;
+  height: 180vh;
   position: absolute;
-  bottom:  ${sampleLocation.pathname.toString() === '/' ? '0' : '10vh'};
+  bottom:  ${sampleLocation.pathname.toString() === '/' ? '0' : '30vh'};
   z-index: 0;
 `
   return (
