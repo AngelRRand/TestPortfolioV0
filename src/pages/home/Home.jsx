@@ -14,8 +14,8 @@ export const Home = () => {
   `
   const ContainerIMG = styled.div`
     
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
   width: 60vw;
   height: 150vh;
   object-fit: cover;
@@ -36,10 +36,7 @@ export const Home = () => {
     grid-row-gap: 0px;
   `
   const ItemAbout = styled(NavLink)`
-  bottom: 37vh;
-  right: 47vw;
-  width: 9rem;
-  padding: 10px;
+  grid-area: 13 / 10 / 14 / 11;
   cursor: pointer;
   display: flex;
   color: #000000;
@@ -50,7 +47,6 @@ export const Home = () => {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  position: absolute;
   z-index: 99;
   img{
     background: transparent;
@@ -69,10 +65,7 @@ export const Home = () => {
   
 `
   const ItemProject = styled(NavLink)`
-  top: 7.6vh;
-  left: 28vw;
-  width: 9rem;
-  padding: 10px;
+  grid-area: 10 / 12 / 11 / 13;
   cursor: pointer;
   display: flex;
   color: #000000;
@@ -83,7 +76,6 @@ export const Home = () => {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  position: absolute;
   z-index: 99;
 img{
     background: transparent;
@@ -102,22 +94,18 @@ img{
 
 `
   const ItemEducation = styled(NavLink)`
-  bottom: -120px;
-  left: 500px;
-width: 9rem;
-padding: 10px;
-cursor: pointer;
-display: flex;
-color: #000000;
-text-decoration: none;
-image-rendering: pixelated;
-transition: all 0.5s ease;
-background: transparent;
-flex-direction: column;
-text-align: center;
-align-items: center;
-position: absolute;
-z-index: 99;
+  grid-area: 17 / 7 / 18 / 8;
+  cursor: pointer;
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  image-rendering: pixelated;
+  transition: all 0.5s ease;
+  background: transparent;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 99;
 img{
     background: transparent;
     width: 3.5rem;
@@ -135,8 +123,7 @@ img{
 
 `
   const Text = styled.span`
-  grid-area: 20 / 10 / 21 / 11;
-  font-size: 1.3deg;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
   align-items: center;
   background: transparent;
@@ -146,7 +133,7 @@ font-family: 'PF Tempesta Seven Extended', sans-serif;
 font-family: 'PF Tempesta Seven Condensed', sans-serif;
 font-family: 'PF Tempesta Seven Compressed', sans-serif;
 image-rendering: pixelated; 
-z-index:30; 
+ 
 `
 
 
@@ -168,10 +155,10 @@ z-index:30;
           <IMG src={Galaxy} alt="Galaxy" />
         </ContainerIMG>
         <TemplateGrid>
-          <Text>About</Text>
 
-          {/* <ItemAbout to='/about'>
+          <ItemAbout to='/about'>
             <img src={terra} alt='About' />
+            <Text>About</Text>
           </ItemAbout>
           <ItemProject to='/projects'>
             <img src={planetLava} alt='About' />
@@ -180,7 +167,7 @@ z-index:30;
           <ItemEducation to='/education'>
             <img src={planetIce} alt='About' />
             <Text >Education</Text>
-          </ItemEducation> */}
+          </ItemEducation>
 
         </TemplateGrid>
       </Home>
