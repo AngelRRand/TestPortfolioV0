@@ -30,13 +30,13 @@ export const Home = () => {
     display: grid;
     width: 60vw;
     height:  150vh;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 4vw);
+    grid-template-rows: repeat(30, 6vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
   const ItemAbout = styled(NavLink)`
-  grid-area: 13 / 10 / 14 / 11;
+  grid-area: 16 / 8 / 18 / 8;
   cursor: pointer;
   display: flex;
   color: #000000;
@@ -65,7 +65,7 @@ export const Home = () => {
   
 `
   const ItemProject = styled(NavLink)`
-  grid-area: 10 / 12 / 11 / 13;
+  grid-area: 12 / 7 / 13 / 8;
   cursor: pointer;
   display: flex;
   color: #000000;
