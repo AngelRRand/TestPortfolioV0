@@ -9,11 +9,13 @@ import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
+  height: 150vh;
   `
   const IMG = styled.img`
   position: absolute;
   top: 0;
   width: 95vw;
+  height: 150vh;
   image-rendering: pixelated;
   object-fit: contain;
   z-index: 10;
@@ -21,14 +23,11 @@ export const Home = () => {
   const TemplateGrid = styled.div`
     display: grid;
     width: 95vw;
-    height: 350vh;
-    background-color: aqua;
   `
   const SeñalesAbolute = styled.img`
-position: absolute;
-  width: 90vw;
+  position: absolute;
+  width: 45vw;
   margin-top: 30vh;
-  height: 150vh;
   image-rendering: pixelated;
   object-fit: contain;
   z-index: 11;
@@ -166,10 +165,7 @@ image-rendering: pixelated;
           <SeñalesAbolute src={señales} />
           <ItemAbout to='/about'>
             <img src={terra} alt='About' />
-            <div>
-
-              <Text>About</Text>
-            </div>
+            <Text>About</Text>
           </ItemAbout>
           <ItemProject to='/projects'>
             <img src={planetLava} alt='About' />
