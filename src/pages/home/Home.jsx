@@ -9,20 +9,31 @@ import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
-    display: flex;
+    display: grid;
     width: 95vw;
     height: 240vh;
     align-items:center;
     justify-content: center;
     overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
     
   `
-  const Container = styled.div`
-    flex-direction: column;
-    width: 70vw;
-    padding: 1rem;
-    text-align: center;
-  `
+  const IMG = styled.img`
+  width: 90vw;
+  height: 150vh;
+  image-rendering: pixelated;
+  object-fit: contain;
+  z-index: 10;
+`
+  const SeñalesAbolute = styled.img`
+position: absolute;
+  width: 90vw;
+  margin-top: 30vh;
+  height: 150vh;
+  image-rendering: pixelated;
+  object-fit: contain;
+  z-index: 11;
+`
   const ItemAbout = styled(NavLink)`
   bottom: 37vh;
   right: 47vw;
@@ -135,23 +146,7 @@ font-family: 'PF Tempesta Seven Condensed', sans-serif;
 font-family: 'PF Tempesta Seven Compressed', sans-serif;
 image-rendering: pixelated;  
 `
-  const IMG = styled.img`
-  width: 90vw;
-  margin-top: 60vh;
-  height: 150vh;
-  image-rendering: pixelated;
-  object-fit: contain;
-  z-index: 10;
-`
-  const SeñalesAbolute = styled.img`
-position: absolute;
-  width: 90vw;
-  margin-top: 30vh;
-  height: 150vh;
-  image-rendering: pixelated;
-  object-fit: contain;
-  z-index: 11;
-`
+  
 
   return (
     <motion.div
