@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavImg/rostro.png'
 import nutria from '../img/nutria.gif'
+import './nav.css'
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
 const NavRPG = () => {
@@ -50,6 +51,8 @@ const NavRPG = () => {
     const PerfilImg = styled.img`
         width: 20vw;
         image-rendering: pixelated;
+        border: 2px solid black;
+        background-color: black;
     `
     const ContainerButtoms = styled.div`
         flex-direction: row;
@@ -80,7 +83,7 @@ const NavRPG = () => {
 
                 </Perfil>
                 <ContainerButtoms>
-                    <h4>{sampleLocation.pathname.toString() === '/' ?
+                    <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
                         'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' 
                         :
                         sampleLocation.pathname.toString() === '/about' ?
