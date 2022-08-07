@@ -12,23 +12,23 @@ const NavRPG = () => {
         navigate('/')
     }
     const Container = styled.nav`
-    width: 100vw;
-    border-top: 3px solid black;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    height: 15vh;
-    background-color: #111111;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: #ebeceb;
-    font-family: 'PF Tempesta Seven', sans-serif;
-    font-family: 'PF Tempesta Seven Extended', sans-serif;
-    font-family: 'PF Tempesta Seven Condensed', sans-serif;
-    font-family: 'PF Tempesta Seven Compressed', sans-serif;
-    image-rendering: pixelated;                            
-    position: fixed;
-    z-index: 100;
+        width: 100vw;
+        border-top: 3px solid #ffffff;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        height: 15vh;
+        background-color: #070707;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: #ebeceb;
+        font-family: 'PF Tempesta Seven', sans-serif;
+        font-family: 'PF Tempesta Seven Extended', sans-serif;
+        font-family: 'PF Tempesta Seven Condensed', sans-serif;
+        font-family: 'PF Tempesta Seven Compressed', sans-serif;
+        image-rendering: pixelated;                            
+        position: fixed;
+        z-index: 100;
     `
     const Perfil = styled.div`
         position: absolute;
@@ -51,8 +51,8 @@ const NavRPG = () => {
     const PerfilImg = styled.img`
         width: 20vw;
         image-rendering: pixelated;
-        border: 2px solid black;
-        background-color: black;
+        border: 2px solid #ffffff;
+        background-color: #070707;
     `
     const ContainerButtoms = styled.div`
         flex-direction: row;
