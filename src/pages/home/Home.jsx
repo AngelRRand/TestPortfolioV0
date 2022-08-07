@@ -9,21 +9,27 @@ import Galaxy from '../../img/galaxy.png'
 export const Home = () => {
   const Home = styled.div`
   height: 150vh;
+  display: flex;
+  justify-content: center;
+  `
+  const ContainerIMG = styled.div`
+    
+    position: absolute;
+    top: 0;
+  width: 60vw;
+  height: 150vh;
+  object-fit: cover;
   `
   const IMG = styled.img`
-  position: absolute;
-  top: 0;
-  width: 95vw;
-  height: 150vh;
+  height: 100%;
+  width: 100%;
   image-rendering: pixelated;
-  object-fit: contain;
   z-index: 10;
 `
   const TemplateGrid = styled.div`
     display: grid;
-    width: 95vw;
-    height: 150vh;
-    background-color: aliceblue;
+    width: 60vw;
+    height:  150vh;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
     grid-column-gap: 0px;
@@ -129,8 +135,8 @@ img{
 
 `
   const Text = styled.span`
-  grid-area: 10 / 9 / 11 / 10;
-  font-size: 1.3rem;
+  grid-area: 20 / 10 / 21 / 11;
+  font-size: 1.3deg;
   transition: all 0.3s ease;
   align-items: center;
   background: transparent;
@@ -157,7 +163,10 @@ z-index:30;
       }}>
 
       <Home className="home">
-        <IMG src={Galaxy} alt="Galaxy" />
+        <ContainerIMG>
+
+          <IMG src={Galaxy} alt="Galaxy" />
+        </ContainerIMG>
         <TemplateGrid>
           <Text>About</Text>
 
