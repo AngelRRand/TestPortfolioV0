@@ -9,7 +9,6 @@ import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
-    display: flex;
     width: 95vw;
     height: 250vh;
   `
@@ -22,6 +21,9 @@ export const Home = () => {
   object-fit: contain;
   z-index: 10;
 `
+  const TemplateGrid = styled.div`
+    
+  `
   const SeñalesAbolute = styled.img`
 position: absolute;
   width: 90vw;
@@ -159,26 +161,26 @@ image-rendering: pixelated;
 
       <Home className="home">
         <IMG src={Galaxy} alt="Galaxy" />
-        <div>
+        <TemplateGrid>
 
-        <SeñalesAbolute src={señales} />
-        <ItemAbout to='/about'>
-          <img src={terra} alt='About' />
-          <div>
+          <SeñalesAbolute src={señales} />
+          <ItemAbout to='/about'>
+            <img src={terra} alt='About' />
+            <div>
 
-            <Text>About</Text>
-          </div>
-        </ItemAbout>
-        <ItemProject to='/projects'>
-          <img src={planetLava} alt='About' />
-          <Text >Projects</Text>
-        </ItemProject>
-        <ItemEducation to='/education'>
-          <img src={planetIce} alt='About' />
-          <Text >Education</Text>
-        </ItemEducation>
-        
-        </div>
+              <Text>About</Text>
+            </div>
+          </ItemAbout>
+          <ItemProject to='/projects'>
+            <img src={planetLava} alt='About' />
+            <Text >Projects</Text>
+          </ItemProject>
+          <ItemEducation to='/education'>
+            <img src={planetIce} alt='About' />
+            <Text >Education</Text>
+          </ItemEducation>
+
+        </TemplateGrid>
       </Home>
 
     </motion.div>
