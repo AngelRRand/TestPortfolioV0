@@ -65,7 +65,7 @@ export const Home = () => {
   
 `
   const ItemProject = styled(NavLink)`
-  grid-area: 12 / 7 / 13 / 8;
+  grid-area: 12 / 11 / 13 / 8;
   cursor: pointer;
   display: flex;
   color: #000000;
@@ -94,7 +94,7 @@ img{
 
 `
   const ItemEducation = styled(NavLink)`
-  grid-area: 17 / 7 / 18 / 8;
+  grid-area: 22 / 4 / 21 / 8;
   cursor: pointer;
   display: flex;
   color: #000000;
@@ -123,17 +123,16 @@ img{
 
 `
   const Text = styled.span`
-  font-size: 1.3rem;
+  font-size: calc(13px + 0.6vw);
   transition: all 0.3s ease;
   align-items: center;
   background: transparent;
   text-align: center;
   font-family: 'PF Tempesta Seven', sans-serif;
-font-family: 'PF Tempesta Seven Extended', sans-serif;
-font-family: 'PF Tempesta Seven Condensed', sans-serif;
-font-family: 'PF Tempesta Seven Compressed', sans-serif;
-image-rendering: pixelated; 
- 
+  font-family: 'PF Tempesta Seven Extended', sans-serif;
+  font-family: 'PF Tempesta Seven Condensed', sans-serif;
+  font-family: 'PF Tempesta Seven Compressed', sans-serif;
+  image-rendering: pixelated; 
 `
 
 
