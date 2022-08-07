@@ -49,7 +49,7 @@ export const Home = () => {
   text-align: center;
   align-items: center;
   z-index: 99;
-  img{
+  img:first-child{
     background: transparent;
     width: 3.5rem;
     display: none;
@@ -57,8 +57,11 @@ export const Home = () => {
   &:hover{
     transform: scale(2);
   }
-  &:hover img{
+  &:hover img:first-child{
     display: inline;
+  }
+  &:hover img{
+    display: none;
   }
   &:hover span{
     display: none;
@@ -78,16 +81,19 @@ export const Home = () => {
   text-align: center;
   align-items: center;
   z-index: 99;
-img{
+img:first-child{
     background: transparent;
     width: 3.5rem;
     display: none;
   }
-  &:hover{
+  &:hover {
     transform: scale(2);
   }
-  &:hover img{
+  &:hover img:first-child{
     display: inline;
+  }
+  &:hover img{
+    display: none;
   }
   &:hover span{
     display: none;
@@ -107,7 +113,7 @@ img{
   text-align: center;
   align-items: center;
   z-index: 99;
-img{
+  img:first-child{
     background: transparent;
     width: 3.5rem;
     display: none;
@@ -115,8 +121,11 @@ img{
   &:hover{
     transform: scale(2);
   }
-  &:hover img{
+  &:hover img:first-child{
     display: inline;
+  }
+  &:hover img{
+    display: none;
   }
   &:hover span{
     display: none;
@@ -124,7 +133,7 @@ img{
 
 `
   const Text = styled.span`
-  font-size: calc(13px + 0.6vw);
+  font-size: calc(13px + 0.4vw);
   transition: all 0.3s ease;
   align-items: center;
   background: transparent;
@@ -133,12 +142,15 @@ img{
   font-family: 'PF Tempesta Seven Extended', sans-serif;
   font-family: 'PF Tempesta Seven Condensed', sans-serif;
   font-family: 'PF Tempesta Seven Compressed', sans-serif;
-  image-rendering: pixelated; 
+  image-rendering: pixelated;
+  z-index: 90; 
 `
 
-    const Señal = styled.img`
-      position: absolute;
-    `
+  const Señal = styled.img`
+    position: absolute;
+    z-index: 80;
+    width: calc(13px + 5vw);
+`
 
   return (
     <motion.div
