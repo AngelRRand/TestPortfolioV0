@@ -136,16 +136,10 @@ img{
   image-rendering: pixelated; 
 `
 
-  const SeñalAbout = styled.img`
-      grid-area: 15 / 7 / 15 / 12;
-      width: calc(13px + 11vw);
-      z-index: 80;
+    const Señal = styled.img`
+      position: absolute;
     `
-  const SeñalProject = styled.img`
-  grid-area: 11 / 11 / 13 / 8;
-  width: calc(13px + 11vw);
-  z-index: 80;
-`
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -160,6 +154,7 @@ img{
 
       <Home className="home">
         <ContainerIMG>
+
           <IMG src={Galaxy} alt="Galaxy" />
         </ContainerIMG>
         <TemplateGrid>
@@ -167,20 +162,18 @@ img{
           <ItemAbout to='/about'>
             <img src={terra} alt='About' />
             <Text>About</Text>
+            <Señal src={señal} alt="" />
           </ItemAbout>
-
           <ItemProject to='/projects'>
             <img src={planetLava} alt='About' />
             <Text >Projects</Text>
+            <Señal src={señal} alt="" />
           </ItemProject>
-
           <ItemEducation to='/education'>
             <img src={planetIce} alt='About' />
             <Text >Education</Text>
+            <Señal src={señal} alt="" />
           </ItemEducation>
-
-          <SeñalAbout src={señal} alt="" />
-          <SeñalProject src={señal} alt="" />
 
         </TemplateGrid>
       </Home>
