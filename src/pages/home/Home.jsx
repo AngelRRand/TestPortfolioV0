@@ -9,20 +9,20 @@ import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
-    width: 95vw;
-    height: 250vh;
   `
   const IMG = styled.img`
   position: absolute;
   top: 0;
   width: 95vw;
-  height: 150vh;
   image-rendering: pixelated;
   object-fit: contain;
   z-index: 10;
 `
   const TemplateGrid = styled.div`
-    
+    display: grid;
+    width: 95vw;
+    height: 350vh;
+    background-color: aqua;
   `
   const SeñalesAbolute = styled.img`
 position: absolute;
