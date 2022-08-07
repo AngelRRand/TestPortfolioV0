@@ -11,15 +11,10 @@ export const Home = () => {
   const Home = styled.div`
     display: grid;
     width: 95vw;
-    height: 240vh;
-    align-items:center;
-    justify-content: center;
-    overflow: hidden;
-    grid-template-columns: repeat(3, 1fr);
-    
   `
   const IMG = styled.img`
-  width: 90vw;
+  position: absolute;
+  width: 95vw;
   height: 150vh;
   image-rendering: pixelated;
   object-fit: contain;

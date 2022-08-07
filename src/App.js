@@ -15,10 +15,6 @@ import { useLocation } from "react-router-dom";
 function App() {
   const sampleLocation = useLocation();
 
-  const ContainerApp = styled.div`
-  height: 100vh;
-  
-`
   const Pages = styled.div`
   display: flex;
   height: 85vh;
@@ -41,9 +37,7 @@ function App() {
 `
   return (
     <Fragment>
-      <ContainerApp>
         <IMGAbolute src={estrellas} />
-        <div>
           <Pages>
             <AnimatePresence>
               <Routes>
@@ -60,9 +54,7 @@ function App() {
               </Routes>
             </AnimatePresence>
           </Pages>
-        </div>
         <NavRPG></NavRPG>
-      </ContainerApp>
 
     </Fragment>
   );
