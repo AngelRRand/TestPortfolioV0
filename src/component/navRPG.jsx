@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../img/NavBotton/rostro.png'
+import logo from '../img/NavBotton/PJprueba.gif'
 import nutria from '../img/NavBotton/nutria.gif'
 import './nav.css'
 import { useNavigate } from "react-router-dom";
