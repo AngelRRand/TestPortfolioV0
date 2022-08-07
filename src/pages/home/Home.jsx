@@ -6,7 +6,6 @@ import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'
 import Galaxy from '../../img/galaxy.png'
-import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
   height: 150vh;
@@ -24,14 +23,6 @@ export const Home = () => {
     display: grid;
     width: 95vw;
   `
-  const SeñalesAbolute = styled.img`
-  position: absolute;
-  width: 45vw;
-  margin-top: 30vh;
-  image-rendering: pixelated;
-  object-fit: contain;
-  z-index: 11;
-`
   const ItemAbout = styled(NavLink)`
   bottom: 37vh;
   right: 47vw;
@@ -162,7 +153,6 @@ image-rendering: pixelated;
         <IMG src={Galaxy} alt="Galaxy" />
         <TemplateGrid>
 
-          <SeñalesAbolute src={señales} />
           <ItemAbout to='/about'>
             <img src={terra} alt='About' />
             <Text>About</Text>
