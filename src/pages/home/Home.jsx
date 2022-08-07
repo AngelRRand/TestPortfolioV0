@@ -5,15 +5,16 @@ import { motion } from "framer-motion";
 import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'
+import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
 export const Home = () => {
+
   const Home = styled.div`
   height: 150vh;
   display: flex;
   justify-content: center;
   `
   const ContainerIMG = styled.div`
-    
   position: absolute;
   top: 0;
   width: 60vw;
@@ -135,7 +136,16 @@ img{
   image-rendering: pixelated; 
 `
 
-
+  const SeñalAbout = styled.img`
+      grid-area: 15 / 7 / 15 / 12;
+      width: calc(13px + 11vw);
+      z-index: 80;
+    `
+  const SeñalProject = styled.img`
+  grid-area: 11 / 11 / 13 / 8;
+  width: calc(13px + 11vw);
+  z-index: 80;
+`
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -150,7 +160,6 @@ img{
 
       <Home className="home">
         <ContainerIMG>
-
           <IMG src={Galaxy} alt="Galaxy" />
         </ContainerIMG>
         <TemplateGrid>
@@ -159,14 +168,19 @@ img{
             <img src={terra} alt='About' />
             <Text>About</Text>
           </ItemAbout>
+
           <ItemProject to='/projects'>
             <img src={planetLava} alt='About' />
             <Text >Projects</Text>
           </ItemProject>
+
           <ItemEducation to='/education'>
             <img src={planetIce} alt='About' />
             <Text >Education</Text>
           </ItemEducation>
+
+          <SeñalAbout src={señal} alt="" />
+          <SeñalProject src={señal} alt="" />
 
         </TemplateGrid>
       </Home>
