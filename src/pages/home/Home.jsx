@@ -22,6 +22,12 @@ export const Home = () => {
   const TemplateGrid = styled.div`
     display: grid;
     width: 95vw;
+    height: 150vh;
+    background-color: aliceblue;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   `
   const ItemAbout = styled(NavLink)`
   bottom: 37vh;
@@ -123,9 +129,9 @@ img{
 
 `
   const Text = styled.span`
+  grid-area: 10 / 9 / 11 / 10;
   font-size: 1.3rem;
   transition: all 0.3s ease;
-  display: flex;
   align-items: center;
   background: transparent;
   text-align: center;
@@ -133,7 +139,8 @@ img{
 font-family: 'PF Tempesta Seven Extended', sans-serif;
 font-family: 'PF Tempesta Seven Condensed', sans-serif;
 font-family: 'PF Tempesta Seven Compressed', sans-serif;
-image-rendering: pixelated;  
+image-rendering: pixelated; 
+z-index:30; 
 `
 
 
@@ -152,10 +159,10 @@ image-rendering: pixelated;
       <Home className="home">
         <IMG src={Galaxy} alt="Galaxy" />
         <TemplateGrid>
+          <Text>About</Text>
 
-          <ItemAbout to='/about'>
+          {/* <ItemAbout to='/about'>
             <img src={terra} alt='About' />
-            <Text>About</Text>
           </ItemAbout>
           <ItemProject to='/projects'>
             <img src={planetLava} alt='About' />
@@ -164,7 +171,7 @@ image-rendering: pixelated;
           <ItemEducation to='/education'>
             <img src={planetIce} alt='About' />
             <Text >Education</Text>
-          </ItemEducation>
+          </ItemEducation> */}
 
         </TemplateGrid>
       </Home>
