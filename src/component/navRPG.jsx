@@ -51,7 +51,7 @@ const NavRPG = () => {
     const PerfilImg = styled.img`
         width: 20vw;
         image-rendering: pixelated;
-        border: 2px solid #ffffff;
+        border: 3px solid #ffffff;
         background-color: #070707;
     `
     const ContainerButtoms = styled.div`
@@ -96,8 +96,8 @@ const NavRPG = () => {
                         'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
                         'no hay nada'
                     }</h4>
-
-                    {/* <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>  */}
+                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                    {/*   */}
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?
                         
