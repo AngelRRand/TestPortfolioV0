@@ -9,11 +9,13 @@ import Galaxy from '../../img/galaxy.png'
 import señales from '../../img/señales.gif'
 export const Home = () => {
   const Home = styled.div`
-    display: grid;
+    display: flex;
     width: 95vw;
+    height: 250vh;
   `
   const IMG = styled.img`
   position: absolute;
+  top: 0;
   width: 95vw;
   height: 150vh;
   image-rendering: pixelated;
@@ -141,7 +143,7 @@ font-family: 'PF Tempesta Seven Condensed', sans-serif;
 font-family: 'PF Tempesta Seven Compressed', sans-serif;
 image-rendering: pixelated;  
 `
-  
+
 
   return (
     <motion.div
@@ -156,8 +158,9 @@ image-rendering: pixelated;
       }}>
 
       <Home className="home">
+        <IMG src={Galaxy} alt="Galaxy" />
+        <div>
 
-        <IMG src={Galaxy} alt="" />
         <SeñalesAbolute src={señales} />
         <ItemAbout to='/about'>
           <img src={terra} alt='About' />
@@ -174,6 +177,8 @@ image-rendering: pixelated;
           <img src={planetIce} alt='About' />
           <Text >Education</Text>
         </ItemEducation>
+        
+        </div>
       </Home>
 
     </motion.div>
