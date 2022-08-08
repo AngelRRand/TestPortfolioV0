@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
+import señal from '../../img/NavImg/Señal.gif'
 const About = () => {
 
 
@@ -30,9 +31,6 @@ const About = () => {
     font-family: 'PF Tempesta Seven Extended', sans-serif;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
     font-family: 'PF Tempesta Seven Compressed', sans-serif;
-    
-    h3{
-    }
     img{
       
       width: 100%;
@@ -42,8 +40,7 @@ const About = () => {
     }
   `
   const TempladeGrid = styled.div`
-
-justify-content: center;
+    justify-content: center;
     align-items: center;
     display: grid;
     width: 35vw;
@@ -53,6 +50,35 @@ justify-content: center;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
+  const Me = styled(NavLink)`
+    grid-area: 29 / 8 / 30 / 9;
+    cursor: pointer;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+   `
+  const Spain = styled(NavLink)`
+   grid-area: 5 / 13 / 6 / 14;
+   cursor: pointer;
+   display: flex;
+   color: #000000;
+   text-decoration: none;
+   image-rendering: pixelated;
+   transition: all 0.5s ease;
+   background: transparent;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   z-index: 99;
+  `
+  
 
   return (
     <AboutContainer>
@@ -72,13 +98,19 @@ justify-content: center;
       >
 
 
-            <ContainerIMG>
-            <h3>About</h3>
-            <img src={planet} alt="" />
-            </ContainerIMG>
-            <TempladeGrid>
-        
-            </TempladeGrid>
+        <ContainerIMG>
+          <h3>About</h3>
+          <img src={planet} alt="" />
+        </ContainerIMG>
+        <TempladeGrid>
+          <Me to='/projects'>
+
+            <img src={señal} alt="" />
+          </Me>
+          <Spain to='/education'>
+          <img src={señal} alt="" />
+          </Spain>
+        </TempladeGrid>
       </motion.div>
 
 
