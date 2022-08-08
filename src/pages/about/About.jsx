@@ -17,7 +17,13 @@ const About = () => {
     position: absolute;
     width: 30vw;
     height: 30vh;
-    object-fit: cover;
+    color: white;
+    text-align: center;
+    color:white;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    font-family: 'PF Tempesta Seven Extended', sans-serif;
+    font-family: 'PF Tempesta Seven Condensed', sans-serif;
+    font-family: 'PF Tempesta Seven Compressed', sans-serif;
     img{
       width:100%;
       image-rendering: pixelated;
@@ -26,7 +32,7 @@ const About = () => {
   const TempladeGrid = styled.div`
     display: grid;
     width: 40vw;
-    height:  40vh;
+    height:  35vh;
     grid-template-columns: repeat(20, 2vw);
     grid-template-rows: repeat(20, 2vh);
     grid-column-gap: 0px;
@@ -50,17 +56,14 @@ const About = () => {
         }}
       >
 
-        <div className="presentation-about">
-          <h3>About</h3>
 
             <ContainerIMG>
+            <h3>About</h3>
               <img src={planet} alt="" />
             </ContainerIMG>
             <TempladeGrid>
 
             </TempladeGrid>
-
-        </div>
       </motion.div>
 
 
