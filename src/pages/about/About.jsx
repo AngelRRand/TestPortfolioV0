@@ -34,9 +34,9 @@ const About = () => {
 
 
       <motion.div
-        initial={{ x: -1000 }}
+        initial={{ scale: 0 }}
         animate={{
-          x: 0,
+          scale: 1,
           transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
         }}
         exit={{
