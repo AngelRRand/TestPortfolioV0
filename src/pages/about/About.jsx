@@ -9,23 +9,28 @@ const About = () => {
   const AboutContainer = styled.div`
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     `
-  const PlanetContainer = styled.div`
-    display: flex;
+  const ContainerIMG = styled.div`
+    position: absolute;
     width: 450px;
     height: 450px;
-    border: none;
-    box-shadow: none;
-    overflow: hidden;
+    object-fit: cover;
     img{
-      width: 100vw;
+      width:100%;
       image-rendering: pixelated;
     }
-    z-index: 1;
+  `
+  const TempladeGrid = styled.div`
+  display: grid;
+  width: 60vw;
+  height:  70vh;
+  grid-template-columns: repeat(10, 4vw);
+  grid-template-rows: repeat(30, 6vh);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   `
 
   return (
@@ -48,10 +53,13 @@ const About = () => {
         <div className="presentation-about">
           <h3>About</h3>
 
-          <PlanetContainer className='containerAnimated' >
-            <img src={planet} alt="" />
-            
-          </PlanetContainer>
+            <ContainerIMG>
+              <img src={planet} alt="" />
+            </ContainerIMG>
+            <TempladeGrid>
+
+            </TempladeGrid>
+
         </div>
       </motion.div>
 
@@ -67,7 +75,7 @@ const About = () => {
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}
       >
-        
+
       </motion.div>
     </AboutContainer>
   )
