@@ -30,23 +30,48 @@ const About = () => {
   `
 
   return (
-    <motion.div
-      initial={{ x: 1000 }}
-      animate={{
-        x: 0,
-        transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
-      }}
-      exit={{
-        x: -500,
-        transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-      }}
-    >
-     <div className="presentation-img">
-              <img src={granImagen} alt="" className="imagen" />
-              <img src={cafe} alt="" className="cafe-gif" />
-            </div>
+    <AboutContainer>
 
-    </motion.div>
+
+
+      <motion.div
+        initial={{ x: -1000 }}
+        animate={{
+          x: 0,
+          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+        }}
+        exit={{
+          x: -500,
+          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+        }}
+      >
+
+        <div className="presentation-about">
+          <h3>My technologies</h3>
+
+          <PlanetContainer className='containerAnimated' >
+            <img src={planetIce} alt="" />
+            
+            {/* <EducationIcons /> */}
+          </PlanetContainer>
+        </div>
+      </motion.div>
+
+
+      <motion.div
+        initial={{ y: 1000 }}
+        animate={{
+          y: 0,
+          transition: { duration: 2.5, type: "spring" },
+        }}
+        exit={{
+          x: -500,
+          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+        }}
+      >
+        
+      </motion.div>
+    </AboutContainer>
   )
 }
 
