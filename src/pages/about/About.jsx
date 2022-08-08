@@ -54,7 +54,6 @@ const About = () => {
     grid-area: 29 / 8 / 30 / 9;
     cursor: pointer;
     display: flex;
-    color: #000000;
     text-decoration: none;
     image-rendering: pixelated;
     transition: all 0.5s ease;
@@ -68,7 +67,6 @@ const About = () => {
    grid-area: 5 / 13 / 6 / 14;;
    cursor: pointer;
    display: flex;
-   color: #000000;
    text-decoration: none;
    image-rendering: pixelated;
    transition: all 0.5s ease;
@@ -82,7 +80,6 @@ const About = () => {
   grid-area: 8 / 7 / 9 / 8;
   cursor: pointer;
   display: flex;
-  color: #000000;
   text-decoration: none;
   image-rendering: pixelated;
   transition: all 0.5s ease;
