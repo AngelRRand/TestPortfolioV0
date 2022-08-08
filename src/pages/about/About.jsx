@@ -1,9 +1,8 @@
 import React from 'react'
-import granImagen from '../../img/cuarto96.gif'
-import cafe from '../../img/cafe.gif'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
+import planet from '../../img/Planet/PlanetZOOM.png'
 const About = () => {
 
 
