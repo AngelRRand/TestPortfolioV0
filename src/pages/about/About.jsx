@@ -65,7 +65,7 @@ const About = () => {
     z-index: 99;
    `
   const Spain = styled(NavLink)`
-   grid-area: 5 / 13 / 6 / 14;
+   grid-area: 5 / 13 / 6 / 14;;
    cursor: pointer;
    display: flex;
    color: #000000;
