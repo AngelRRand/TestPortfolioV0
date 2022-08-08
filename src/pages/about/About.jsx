@@ -15,8 +15,8 @@ const About = () => {
     `
   const ContainerIMG = styled.div`
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 40vw;
+    height: 40vh;
     object-fit: cover;
     img{
       width:100%;
@@ -25,10 +25,10 @@ const About = () => {
   `
   const TempladeGrid = styled.div`
   display: grid;
-  width: 60vw;
-  height:  70vh;
+  width: 40vw;
+  height:  45vh;
   grid-template-columns: repeat(10, 4vw);
-  grid-template-rows: repeat(30, 6vh);
+  grid-template-rows: repeat(10, 6vh);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   `
