@@ -47,7 +47,7 @@ const About = () => {
       >
 
         <div className="presentation-about">
-          <h3>My technologies</h3>
+          <h3>About</h3>
 
           <PlanetContainer className='containerAnimated' >
             <img src={planetIce} alt="" />
