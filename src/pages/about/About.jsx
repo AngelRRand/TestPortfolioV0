@@ -7,38 +7,27 @@ import { motion } from "framer-motion";
 const About = () => {
 
 
-  const Item = styled(NavLink)`
-  width: 9rem;
-  padding: 10px;
-  cursor: pointer;
-  display: flex;
-  color: #000000;
-  text-decoration: none;
-  image-rendering: pixelated;
-  transition: all 0.2s ease;
-  background: transparent;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  img{
-    background: transparent;
-    width: 5rem;
-  }
-  &:hover{
-    transform: scale(1.05);
-  }
-  
-`
-  const Text = styled.span`
-  padding-top: 10px;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  background: transparent;
-  text-align: center;
-`
-
+  const AboutContainer = styled.div`
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    `
+  const PlanetContainer = styled.div`
+    display: flex;
+    width: 450px;
+    height: 450px;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    img{
+      width: 100vw;
+      image-rendering: pixelated;
+    }
+    z-index: 1;
+  `
 
   return (
     <motion.div
