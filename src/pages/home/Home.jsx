@@ -26,7 +26,7 @@ export const Home = () => {
   width: 100%;
   image-rendering: pixelated;
   z-index: 10;
-  `
+`
   const TemplateGrid = styled.div`
     display: grid;
     width: 60vw;

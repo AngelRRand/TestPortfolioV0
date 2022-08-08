@@ -7,17 +7,21 @@ const About = () => {
 
 
   const AboutContainer = styled.div`
+    overflow: hidden;
+    height: 85vh;
+    width: 85vw;
     display: flex;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
     `
   const ContainerIMG = styled.div`
+  
     position: absolute;
-    height: 70vh;
-    width: 40vw;
+    width: 35vw;
+    height: 60vh;
     image-rendering: pixelated;
+    object-fit: contain;
     z-index: 10;
     color: white;
     text-align: center;
@@ -26,19 +30,26 @@ const About = () => {
     font-family: 'PF Tempesta Seven Extended', sans-serif;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
     font-family: 'PF Tempesta Seven Compressed', sans-serif;
+    
+    h3{
+    }
     img{
+      
       width: 100%;
       height: 100%;
-  image-rendering: pixelated;
-  z-index: 10;
+      image-rendering: pixelated;
+      z-index: 10;
     }
   `
   const TempladeGrid = styled.div`
+
+justify-content: center;
+    align-items: center;
     display: grid;
-    width: 40vw;
-    height:  35vh;
+    width: 35vw;
+    height: 60vh;
     grid-template-columns: repeat(20, 2vw);
-    grid-template-rows: repeat(20, 2vh);
+    grid-template-rows: repeat(30, 2vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
@@ -66,7 +77,7 @@ const About = () => {
             <img src={planet} alt="" />
             </ContainerIMG>
             <TempladeGrid>
-
+        
             </TempladeGrid>
       </motion.div>
 
