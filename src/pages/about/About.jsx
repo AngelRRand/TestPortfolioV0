@@ -49,9 +49,8 @@ const About = () => {
           <h3>About</h3>
 
           <PlanetContainer className='containerAnimated' >
-            <img src={planetIce} alt="" />
+            <img src={planet} alt="" />
             
-            {/* <EducationIcons /> */}
           </PlanetContainer>
         </div>
       </motion.div>
