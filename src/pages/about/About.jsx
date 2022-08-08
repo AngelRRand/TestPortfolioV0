@@ -78,8 +78,20 @@ const About = () => {
    align-items: center;
    z-index: 99;
   `
-  
-
+  const CR = styled(NavLink)`
+  grid-area: 8 / 7 / 9 / 8;
+  cursor: pointer;
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  image-rendering: pixelated;
+  transition: all 0.5s ease;
+  background: transparent;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 99;
+ `
   return (
     <AboutContainer>
 
@@ -110,6 +122,9 @@ const About = () => {
           <Spain to='/education'>
           <img src={señal} alt="" />
           </Spain>
+          <CR to='/education'>
+          <img src={señal} alt="" />
+          </CR>
         </TempladeGrid>
       </motion.div>
 
