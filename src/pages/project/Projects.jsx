@@ -1,5 +1,7 @@
 import React from 'react'
-
+import styled from 'styled-components';
+import { motion } from "framer-motion";
+import planetLava from '../../img/Planet/PlanetLavaZOOM.png'
 const Projects = () => {
 
   const ProjectsContainer = styled.div`
@@ -24,12 +26,45 @@ const Projects = () => {
     z-index: 1;
   `
   return (
-    <div>
-        <p>
-            Hola gente esta es la Projects
-        </p>
+    <ProjectsContainer>
 
-    </div>
+      <motion.div
+        initial={{  scale: 0 }}
+        animate={{
+          scale: 1,
+          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+        }}
+        exit={{
+          x: -500,
+          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+        }}
+      >
+
+        <div className="presentation-about">
+          <h3>Projects</h3>
+
+          <PlanetContainer className='containerAnimated' >
+            <img src={planetLava} alt="" />
+            
+          </PlanetContainer>
+        </div>
+      </motion.div>
+
+
+      <motion.div
+        initial={{ y: 1000 }}
+        animate={{
+          y: 0,
+          transition: { duration: 2.5, type: "spring" },
+        }}
+        exit={{
+          x: -500,
+          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+        }}
+      >
+        
+      </motion.div>
+    </ProjectsContainer>
   )
 }
 
