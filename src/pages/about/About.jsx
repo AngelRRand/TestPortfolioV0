@@ -20,7 +20,7 @@ const About = () => {
   
     position: absolute;
     width: 35vw;
-    height: 60vh;
+    height: 65vh;
     image-rendering: pixelated;
     object-fit: contain;
     z-index: 10;
@@ -44,7 +44,7 @@ const About = () => {
     align-items: center;
     display: grid;
     width: 35vw;
-    height: 60vh;
+    height: 65vh;
     grid-template-columns: repeat(20, 2vw);
     grid-template-rows: repeat(30, 2vh);
     grid-column-gap: 0px;
