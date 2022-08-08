@@ -15,8 +15,10 @@ const About = () => {
     `
   const ContainerIMG = styled.div`
     position: absolute;
-    width: 30vw;
-    height: 30vh;
+    height: 70vh;
+    width: 40vw;
+    image-rendering: pixelated;
+    z-index: 10;
     color: white;
     text-align: center;
     color:white;
@@ -25,8 +27,10 @@ const About = () => {
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
     font-family: 'PF Tempesta Seven Compressed', sans-serif;
     img{
-      width:100%;
-      image-rendering: pixelated;
+      width: 100%;
+      height: 100%;
+  image-rendering: pixelated;
+  z-index: 10;
     }
   `
   const TempladeGrid = styled.div`
@@ -59,7 +63,7 @@ const About = () => {
 
             <ContainerIMG>
             <h3>About</h3>
-              <img src={planet} alt="" />
+            <img src={planet} alt="" />
             </ContainerIMG>
             <TempladeGrid>
 
