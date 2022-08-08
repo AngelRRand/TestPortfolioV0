@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../img/NavBotton/PJprueba.gif'
+import logoSinCasco from '../img/NavBotton/PJpruebaSinCasco.gif'
 import nutria from '../img/NavBotton/nutria.gif'
+import nutriaSinCasco from '../img/NavBotton/nutriaSinCasco.gif'
 import './nav.css'
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
@@ -78,7 +80,7 @@ const NavRPG = () => {
         <>
             <Container>
                 <Perfil>
-                    <PerfilImg src={logo} />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/about'? logoSinCasco: logo } />
                     <h1>Hori</h1>
 
                 </Perfil>
@@ -109,7 +111,7 @@ const NavRPG = () => {
                     } */}
                 </ContainerButtoms>
                 <PerfilNutrie>
-                    <PerfilImg src={nutria} />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/about'? nutriaSinCasco: nutria} />
                     <h1>nutria</h1>
                 </PerfilNutrie>
             </Container>

@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import './About.css'
 import { motion } from "framer-motion";
-import EducationIcons from './EducationIcons.jsx'
 import planetIce from '../../img/Planet/IcePlanetZOOM2.png'
 const Education = () => {
 
