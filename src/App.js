@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import NavRPG from './component/NavBottom/navRPG';
 import estrellas from './img/Starts.gif'
 import { useLocation } from "react-router-dom";
+import House from './component/About/House';
 
 
 
@@ -43,6 +44,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
+                <Route path='/House' element={<House/>}/>
                 <Route path='/Education' element={<Education />} />
                 <Route path='/Projects' element={<Projects />} />
 
