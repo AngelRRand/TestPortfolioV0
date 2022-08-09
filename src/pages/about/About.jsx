@@ -89,6 +89,19 @@ const About = () => {
   align-items: center;
   z-index: 99;
  `
+   const Text = styled.span`
+   font-size: calc(13px + 0.4vw);
+   transition: all 0.3s ease;
+   align-items: center;
+   background: transparent;
+   text-align: center;
+   font-family: 'PF Tempesta Seven', sans-serif;
+   font-family: 'PF Tempesta Seven Extended', sans-serif;
+   font-family: 'PF Tempesta Seven Condensed', sans-serif;
+   font-family: 'PF Tempesta Seven Compressed', sans-serif;
+   image-rendering: pixelated;
+   z-index: 90; 
+ `
   return (
     <AboutContainer>
 
