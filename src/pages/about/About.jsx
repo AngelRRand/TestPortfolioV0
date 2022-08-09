@@ -64,7 +64,7 @@ const About = () => {
     z-index: 99;
    `
   const Spain = styled(NavLink)`
-   grid-area: 5 / 13 / 6 / 14;;
+   grid-area: 6 / 13 / 6 / 14;;
    cursor: pointer;
    display: flex;
    text-decoration: none;
@@ -77,7 +77,7 @@ const About = () => {
    z-index: 99;
   `
   const CR = styled(NavLink)`
-  grid-area: 8 / 7 / 9 / 8;
+  grid-area: 23 / 5 / 24 / 6;
   cursor: pointer;
   display: flex;
   text-decoration: none;
@@ -90,9 +90,10 @@ const About = () => {
   z-index: 99;
  `
    const Text = styled.span`
+   position: absolute;
    font-size: calc(13px + 0.4vw);
-   height: 10px;
-   color: white;
+   color: #ffffff;
+   text-shadow: 2px 2px 1px #22222283;
    transition: all 0.3s ease;
    background: transparent;
    text-align: center;
@@ -131,11 +132,11 @@ const About = () => {
             <img src={señal} alt="" />
           </Me>
           <Spain to='/education'>
-          <Text >Art</Text>
+          <Text >Dream</Text>
           <img src={señal} alt="" />
           </Spain>
           <CR to='/education'>
-          <Text >Dream</Text>
+          <Text >Art</Text>
           <img src={señal} alt="" />
           </CR>
         </TempladeGrid>
