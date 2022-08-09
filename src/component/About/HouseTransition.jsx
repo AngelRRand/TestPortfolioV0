@@ -3,7 +3,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
+import { useNavigate } from "react-router-dom";
 const House = () => {
+  const navigate = useNavigate()
+  const goBack = () => {
+    navigate('/')
+}
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -35,25 +40,38 @@ const House = () => {
       z-index: 10;
     }
   `
+  const Nubes = styled.div`
+  position: absolute;
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+  `
   const [show, setShow] = useState(false);
+  setTimeout(() => {
+    setShow(true)
+  }, 5000);
   return (
+    <>
+
     <AboutContainer>
       <motion.div
         initial={{ scale: 1 }}
         animate={{
-          scale: 4,
+          scale: 5,
           x: 200,
-          y: -650,
-          display: 0,
+          y: -850,
           transition: { duration: 6.5, type: "spring", },
         }}
       >
+        
         <ContainerIMG>
           <h3>About</h3>
           <img src={planet} alt="" />
         </ContainerIMG>
+        
       </motion.div>
     </AboutContainer>
+    </>
   )
 }
 

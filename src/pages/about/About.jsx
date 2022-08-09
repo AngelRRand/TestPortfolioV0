@@ -125,7 +125,7 @@ const About = () => {
           <img src={planet} alt="" />
         </ContainerIMG>
         <TempladeGrid>
-          <Me to='/About/House'>
+          <Me to='/About/HouseTransition'>
             <Text >House</Text>
             <img src={señal} alt="" />
           </Me>
