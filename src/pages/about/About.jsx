@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
@@ -48,7 +48,7 @@ const About = () => {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
-  const Me = styled(NavLink)`
+  const Me = styled(Link)`
     grid-area: 30 / 7 / 31 / 9;
     cursor: pointer;
     display: flex;
@@ -61,7 +61,7 @@ const About = () => {
     align-items: center;
     z-index: 99;
    `
-  const Spain = styled(NavLink)`
+  const Spain = styled(Link)`
    grid-area: 6 / 13 / 6 / 14;;
    cursor: pointer;
    display: flex;
@@ -74,7 +74,7 @@ const About = () => {
    align-items: center;
    z-index: 99;
   `
-  const CR = styled(NavLink)`
+  const CR = styled(Link)`
   grid-area: 23 / 5 / 24 / 6;
   cursor: pointer;
   display: flex;
@@ -139,21 +139,6 @@ const About = () => {
           </CR>
         </TempladeGrid>
 
-
-
-        <motion.div
-          initial={{ y: 1000 }}
-          animate={{
-            y: 0,
-            transition: { duration: 2.5, type: "spring" },
-          }}
-          exit={{
-            x: -500,
-            transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-          }}
-        >
-
-        </motion.div>
       </AboutContainer>
     </motion.div>
     </>

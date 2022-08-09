@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Location } from 'react-router-dom';
 import About from './pages/about/About';
 import { Home } from './pages/home/Home';
 import Education from './pages/education/Education';
@@ -41,7 +41,7 @@ function App() {
         <IMGAbolute src={estrellas} />
           <Pages>
             <AnimatePresence exitBeforeEnter>
-              <Routes location={location} key={location.key}>
+              <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/About/House' element={<House/>}/>
