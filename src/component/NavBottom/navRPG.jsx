@@ -88,13 +88,16 @@ const NavRPG = () => {
                     <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
                         'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' 
                         :
-                        sampleLocation.pathname.toString() === '/about' ?
+                        sampleLocation.pathname.toString() === '/About' ?
                         'Its in my personal zone, my about... in it you can know more about me!' 
                         :
-                        sampleLocation.pathname.toString() === '/education' ?
+                        sampleLocation.pathname.toString() === '/House' ?
+                        'CASA!' 
+                        :
+                        sampleLocation.pathname.toString() === '/Education' ?
                         'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
                         :
-                        sampleLocation.pathname.toString() === '/projects' ?
+                        sampleLocation.pathname.toString() === '/Projects' ?
                         'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
                         'no hay nada'
                     }</h4>

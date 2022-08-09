@@ -171,17 +171,17 @@ img:first-child{
         </ContainerIMG>
         <TemplateGrid>
 
-          <ItemAbout to='/about'>
+          <ItemAbout to='/About'>
             <img src={terra} alt='About' />
             <Text>About</Text>
             <Señal src={señal} alt="" />
           </ItemAbout>
-          <ItemProject to='/projects'>
+          <ItemProject to='/Projects'>
             <img src={planetLava} alt='About' />
             <Text >Projects</Text>
             <Señal src={señal} alt="" />
           </ItemProject>
-          <ItemEducation to='/education'>
+          <ItemEducation to='/Education'>
             <img src={planetIce} alt='About' />
             <Text >Education</Text>
             <Señal src={señal} alt="" />

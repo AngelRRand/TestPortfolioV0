@@ -5,8 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
 import { useLocation } from "react-router-dom";
+
+import House from '../../component/About/House.jsx';
+import { Route, Routes } from 'react-router-dom';
 const About = () => {
-  const sampleLocation = useLocation();
+  const location = useLocation();
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -104,42 +107,48 @@ const About = () => {
    image-rendering: pixelated;
    z-index: 90; 
  `
-  const [Show, setShow] = useState(true);
+  
   return (
 
+    <>
+    <Routes location={location} key={location.key}>
+                <Route path='/About/House' element={<House/>}/>
+
+              
+     </Routes>
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={{
+        scale: 1,
+        transition: { delay: 1, duration: 1.7,  type: "spring", },
+      }}
+      exit={{
+        x: "-100vh",
+        transition: { delay: 1.5,  ease: 'easeInOut' },
+      }}
+    >
       <AboutContainer >
 
 
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{
-            scale: 1,
-            transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
-          }}
-          exit={{
-            scale: 0,
-            transition: { duration: 5.5, type: "spring" },
-          }}
-        >
-              <ContainerIMG>
-                <h3>About</h3>
-                <img src={planet} alt="" />
-              </ContainerIMG>
-          <TempladeGrid>
-            <Me to='/projects'>
-              <Text >House</Text>
-              <img src={señal} alt="" />
-            </Me>
-            <Spain to='/education'>
-              <Text >Dream</Text>
-              <img src={señal} alt="" />
-            </Spain>
-            <CR to='/education'>
-              <Text >Art</Text>
-              <img src={señal} alt="" />
-            </CR>
-          </TempladeGrid>
-        </motion.div>
+        <ContainerIMG>
+          <h3>About</h3>
+          <img src={planet} alt="" />
+        </ContainerIMG>
+        <TempladeGrid>
+          <Me to='/About/House'>
+            <Text >House</Text>
+            <img src={señal} alt="" />
+          </Me>
+          <Spain to='/education'>
+            <Text >Dream</Text>
+            <img src={señal} alt="" />
+          </Spain>
+          <CR to='/education'>
+            <Text >Art</Text>
+            <img src={señal} alt="" />
+          </CR>
+        </TempladeGrid>
+
 
 
         <motion.div
@@ -156,6 +165,8 @@ const About = () => {
 
         </motion.div>
       </AboutContainer>
+    </motion.div>
+    </>
   )
 }
 
