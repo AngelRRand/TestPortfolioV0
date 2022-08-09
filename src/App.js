@@ -14,7 +14,7 @@ import House from './component/About/House';
 
 
 function App() {
-  const sampleLocation = useLocation();
+  const location = useLocation();
 
   const Pages = styled.div`
   display: flex;
@@ -31,8 +31,8 @@ function App() {
   position: absolute;
   width:90vw;
   height: 250vh;
-  margin-top: ${sampleLocation.pathname.toString() === '/' ? '60vh' : '0vh'};
-  bottom:  ${sampleLocation.pathname.toString() === '/' ? '-50vh' : '0vh'};
+  margin-top: ${location.pathname.toString() === '/' ? '60vh' : '0vh'};
+  bottom:  ${location.pathname.toString() === '/' ? '-50vh' : '0vh'};
   left: 5vw;
   z-index: 0;
 `
@@ -41,7 +41,7 @@ function App() {
         <IMGAbolute src={estrellas} />
           <Pages>
             <AnimatePresence>
-              <Routes location={sampleLocation} key={sampleLocation.pathname}>
+              <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/House' element={<House/>}/>

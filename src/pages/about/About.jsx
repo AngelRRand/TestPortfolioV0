@@ -4,9 +4,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
+import { useLocation } from "react-router-dom";
 const About = () => {
-
-
+  const sampleLocation = useLocation();
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -107,7 +107,7 @@ const About = () => {
   const [Show, setShow] = useState(true);
   return (
 
-      <AboutContainer>
+      <AboutContainer >
 
 
         <motion.div
@@ -117,7 +117,7 @@ const About = () => {
             transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
           }}
           exit={{
-            scale: 6,
+            scale: 0,
             transition: { duration: 5.5, type: "spring" },
           }}
         >
