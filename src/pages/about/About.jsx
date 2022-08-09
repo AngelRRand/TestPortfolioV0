@@ -131,6 +131,7 @@ const About = () => {
             <img src={señal} alt="" />
           </Me>
           <Spain to='/education'>
+          <Text >Art</Text>
           <img src={señal} alt="" />
           </Spain>
           <CR to='/education'>
