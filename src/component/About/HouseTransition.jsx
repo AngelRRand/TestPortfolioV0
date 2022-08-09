@@ -6,8 +6,8 @@ import planet from '../../img/Planet/PlanetZOOM.png'
 import { useNavigate } from "react-router-dom";
 const House = () => {
   const navigate = useNavigate()
-  const goBack = () => {
-    navigate('/')
+  const go = () => {
+    navigate('/About/House')
 }
   const AboutContainer = styled.div`
     overflow: hidden;
@@ -46,9 +46,8 @@ const House = () => {
     height: 1000px;
     background-color: white;
   `
-  const [show, setShow] = useState(false);
   setTimeout(() => {
-    setShow(true)
+    go()
   }, 5000);
   return (
     <>
