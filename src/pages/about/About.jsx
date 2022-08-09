@@ -113,7 +113,7 @@ const About = () => {
         </ContainerIMG>
         <TempladeGrid>
           <Me to='/projects'>
-
+            <Text >House</Text>
             <img src={señal} alt="" />
           </Me>
           <Spain to='/education'>
