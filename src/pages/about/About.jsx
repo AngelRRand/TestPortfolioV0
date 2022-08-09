@@ -7,9 +7,7 @@ import señal from '../../img/NavImg/Señal.gif'
 import { useLocation } from "react-router-dom";
 
 import House from '../../component/About/House.jsx';
-import { Route, Routes } from 'react-router-dom';
 const About = () => {
-  const location = useLocation();
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -111,11 +109,6 @@ const About = () => {
   return (
 
     <>
-    <Routes location={location} key={location.key}>
-                <Route path='/About/House' element={<House/>}/>
-
-              
-     </Routes>
     <motion.div
       initial={{ scale: 0 }}
       animate={{
