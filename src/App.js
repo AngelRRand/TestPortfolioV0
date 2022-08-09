@@ -40,8 +40,8 @@ function App() {
     <Fragment>
         <IMGAbolute src={estrellas} />
           <Pages>
-            <AnimatePresence>
-              <Routes>
+            <AnimatePresence exitBeforeEnter>
+              <Routes location={sampleLocation} key={sampleLocation.pathname}>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/House' element={<House/>}/>

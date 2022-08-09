@@ -106,7 +106,6 @@ const About = () => {
  `
   const [Show, setShow] = useState(true);
   return (
-    <AnimatePresence>
 
       <AboutContainer>
 
@@ -119,23 +118,13 @@ const About = () => {
           }}
           exit={{
             scale: 0,
-            transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+            transition: { duration: 5.5, type: "spring" },
           }}
         >
-          <AnimatePresence>
-            {
-              Show && (
-
-                <motion.div>
-                  <ContainerIMG>
-                    <h3>About</h3>
-                    <img src={planet} alt="" />
-                  </ContainerIMG>
-                </motion.div>
-              )
-
-            }
-          </AnimatePresence>
+              <ContainerIMG>
+                <h3>About</h3>
+                <img src={planet} alt="" />
+              </ContainerIMG>
           <TempladeGrid>
             <Me to='/projects'>
               <Text >House</Text>
@@ -167,7 +156,6 @@ const About = () => {
 
         </motion.div>
       </AboutContainer>
-    </AnimatePresence >
   )
 }
 
