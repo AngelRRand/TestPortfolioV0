@@ -35,6 +35,7 @@ const House = () => {
       z-index: 10;
     }
   `
+  const [show, setShow] = useState(false);
   return (
     <AboutContainer>
       <motion.div
@@ -42,8 +43,8 @@ const House = () => {
         animate={{
           scale: 4,
           x: 200,
-          y: -500,
-          opacity: 0,
+          y: -650,
+          display: 0,
           transition: { duration: 6.5, type: "spring", },
         }}
       >
