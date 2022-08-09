@@ -4,9 +4,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
-import { useLocation } from "react-router-dom";
-
-import House from '../../component/About/House.jsx';
 const About = () => {
   const AboutContainer = styled.div`
     overflow: hidden;
@@ -52,7 +49,7 @@ const About = () => {
     grid-row-gap: 0px;
   `
   const Me = styled(NavLink)`
-    grid-area: 29 / 8 / 30 / 9;
+    grid-area: 30 / 7 / 31 / 9;
     cursor: pointer;
     display: flex;
     text-decoration: none;
@@ -113,7 +110,7 @@ const About = () => {
       initial={{ scale: 0 }}
       animate={{
         scale: 1,
-        transition: { delay: 1, duration: 1.7,  type: "spring", },
+        transition: { delay: 0.5, duration: 1.7,  type: "spring", },
       }}
       exit={{
         x: "-100vh",
