@@ -116,7 +116,7 @@ const About = () => {
           transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
         }}
         exit={{
-          x: -500,
+          scale: 0,
           transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
         }}
       >
