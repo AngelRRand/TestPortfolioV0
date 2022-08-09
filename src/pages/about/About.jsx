@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
 const About = () => {
@@ -89,7 +89,7 @@ const About = () => {
   align-items: center;
   z-index: 99;
  `
-   const Text = styled.span`
+  const Text = styled.span`
    position: absolute;
    font-size: calc(13px + 0.4vw);
    color: #ffffff;
@@ -104,59 +104,70 @@ const About = () => {
    image-rendering: pixelated;
    z-index: 90; 
  `
+  const [Show, setShow] = useState(true);
   return (
-    <AboutContainer>
+    <AnimatePresence>
+
+      <AboutContainer>
 
 
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{
+            scale: 1,
+            transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+          }}
+          exit={{
+            scale: 0,
+            transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+          }}
+        >
+          <AnimatePresence>
+            {
+              Show && (
 
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{
-          scale: 1,
-          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
-        }}
-        exit={{
-          scale: 0,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
+                <motion.div>
+                  <ContainerIMG>
+                    <h3>About</h3>
+                    <img src={planet} alt="" />
+                  </ContainerIMG>
+                </motion.div>
+              )
+
+            }
+          </AnimatePresence>
+          <TempladeGrid>
+            <Me to='/projects'>
+              <Text >House</Text>
+              <img src={señal} alt="" />
+            </Me>
+            <Spain to='/education'>
+              <Text >Dream</Text>
+              <img src={señal} alt="" />
+            </Spain>
+            <CR to='/education'>
+              <Text >Art</Text>
+              <img src={señal} alt="" />
+            </CR>
+          </TempladeGrid>
+        </motion.div>
 
 
-        <ContainerIMG>
-          <h3>About</h3>
-          <img src={planet} alt="" />
-        </ContainerIMG>
-        <TempladeGrid>
-          <Me to='/projects'>
-            <Text >House</Text>
-            <img src={señal} alt="" />
-          </Me>
-          <Spain to='/education'>
-          <Text >Dream</Text>
-          <img src={señal} alt="" />
-          </Spain>
-          <CR to='/education'>
-          <Text >Art</Text>
-          <img src={señal} alt="" />
-          </CR>
-        </TempladeGrid>
-      </motion.div>
+        <motion.div
+          initial={{ y: 1000 }}
+          animate={{
+            y: 0,
+            transition: { duration: 2.5, type: "spring" },
+          }}
+          exit={{
+            x: -500,
+            transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+          }}
+        >
 
-
-      <motion.div
-        initial={{ y: 1000 }}
-        animate={{
-          y: 0,
-          transition: { duration: 2.5, type: "spring" },
-        }}
-        exit={{
-          x: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
-
-      </motion.div>
-    </AboutContainer>
+        </motion.div>
+      </AboutContainer>
+    </AnimatePresence >
   )
 }
 
