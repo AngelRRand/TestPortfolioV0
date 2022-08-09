@@ -10,6 +10,7 @@ import NavRPG from './component/NavBottom/navRPG';
 import estrellas from './img/Starts.gif'
 import { useLocation } from "react-router-dom";
 import HouseTransition from './component/About/HouseTransition.jsx';
+import House from './component/About/House';
 
 
 
@@ -45,6 +46,8 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/About/HouseTransition' element={<HouseTransition/>}/>
+                <Route path='/About/House' element={<House/>}/>
+                
                 <Route path='/Education' element={<Education />} />
                 <Route path='/Projects' element={<Projects />} />
 
