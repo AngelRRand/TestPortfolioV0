@@ -93,7 +93,7 @@ const About = () => {
    position: absolute;
    font-size: calc(13px + 0.4vw);
    color: #ffffff;
-   text-shadow: 2px 2px 1px  #0f0f0f83;
+   text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
    transition: all 0.3s ease;
    background: transparent;
    text-align: center;

@@ -6,7 +6,7 @@ import Education from './pages/education/Education';
 import Projects from './pages/project/Projects';
 import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
-import NavRPG from './component/navRPG';
+import NavRPG from './component/NavBottom/navRPG';
 import estrellas from './img/Starts.gif'
 import { useLocation } from "react-router-dom";
 
