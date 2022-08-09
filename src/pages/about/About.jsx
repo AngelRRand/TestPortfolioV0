@@ -91,9 +91,9 @@ const About = () => {
  `
    const Text = styled.span`
    font-size: calc(13px + 0.4vw);
+   height: 10px;
    color: white;
    transition: all 0.3s ease;
-   align-items: center;
    background: transparent;
    text-align: center;
    font-family: 'PF Tempesta Seven', sans-serif;
@@ -135,6 +135,7 @@ const About = () => {
           <img src={señal} alt="" />
           </Spain>
           <CR to='/education'>
+          <Text >Dream</Text>
           <img src={señal} alt="" />
           </CR>
         </TempladeGrid>
