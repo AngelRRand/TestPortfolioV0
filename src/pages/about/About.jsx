@@ -91,6 +91,7 @@ const About = () => {
  `
    const Text = styled.span`
    font-size: calc(13px + 0.4vw);
+   color: white;
    transition: all 0.3s ease;
    align-items: center;
    background: transparent;
