@@ -107,7 +107,7 @@ const NavRPG = () => {
                             startDelay={1500}
                             cursorColor="#ececec"
                             multiText={[
-                                'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)',
+                                'You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)',
                             ]}
                             multiTextDelay={1000}
                             typeSpeed={60}
