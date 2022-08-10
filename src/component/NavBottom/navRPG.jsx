@@ -167,9 +167,10 @@ const NavRPG = () => {
                                         startDelay={1500}
                                         cursorColor="#44ff44"
                                         multiText={[
-                                            'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
+                                            'As you can see, many of the technologies are oriented towards frontend development.',
+                                            'But I dont frown on new experiences.',
                                         ]}
-                                        multiTextDelay={1000}
+                                        multiTextDelay={1500}
                                         typeSpeed={60}
                                     />
                                     :
@@ -180,15 +181,15 @@ const NavRPG = () => {
                                                 fontFamily: 'PF Tempesta Seven Condensed',
                                                 color: '#44ff44',
                                                 fontWeight: 500,
-                                                fontSize: '2em',
+                                                fontSize: '1.4em',
                                                 textAling: 'center'
                                             }}
                                             startDelay={1000}
                                             cursorColor="#44ff44"
                                             multiText={[
-                                                'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)'
+                                                'This area is a bit extensive! but here you can not only see my projects.',' but I also put a few of my most precious drawings :)'
                                             ]}
-                                            multiTextDelay={1000}
+                                            multiTextDelay={1500}
                                             typeSpeed={60}
                                         />
                                         :
