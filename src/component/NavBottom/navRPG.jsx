@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import TypeWriterEffect from 'react-typewriter-effect';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
 import logo from '../../img/NavBotton/PJprueba.gif'
@@ -62,10 +63,12 @@ const NavRPG = () => {
         flex-direction: row;
         display: flex;
         width: 50vw;
+        min-height: 10vh;
         justify-content: space-around;
         border: 1px solid white;
         padding: 5px;
         border-radius: 10px;
+        text-align: center;
         
     `
     const Buttom = styled.button`
@@ -82,28 +85,45 @@ const NavRPG = () => {
         <>
             <Container>
                 <Perfil>
-                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House'? logoSinCasco: logo } />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? logoSinCasco : logo} />
                     <h1>Hori</h1>
 
                 </Perfil>
                 <ContainerButtoms>
                     <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
-                        'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)' 
+                        'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)'
                         :
                         sampleLocation.pathname.toString() === '/About' ?
-                        'Its in my personal zone, my about... in it you can know more about me!' 
-                        :
-                        sampleLocation.pathname.toString() === '/House' ?
-                        'CASA!' 
-                        :
-                        sampleLocation.pathname.toString() === '/Education' ?
-                        'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
-                        :
-                        sampleLocation.pathname.toString() === '/Projects' ?
-                        'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
-                        'no hay nada'
+                            <TypeWriterEffect
+                                textStyle={{
+                                    fontFamily: 'PF Tempesta Seven',
+                                    fontFamily: 'PF Tempesta Seven Extended',
+                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                    fontFamily: 'PF Tempesta Seven Compressed',
+                                    color: '#ececec',
+                                    fontWeight: 500,
+                                    fontSize: '1.3em',
+                                }}
+                                startDelay={2000}
+                                cursorColor="#ececec"
+                                multiText={[
+                                    'Its in my personal zone, my about... in it you can know more about me!',
+                                ]}
+                                multiTextDelay={1000}
+                                typeSpeed={60}
+                            />
+
+                            :
+                            sampleLocation.pathname.toString() === '/House' ?
+                                'CASA!'
+                                :
+                                sampleLocation.pathname.toString() === '/Education' ?
+                                    'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
+                                    :
+                                    sampleLocation.pathname.toString() === '/Projects' ?
+                                        'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
+                                        'no hay nada'
                     }</h4>
-                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
                     {/*   */}
                     {/* {
                         sampleLocation.pathname.toString() === '/education' ?
@@ -115,8 +135,9 @@ const NavRPG = () => {
                             ''
                     } */}
                 </ContainerButtoms>
+                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
                 <PerfilNutrie>
-                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House'? nutriaSinCasco: nutria} />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? nutriaSinCasco : nutria} />
                     <h1>nutria</h1>
                 </PerfilNutrie>
             </Container>
