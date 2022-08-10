@@ -132,50 +132,68 @@ const NavRPG = () => {
                             />
 
                             :
-                            sampleLocation.pathname.toString() === '/House' ?
+                            sampleLocation.pathname.toString() === '/About/House' ?
                                 <TypeWriterEffect
-                                textStyle={{
-                                    fontFamily: 'PF Tempesta Seven',
-                                    fontFamily: 'PF Tempesta Seven Extended',
-                                    fontFamily: 'PF Tempesta Seven Condensed',
-                                    fontFamily: 'PF Tempesta Seven Compressed',
-                                    color: '#ececec',
-                                    fontWeight: 500,
-                                    fontSize: '1.3em',
-                                }}
-                                startDelay={2000}
-                                cursorColor="#ececec"
-                                multiText={[
-                                    'House :D',
-                                ]}
-                                multiTextDelay={1000}
-                                typeSpeed={60}
-                            />
+                                    textStyle={{
+                                        fontFamily: 'PF Tempesta Seven',
+                                        fontFamily: 'PF Tempesta Seven Extended',
+                                        fontFamily: 'PF Tempesta Seven Condensed',
+                                        fontFamily: 'PF Tempesta Seven Compressed',
+                                        color: '#ececec',
+                                        fontWeight: 500,
+                                        fontSize: '1.3em',
+                                    }}
+                                    startDelay={2000}
+                                    cursorColor="#ececec"
+                                    multiText={[
+                                        'House :D',
+                                    ]}
+                                    multiTextDelay={1000}
+                                    typeSpeed={60}
+                                />
                                 :
                                 sampleLocation.pathname.toString() === '/Education' ?
-                                    
+
                                     <TypeWriterEffect
-                                textStyle={{
-                                    fontFamily: 'PF Tempesta Seven',
-                                    fontFamily: 'PF Tempesta Seven Extended',
-                                    fontFamily: 'PF Tempesta Seven Condensed',
-                                    fontFamily: 'PF Tempesta Seven Compressed',
-                                    color: '#ececec',
-                                    fontWeight: 500,
-                                    fontSize: '1.3em',
-                                }}
-                                startDelay={2000}
-                                cursorColor="#ececec"
-                                multiText={[
-                                    'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
-                                ]}
-                                multiTextDelay={1000}
-                                typeSpeed={60}
-                            />
+                                        textStyle={{
+                                            fontFamily: 'PF Tempesta Seven',
+                                            fontFamily: 'PF Tempesta Seven Extended',
+                                            fontFamily: 'PF Tempesta Seven Condensed',
+                                            fontFamily: 'PF Tempesta Seven Compressed',
+                                            color: '#ececec',
+                                            fontWeight: 500,
+                                            fontSize: '1.3em',
+                                        }}
+                                        startDelay={2000}
+                                        cursorColor="#ececec"
+                                        multiText={[
+                                            'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
+                                        ]}
+                                        multiTextDelay={1000}
+                                        typeSpeed={60}
+                                    />
                                     :
                                     sampleLocation.pathname.toString() === '/Projects' ?
                                         'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
-                                        'no hay nada'
+                                        <TypeWriterEffect
+                                        textStyle={{
+                                            fontFamily: 'PF Tempesta Seven',
+                                            fontFamily: 'PF Tempesta Seven Extended',
+                                            fontFamily: 'PF Tempesta Seven Condensed',
+                                            fontFamily: 'PF Tempesta Seven Compressed',
+                                            color: '#ececec',
+                                            fontWeight: 500,
+                                            fontSize: '2em',
+                                            textAling: 'center'
+                                        }}
+                                        startDelay={1000}
+                                        cursorColor="#ececec"
+                                        multiText={[
+                                            'Traveling....',
+                                        ]}
+                                        multiTextDelay={1000}
+                                        typeSpeed={60}
+                                    />
                     }</h4>
                     {/*   */}
                     {/* {
