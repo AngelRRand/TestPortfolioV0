@@ -174,37 +174,47 @@ const NavRPG = () => {
                                     />
                                     :
                                     sampleLocation.pathname.toString() === '/Projects' ?
-                                        'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
+
                                         <TypeWriterEffect
-                                        textStyle={{
-                                            fontFamily: 'PF Tempesta Seven',
-                                            fontFamily: 'PF Tempesta Seven Extended',
-                                            fontFamily: 'PF Tempesta Seven Condensed',
-                                            fontFamily: 'PF Tempesta Seven Compressed',
-                                            color: '#ececec',
-                                            fontWeight: 500,
-                                            fontSize: '2em',
-                                            textAling: 'center'
-                                        }}
-                                        startDelay={1000}
-                                        cursorColor="#ececec"
-                                        multiText={[
-                                            'Traveling....',
-                                        ]}
-                                        multiTextDelay={1000}
-                                        typeSpeed={60}
-                                    />
+                                            textStyle={{
+                                                fontFamily: 'PF Tempesta Seven',
+                                                fontFamily: 'PF Tempesta Seven Extended',
+                                                fontFamily: 'PF Tempesta Seven Condensed',
+                                                fontFamily: 'PF Tempesta Seven Compressed',
+                                                color: '#ececec',
+                                                fontWeight: 500,
+                                                fontSize: '2em',
+                                                textAling: 'center'
+                                            }}
+                                            startDelay={1000}
+                                            cursorColor="#ececec"
+                                            multiText={[
+                                                'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)'
+                                            ]}
+                                            multiTextDelay={1000}
+                                            typeSpeed={60}
+                                        />
+                                        :
+                                        <TypeWriterEffect
+                                            textStyle={{
+                                                fontFamily: 'PF Tempesta Seven',
+                                                fontFamily: 'PF Tempesta Seven Extended',
+                                                fontFamily: 'PF Tempesta Seven Condensed',
+                                                fontFamily: 'PF Tempesta Seven Compressed',
+                                                color: '#ececec',
+                                                fontWeight: 500,
+                                                fontSize: '2em',
+                                                textAling: 'center'
+                                            }}
+                                            startDelay={1000}
+                                            cursorColor="#ececec"
+                                            multiText={[
+                                                'Traveling....',
+                                            ]}
+                                            multiTextDelay={1000}
+                                            typeSpeed={60}
+                                        />
                     }</h4>
-                    {/*   */}
-                    {/* {
-                        sampleLocation.pathname.toString() === '/education' ?
-                        
-                            <>
-                                <Buttom onClick={() => goBack()}><p>Volver?</p></Buttom>
-                            </>
-                            :
-                            ''
-                    } */}
                 </ContainerButtoms>
                 <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
                 <PerfilNutrie>
