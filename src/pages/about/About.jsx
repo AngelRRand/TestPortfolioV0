@@ -25,10 +25,7 @@ const About = () => {
     color: white;
     text-align: center;
     color:white;
-    font-family: 'PF Tempesta Seven', sans-serif;
-    font-family: 'PF Tempesta Seven Extended', sans-serif;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
-    font-family: 'PF Tempesta Seven Compressed', sans-serif;
     img{
       
       width: 100%;

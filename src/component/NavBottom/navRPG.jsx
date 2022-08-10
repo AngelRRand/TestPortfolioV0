@@ -140,14 +140,16 @@ const NavRPG = () => {
                                         fontFamily: 'PF Tempesta Seven Condensed',
                                         color: '#ececec',
                                         fontWeight: 500,
-                                        fontSize: '1.3em',
+                                        fontSize: '1.5em',
+                                        textAling: 'center'
                                     }}
                                     startDelay={1500}
                                     cursorColor="#ececec"
                                     multiText={[
-                                        'This is the most personal area of ​​the web... welcome to my house!',
+                                        'This is the most personal area of ​​the web...',
+                                        'Welcome to my house!!'
                                     ]}
-                                    multiTextDelay={1000}
+                                    multiTextDelay={1500}
                                     typeSpeed={60}
                                 />
                                 :
