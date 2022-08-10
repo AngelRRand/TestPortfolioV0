@@ -1,18 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom"
 import logo from '../../img/NavBotton/PJprueba.gif'
 import logoSinCasco from '../../img/NavBotton/PJpruebaSinCasco.gif'
 import nutria from '../../img/NavBotton/nutria.gif'
 import nutriaSinCasco from '../../img/NavBotton/nutriaSinCasco.gif'
 import './nav.css'
-import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom"
 const NavRPG = () => {
+
     const navigate = useNavigate()
     const sampleLocation = useLocation();
     const goBack = () => {
         navigate('/')
     }
+
     const Container = styled.nav`
         width: 100vw;
         border-top: 3px solid #ffffff;
@@ -80,7 +82,7 @@ const NavRPG = () => {
         <>
             <Container>
                 <Perfil>
-                    <PerfilImg src={sampleLocation.pathname.toString() === '/about'? logoSinCasco: logo } />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House'? logoSinCasco: logo } />
                     <h1>Hori</h1>
 
                 </Perfil>
@@ -114,7 +116,7 @@ const NavRPG = () => {
                     } */}
                 </ContainerButtoms>
                 <PerfilNutrie>
-                    <PerfilImg src={sampleLocation.pathname.toString() === '/about'? nutriaSinCasco: nutria} />
+                    <PerfilImg src={sampleLocation.pathname.toString() === '/About/House'? nutriaSinCasco: nutria} />
                     <h1>nutria</h1>
                 </PerfilNutrie>
             </Container>
