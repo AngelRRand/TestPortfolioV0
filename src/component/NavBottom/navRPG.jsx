@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TypeWriterEffect from 'react-typewriter-effect';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"
+import AltVoz from '../../img/NavBotton/altavoz.png'
 import logo from '../../img/NavBotton/PJprueba.gif'
 import logoSinCasco from '../../img/NavBotton/PJpruebaSinCasco.gif'
 import nutria from '../../img/NavBotton/nutria.gif'
@@ -27,10 +28,8 @@ const NavRPG = () => {
         align-items: center;
         display: flex;
         color: #ebeceb;
-        font-family: 'PF Tempesta Seven', sans-serif;
-        font-family: 'PF Tempesta Seven Extended', sans-serif;
         font-family: 'PF Tempesta Seven Condensed', sans-serif;
-        font-family: 'PF Tempesta Seven Compressed', sans-serif;
+        font-weight: 200;
         image-rendering: pixelated;                            
         position: fixed;
         z-index: 100;
@@ -82,13 +81,20 @@ const NavRPG = () => {
         font-size: 1.2rem;
         cursor: pointer;
     `
-
+    const AltVOZ = styled.img`
+    position: absolute;
+        width: 80px;
+        height: 80px;
+        right: 25vw;
+        bottom: 55%;
+        image-rendering: pixelated;
+    `
     return (
         <>
             <Container>
                 <Perfil>
                     <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? logoSinCasco : logo} />
-                    <h1>Hori</h1>
+                    <h2>Hori</h2>
 
                 </Perfil>
                 <ContainerButtoms>
@@ -96,10 +102,7 @@ const NavRPG = () => {
 
                         <TypeWriterEffect
                             textStyle={{
-                                fontFamily: 'PF Tempesta Seven',
-                                fontFamily: 'PF Tempesta Seven Extended',
                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                fontFamily: 'PF Tempesta Seven Compressed',
                                 color: '#fafafa',
                                 fontWeight: 500,
                                 fontSize: '1.3em',
@@ -116,10 +119,7 @@ const NavRPG = () => {
                         sampleLocation.pathname.toString() === '/About' ?
                             <TypeWriterEffect
                                 textStyle={{
-                                    fontFamily: 'PF Tempesta Seven',
-                                    fontFamily: 'PF Tempesta Seven Extended',
                                     fontFamily: 'PF Tempesta Seven Condensed',
-                                    fontFamily: 'PF Tempesta Seven Compressed',
                                     color: '#ececec',
                                     fontWeight: 500,
                                     fontSize: '1.3em',
@@ -137,10 +137,7 @@ const NavRPG = () => {
                             sampleLocation.pathname.toString() === '/About/House' ?
                                 <TypeWriterEffect
                                     textStyle={{
-                                        fontFamily: 'PF Tempesta Seven',
-                                        fontFamily: 'PF Tempesta Seven Extended',
                                         fontFamily: 'PF Tempesta Seven Condensed',
-                                        fontFamily: 'PF Tempesta Seven Compressed',
                                         color: '#ececec',
                                         fontWeight: 500,
                                         fontSize: '1.3em',
@@ -158,10 +155,7 @@ const NavRPG = () => {
 
                                     <TypeWriterEffect
                                         textStyle={{
-                                            fontFamily: 'PF Tempesta Seven',
-                                            fontFamily: 'PF Tempesta Seven Extended',
                                             fontFamily: 'PF Tempesta Seven Condensed',
-                                            fontFamily: 'PF Tempesta Seven Compressed',
                                             color: '#ececec',
                                             fontWeight: 500,
                                             fontSize: '1.3em',
@@ -179,10 +173,7 @@ const NavRPG = () => {
 
                                         <TypeWriterEffect
                                             textStyle={{
-                                                fontFamily: 'PF Tempesta Seven',
-                                                fontFamily: 'PF Tempesta Seven Extended',
                                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                                fontFamily: 'PF Tempesta Seven Compressed',
                                                 color: '#ececec',
                                                 fontWeight: 500,
                                                 fontSize: '2em',
@@ -199,10 +190,7 @@ const NavRPG = () => {
                                         :
                                         <TypeWriterEffect
                                             textStyle={{
-                                                fontFamily: 'PF Tempesta Seven',
-                                                fontFamily: 'PF Tempesta Seven Extended',
                                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                                fontFamily: 'PF Tempesta Seven Compressed',
                                                 color: '#ececec',
                                                 fontWeight: 500,
                                                 fontSize: '2em',
@@ -216,12 +204,13 @@ const NavRPG = () => {
                                             multiTextDelay={1000}
                                             typeSpeed={60}
                                         />
-                    }</h4>
+                                    }</h4>
+                                    <AltVOZ src={AltVoz} alt="" />
                 </ContainerButtoms>
                 <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
                 <PerfilNutrie>
                     <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? nutriaSinCasco : nutria} />
-                    <h1>nutria</h1>
+                    <h2>Nutria</h2>
                 </PerfilNutrie>
             </Container>
 
