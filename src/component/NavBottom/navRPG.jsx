@@ -23,7 +23,7 @@ const NavRPG = () => {
         padding-top: 10px;
         padding-bottom: 5px;
         height: 15vh;
-        background-color: #070707;
+        background-color: #e7e7e7;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -38,7 +38,7 @@ const NavRPG = () => {
         position: absolute;
         bottom: 5px;
         image-rendering: pixelated;
-        color: white;
+        color: black;
         text-align: center;
         padding: 5px;
         left: 0px;
@@ -47,7 +47,7 @@ const NavRPG = () => {
         position: absolute;
         bottom: 5px;
         image-rendering: pixelated;
-        color: white;
+        color: black;
         text-align: center;
         padding: 5px;
         right: 0px;
@@ -67,10 +67,10 @@ const NavRPG = () => {
         padding-left: 10px;
         padding-right: 10px;
         justify-content: space-around;
-        border: 1px solid white;
+        border: 1px solid #1d1c46;
         border-radius: 10px;
         text-align: center;
-        
+        background-color: #131313;
     `
     const Buttom = styled.button`
         color: #000000;
