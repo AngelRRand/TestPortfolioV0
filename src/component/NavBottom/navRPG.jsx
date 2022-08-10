@@ -91,25 +91,25 @@ const NavRPG = () => {
                 </Perfil>
                 <ContainerButtoms>
                     <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
-                        
+
                         <TypeWriterEffect
-                                textStyle={{
-                                    fontFamily: 'PF Tempesta Seven',
-                                    fontFamily: 'PF Tempesta Seven Extended',
-                                    fontFamily: 'PF Tempesta Seven Condensed',
-                                    fontFamily: 'PF Tempesta Seven Compressed',
-                                    color: '#ececec',
-                                    fontWeight: 500,
-                                    fontSize: '1.3em',
-                                }}
-                                startDelay={2000}
-                                cursorColor="#ececec"
-                                multiText={[
-                                    'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)',
-                                ]}
-                                multiTextDelay={1000}
-                                typeSpeed={60}
-                            />
+                            textStyle={{
+                                fontFamily: 'PF Tempesta Seven',
+                                fontFamily: 'PF Tempesta Seven Extended',
+                                fontFamily: 'PF Tempesta Seven Condensed',
+                                fontFamily: 'PF Tempesta Seven Compressed',
+                                color: '#ececec',
+                                fontWeight: 500,
+                                fontSize: '1.3em',
+                            }}
+                            startDelay={2000}
+                            cursorColor="#ececec"
+                            multiText={[
+                                'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)',
+                            ]}
+                            multiTextDelay={1000}
+                            typeSpeed={60}
+                        />
                         :
                         sampleLocation.pathname.toString() === '/About' ?
                             <TypeWriterEffect
@@ -133,10 +133,45 @@ const NavRPG = () => {
 
                             :
                             sampleLocation.pathname.toString() === '/House' ?
-                                'CASA!'
+                                <TypeWriterEffect
+                                textStyle={{
+                                    fontFamily: 'PF Tempesta Seven',
+                                    fontFamily: 'PF Tempesta Seven Extended',
+                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                    fontFamily: 'PF Tempesta Seven Compressed',
+                                    color: '#ececec',
+                                    fontWeight: 500,
+                                    fontSize: '1.3em',
+                                }}
+                                startDelay={2000}
+                                cursorColor="#ececec"
+                                multiText={[
+                                    'House :D',
+                                ]}
+                                multiTextDelay={1000}
+                                typeSpeed={60}
+                            />
                                 :
                                 sampleLocation.pathname.toString() === '/Education' ?
-                                    'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.'
+                                    
+                                    <TypeWriterEffect
+                                textStyle={{
+                                    fontFamily: 'PF Tempesta Seven',
+                                    fontFamily: 'PF Tempesta Seven Extended',
+                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                    fontFamily: 'PF Tempesta Seven Compressed',
+                                    color: '#ececec',
+                                    fontWeight: 500,
+                                    fontSize: '1.3em',
+                                }}
+                                startDelay={2000}
+                                cursorColor="#ececec"
+                                multiText={[
+                                    'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
+                                ]}
+                                multiTextDelay={1000}
+                                typeSpeed={60}
+                            />
                                     :
                                     sampleLocation.pathname.toString() === '/Projects' ?
                                         'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)' :
