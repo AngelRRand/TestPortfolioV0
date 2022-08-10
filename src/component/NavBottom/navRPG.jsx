@@ -62,11 +62,11 @@ const NavRPG = () => {
     const ContainerButtoms = styled.div`
         flex-direction: row;
         display: flex;
-        width: 50vw;
+        width: 45vw;
         min-height: 10vh;
+        padding: 6px;
         justify-content: space-around;
         border: 1px solid white;
-        padding: 5px;
         border-radius: 10px;
         text-align: center;
         
@@ -146,7 +146,7 @@ const NavRPG = () => {
                                     startDelay={2000}
                                     cursorColor="#ececec"
                                     multiText={[
-                                        'House :D',
+                                        'This is the most personal area of ​​the web... welcome to my house!',
                                     ]}
                                     multiTextDelay={1000}
                                     typeSpeed={60}
