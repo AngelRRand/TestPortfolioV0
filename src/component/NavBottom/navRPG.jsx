@@ -62,9 +62,11 @@ const NavRPG = () => {
     const ContainerButtoms = styled.div`
         flex-direction: row;
         display: flex;
-        width: 45vw;
+        width: 50vw;
         min-height: 10vh;
-        padding: 6px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         justify-content: space-around;
         border: 1px solid white;
         border-radius: 10px;
@@ -98,11 +100,11 @@ const NavRPG = () => {
                                 fontFamily: 'PF Tempesta Seven Extended',
                                 fontFamily: 'PF Tempesta Seven Condensed',
                                 fontFamily: 'PF Tempesta Seven Compressed',
-                                color: '#ececec',
+                                color: '#fafafa',
                                 fontWeight: 500,
                                 fontSize: '1.3em',
                             }}
-                            startDelay={2000}
+                            startDelay={1500}
                             cursorColor="#ececec"
                             multiText={[
                                 'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)',
@@ -122,7 +124,7 @@ const NavRPG = () => {
                                     fontWeight: 500,
                                     fontSize: '1.3em',
                                 }}
-                                startDelay={2000}
+                                startDelay={1500}
                                 cursorColor="#ececec"
                                 multiText={[
                                     'Its in my personal zone, my about... in it you can know more about me!',
@@ -143,7 +145,7 @@ const NavRPG = () => {
                                         fontWeight: 500,
                                         fontSize: '1.3em',
                                     }}
-                                    startDelay={2000}
+                                    startDelay={1500}
                                     cursorColor="#ececec"
                                     multiText={[
                                         'This is the most personal area of ​​the web... welcome to my house!',
@@ -164,7 +166,7 @@ const NavRPG = () => {
                                             fontWeight: 500,
                                             fontSize: '1.3em',
                                         }}
-                                        startDelay={2000}
+                                        startDelay={1500}
                                         cursorColor="#ececec"
                                         multiText={[
                                             'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
