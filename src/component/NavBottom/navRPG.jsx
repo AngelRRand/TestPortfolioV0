@@ -91,7 +91,25 @@ const NavRPG = () => {
                 </Perfil>
                 <ContainerButtoms>
                     <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
-                        'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)'
+                        
+                        <TypeWriterEffect
+                                textStyle={{
+                                    fontFamily: 'PF Tempesta Seven',
+                                    fontFamily: 'PF Tempesta Seven Extended',
+                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                    fontFamily: 'PF Tempesta Seven Compressed',
+                                    color: '#ececec',
+                                    fontWeight: 500,
+                                    fontSize: '1.3em',
+                                }}
+                                startDelay={2000}
+                                cursorColor="#ececec"
+                                multiText={[
+                                    'You are at home, you can visit the other views of the page following the map or cheating if you are a dev ;)',
+                                ]}
+                                multiTextDelay={1000}
+                                typeSpeed={60}
+                            />
                         :
                         sampleLocation.pathname.toString() === '/About' ?
                             <TypeWriterEffect
