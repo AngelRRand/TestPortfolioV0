@@ -19,11 +19,11 @@ const NavRPG = () => {
 
     const Container = styled.nav`
         width: 100vw;
-        border-top: 3px solid #ffffff;
+        border-top: 2px solid #1f1f1f;
         padding-top: 10px;
         padding-bottom: 5px;
         height: 15vh;
-        background-color: #e7e7e7;
+        background-color: #1a1630;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -38,7 +38,7 @@ const NavRPG = () => {
         position: absolute;
         bottom: 5px;
         image-rendering: pixelated;
-        color: black;
+        color: white;
         text-align: center;
         padding: 5px;
         left: 0px;
@@ -47,7 +47,7 @@ const NavRPG = () => {
         position: absolute;
         bottom: 5px;
         image-rendering: pixelated;
-        color: black;
+        color: white;
         text-align: center;
         padding: 5px;
         right: 0px;
@@ -55,19 +55,19 @@ const NavRPG = () => {
     const PerfilImg = styled.img`
         width: 20vw;
         image-rendering: pixelated;
-        border: 3px solid #ffffff;
+        border: 3px solid #1f1f1f;
         background-color: #070707;
     `
     const ContainerButtoms = styled.div`
         flex-direction: row;
         display: flex;
         width: 50vw;
-        min-height: 10vh;
+        height: 13vh;
         padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
         justify-content: space-around;
-        border: 1px solid #1d1c46;
+        border: 1px solid #1f1f1f;
         border-radius: 10px;
         text-align: center;
         background-color: #131313;
@@ -85,8 +85,9 @@ const NavRPG = () => {
     position: absolute;
         width: 80px;
         height: 80px;
-        right: 25vw;
+        right: 19vw;
         bottom: 55%;
+        z-index: 100;
         image-rendering: pixelated;
     `
     return (
@@ -97,18 +98,19 @@ const NavRPG = () => {
                     <h2>Hori</h2>
 
                 </Perfil>
+                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
                 <ContainerButtoms>
                     <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
 
                         <TypeWriterEffect
                             textStyle={{
                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                color: '#fafafa',
+                                color: '#44ff44',
                                 fontWeight: 500,
-                                fontSize: '1.3em',
+                                fontSize: '1.2em',
                             }}
                             startDelay={1500}
-                            cursorColor="#ececec"
+                            cursorColor="#44ff44"
                             multiText={[
                                 'You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)',
                             ]}
@@ -120,12 +122,12 @@ const NavRPG = () => {
                             <TypeWriterEffect
                                 textStyle={{
                                     fontFamily: 'PF Tempesta Seven Condensed',
-                                    color: '#ececec',
+                                    color: '#44ff44',
                                     fontWeight: 500,
                                     fontSize: '1.3em',
                                 }}
                                 startDelay={1500}
-                                cursorColor="#ececec"
+                                cursorColor="#44ff44"
                                 multiText={[
                                     'Its in my personal zone, my about... in it you can know more about me!',
                                 ]}
@@ -138,13 +140,13 @@ const NavRPG = () => {
                                 <TypeWriterEffect
                                     textStyle={{
                                         fontFamily: 'PF Tempesta Seven Condensed',
-                                        color: '#ececec',
+                                        color: '#44ff44',
                                         fontWeight: 500,
                                         fontSize: '1.5em',
                                         textAling: 'center'
                                     }}
                                     startDelay={1500}
-                                    cursorColor="#ececec"
+                                    cursorColor="#44ff44"
                                     multiText={[
                                         'This is the most personal area of ​​the web...',
                                         'Welcome to my house!!'
@@ -158,12 +160,12 @@ const NavRPG = () => {
                                     <TypeWriterEffect
                                         textStyle={{
                                             fontFamily: 'PF Tempesta Seven Condensed',
-                                            color: '#ececec',
+                                            color: '#44ff44',
                                             fontWeight: 500,
                                             fontSize: '1.3em',
                                         }}
                                         startDelay={1500}
-                                        cursorColor="#ececec"
+                                        cursorColor="#44ff44"
                                         multiText={[
                                             'As you can see, many of the technologies are oriented towards frontend development, but I dont frown on new experiences.',
                                         ]}
@@ -176,13 +178,13 @@ const NavRPG = () => {
                                         <TypeWriterEffect
                                             textStyle={{
                                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                                color: '#ececec',
+                                                color: '#44ff44',
                                                 fontWeight: 500,
                                                 fontSize: '2em',
                                                 textAling: 'center'
                                             }}
                                             startDelay={1000}
-                                            cursorColor="#ececec"
+                                            cursorColor="#44ff44"
                                             multiText={[
                                                 'This area is a bit extensive! but here you can not only see my projects, but I also put a few of my most precious drawings :)'
                                             ]}
@@ -193,13 +195,13 @@ const NavRPG = () => {
                                         <TypeWriterEffect
                                             textStyle={{
                                                 fontFamily: 'PF Tempesta Seven Condensed',
-                                                color: '#ececec',
+                                                color: '#44ff44',
                                                 fontWeight: 500,
                                                 fontSize: '2em',
                                                 textAling: 'center'
                                             }}
                                             startDelay={1000}
-                                            cursorColor="#ececec"
+                                            cursorColor="#44ff44"
                                             multiText={[
                                                 'Traveling....',
                                             ]}
@@ -209,7 +211,7 @@ const NavRPG = () => {
                                     }</h4>
                                     <AltVOZ src={AltVoz} alt="" />
                 </ContainerButtoms>
-                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                
                 <PerfilNutrie>
                     <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? nutriaSinCasco : nutria} />
                     <h2>Nutria</h2>
