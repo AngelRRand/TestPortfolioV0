@@ -19,11 +19,11 @@ const NavRPG = () => {
 
     const Container = styled.nav`
         width: 100vw;
-        border-top: 2px solid #1f1f1f;
+        border-top: 2px solid #141414;
         padding-top: 10px;
         padding-bottom: 5px;
         height: 15vh;
-        background-color: #1a1630;
+        background-color: #0d0b16;
         justify-content: center;
         align-items: center;
         display: flex;
