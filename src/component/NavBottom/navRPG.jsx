@@ -53,7 +53,7 @@ const NavRPG = () => {
         right: 0px;
     `
     const PerfilImg = styled.img`
-        width: 20vw;
+        width: 15vw;
         image-rendering: pixelated;
         border: 3px solid #1f1f1f;
         background-color: #070707;
