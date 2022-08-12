@@ -56,7 +56,7 @@ const NavRPG = () => {
         width: 15vw;
         image-rendering: pixelated;
         border: 3px solid #1f1f1f;
-        background-color: #070707;
+        background-color: #f75a5a;
     `
     const ContainerButtoms = styled.div`
         flex-direction: row;
