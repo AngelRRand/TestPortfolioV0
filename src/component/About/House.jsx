@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import house from '../../img/casa.gif'
+import house from '../../img/House2.png'
 
 
 const House = () => {
