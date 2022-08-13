@@ -8,25 +8,32 @@ const Education = () => {
 
   const EducationContainer = styled.div`
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
     `
-  const PlanetContainer = styled.div`
-    display: flex;
-    width: 450px;
-    height: 450px;
-    border: none;
-    box-shadow: none;
-    overflow: hidden;
-    img{
-      width: 100vw;
-      image-rendering: pixelated;
-    }
-    z-index: 1;
-  `
+  const ContainerIMG = styled.div`
+  position: absolute;
+  width: 35vw;
+  height: 65vh;
+  image-rendering: pixelated;
+  object-fit: contain;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  color:white;
+  font-family: 'PF Tempesta Seven Condensed', sans-serif;
+  img{
+    
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    z-index: 10;
+  }
+`
   
 
   return (
@@ -50,28 +57,10 @@ const Education = () => {
         <div className="presentation-about">
           <h3>My technologies</h3>
 
-          <PlanetContainer className='containerAnimated' >
-            <img src={planetIce} alt="" />
-            
-            {/* <EducationIcons /> */}
-          </PlanetContainer>
         </div>
       </motion.div>
 
 
-      <motion.div
-        initial={{ y: 1000 }}
-        animate={{
-          y: 0,
-          transition: { duration: 2.5, type: "spring" },
-        }}
-        exit={{
-          x: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
-        
-      </motion.div>
     </EducationContainer>
   )
 }
