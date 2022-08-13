@@ -48,30 +48,9 @@ const Projects = () => {
         }}
       >
 
-        <div className="presentation-about">
-          <h3>Projects</h3>
-
-          <PlanetContainer className='containerAnimated' >
-            <img src={planetLava} alt="" />
-            
-          </PlanetContainer>
-        </div>
       </motion.div>
 
 
-      <motion.div
-        initial={{ y: 1000 }}
-        animate={{
-          y: 0,
-          transition: { duration: 2.5, type: "spring" },
-        }}
-        exit={{
-          x: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
-        
-      </motion.div>
     </ProjectsContainer>
   )
 }
