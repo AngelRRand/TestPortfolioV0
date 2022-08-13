@@ -34,7 +34,17 @@ const Education = () => {
     z-index: 10;
   }
 `
-  
+const TempladeGrid = styled.div`
+justify-content: center;
+align-items: center;
+display: grid;
+width: 35vw;
+height: 65vh;
+grid-template-columns: repeat(20, 2vw);
+grid-template-rows: repeat(30, 2vh);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+`
 
   return (
       <motion.div
@@ -52,7 +62,7 @@ const Education = () => {
         <EducationContainer>
 
 
-          
+
         </EducationContainer>
       </motion.div>
   )
