@@ -49,7 +49,8 @@ const Projects = () => {
       >
 
         <ContainerIMG>
-          
+          <h3>Projects</h3>
+          <img src={planetLava} alt="" />
         </ContainerIMG>
         
       </motion.div>
