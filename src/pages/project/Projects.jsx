@@ -12,20 +12,27 @@ const Projects = () => {
   justify-content: center;
   align-items: center;
   object-fit: contain;
-    `
-  const PlanetContainer = styled.div`
-    display: flex;
-    width: 450px;
-    height: 450px;
-    border: none;
-    box-shadow: none;
-    overflow: hidden;
-    img{
-      width: 100vw;
-      image-rendering: pixelated;
-    }
-    z-index: 1;
   `
+  const ContainerIMG = styled.div`
+  
+  position: absolute;
+  width: 35vw;
+  height: 65vh;
+  image-rendering: pixelated;
+  object-fit: contain;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  color:white;
+  font-family: 'PF Tempesta Seven Condensed', sans-serif;
+  img{
+    
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    z-index: 10;
+  }
+`
   return (
     <ProjectsContainer>
 

@@ -102,7 +102,6 @@ const About = () => {
   
   return (
 
-    <>
     <motion.div
       initial={{ scale: 0 }}
       animate={{
@@ -138,7 +137,6 @@ const About = () => {
 
       </AboutContainer>
     </motion.div>
-    </>
   )
 }
 
