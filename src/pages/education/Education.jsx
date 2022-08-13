@@ -34,7 +34,7 @@ const Education = () => {
     z-index: 10;
   }
 `
-const TempladeGrid = styled.div`
+  const TempladeGrid = styled.div`
 justify-content: center;
 align-items: center;
 display: grid;
@@ -47,24 +47,30 @@ grid-row-gap: 0px;
 `
 
   return (
-      <motion.div
-        initial={{ x: -1000, scale: 0 }}
-        animate={{
-          x: 0,
-          scale: 1,
-          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
-        }}
-        exit={{
-          x: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-        }}
-      >
-        <EducationContainer>
+    <motion.div
+      initial={{ x: -1000, scale: 0 }}
+      animate={{
+        x: 0,
+        scale: 1,
+        transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+      }}
+      exit={{
+        x: -500,
+        transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+      }}
+    >
+      <EducationContainer>
 
+        <ContainerIMG>
+          <h3>Projects</h3>
+          <img src={planetIce} alt="" />
+        </ContainerIMG>
+        <TempladeGrid>
 
+        </TempladeGrid>
 
-        </EducationContainer>
-      </motion.div>
+      </EducationContainer>
+    </motion.div>
   )
 }
 
