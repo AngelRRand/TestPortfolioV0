@@ -5,12 +5,13 @@ import planetLava from '../../img/Planet/PlanetLavaZOOM.png'
 const Projects = () => {
 
   const ProjectsContainer = styled.div`
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  overflow: hidden;
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
     `
   const PlanetContainer = styled.div`
     display: flex;
