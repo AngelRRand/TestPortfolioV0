@@ -40,14 +40,18 @@ const Projects = () => {
         initial={{  scale: 0 }}
         animate={{
           scale: 1,
-          transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
+          transition: { delay: 0.5, duration: 1.7,  type: "spring", },
         }}
         exit={{
           x: -500,
-          transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
+          transition: { delay: 1.5,  ease: 'easeInOut' },
         }}
       >
 
+        <ContainerIMG>
+          
+        </ContainerIMG>
+        
       </motion.div>
 
 
