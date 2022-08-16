@@ -78,15 +78,15 @@ const NavRPG = () => {
     const ContainerBtns = styled.div`
         display: flex;
          justify-content: space-around;
+         margin-top: 5px;
     `
-    const Buttom = styled.button`
-        margin-top: 5px;
+    const Buttom = styled.div`
         color: #000000;
-        border: none;
         padding: 10px;
         text-align: center;
         background-color: white;
-        font-size: 1.2rem;
+        height: 5vh;
+        font-size: 1rem;
         font-family: 'PF Tempesta Seven Condensed', sans-serif;
         font-weight: 200;
         cursor: pointer;
