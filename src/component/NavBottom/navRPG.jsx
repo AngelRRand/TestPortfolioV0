@@ -56,12 +56,12 @@ const NavRPG = () => {
         border: 3px solid #1f1f1f;
         background-color: #f75a5a;
     `
-    const ContainerBtn = styled.div`
+    const ContainerRouters = styled.div`
         width: 55vw;
         height: 25vh;
         margin-bottom: 15vh;
     `
-    const ContainerButtoms = styled.div`
+    const ContainerTextNav = styled.div`
         flex-direction: row;
         display: flex;
         width: 50vw;
@@ -102,8 +102,8 @@ const NavRPG = () => {
                     <h2>Hori</h2>
 
                 </Perfil>
-                <ContainerBtn>
-                    <ContainerButtoms>
+                <ContainerRouters>
+                    <ContainerTextNav>
                         <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
 
                             <TypeWriterEffect
@@ -215,11 +215,14 @@ const NavRPG = () => {
                                             />
                         }</h4>
                         <AltVOZ src={AltVoz} alt="" />
-                    </ContainerButtoms>
-                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                </ContainerBtn>
+                    </ContainerTextNav>
+                    <ContainerBtns>
+
+                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                    </ContainerBtns>
+                </ContainerRouters>
 
 
                 <PerfilNutrie>
