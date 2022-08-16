@@ -89,8 +89,8 @@ const NavRPG = () => {
     position: absolute;
         width: 80px;
         height: 80px;
-        right: 22vw;
-        bottom: 70%;
+        right: 23vw;
+        bottom: 75%;
         z-index: 100;
         image-rendering: pixelated;
     `
@@ -110,8 +110,8 @@ const NavRPG = () => {
                                 textStyle={{
                                     fontFamily: 'PF Tempesta Seven Condensed',
                                     color: '#44ff44',
-                                    fontWeight: 500,
-                                    fontSize: '1.2em',
+                                    fontWeight: 400,
+                                    fontSize: '1.1em',
                                 }}
                                 startDelay={1500}
                                 cursorColor="#44ff44"
