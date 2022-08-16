@@ -64,7 +64,7 @@ const NavRPG = () => {
     const ContainerTextNav = styled.div`
         flex-direction: row;
         display: flex;
-        width: 50vw;
+        width: 55vw;
         height: 15vh;
         padding: 5px;
         padding-left: 30px;
@@ -74,6 +74,10 @@ const NavRPG = () => {
         border-radius: 10px;
         text-align: center;
         background-color: #131313;
+    `
+    const ContainerBtns = styled.div`
+        display: flex;
+         justify-content: space-around;
     `
     const Buttom = styled.button`
         margin-top: 5px;
@@ -214,7 +218,6 @@ const NavRPG = () => {
                                                 typeSpeed={60}
                                             />
                         }</h4>
-                        <AltVOZ src={AltVoz} alt="" />
                     </ContainerTextNav>
                     <ContainerBtns>
 
