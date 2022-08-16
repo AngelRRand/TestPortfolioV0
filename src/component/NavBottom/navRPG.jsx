@@ -20,10 +20,8 @@ const NavRPG = () => {
     const Container = styled.nav`
         width: 100vw;
         border-top: 2px solid #141414;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        height: 15vh;
-        background-color: #0d0b16;
+        height: 25vh;
+        background-color: #2b273b;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -36,7 +34,7 @@ const NavRPG = () => {
     `
     const Perfil = styled.div`
         position: absolute;
-        bottom: 5px;
+        bottom: 10vh;
         image-rendering: pixelated;
         color: white;
         text-align: center;
@@ -45,7 +43,7 @@ const NavRPG = () => {
     `
     const PerfilNutrie = styled.div`
         position: absolute;
-        bottom: 5px;
+        bottom: 10vh;
         image-rendering: pixelated;
         color: white;
         text-align: center;
@@ -58,11 +56,16 @@ const NavRPG = () => {
         border: 3px solid #1f1f1f;
         background-color: #f75a5a;
     `
+    const ContainerBtn = styled.div`
+        width: 55vw;
+        height: 25vh;
+        margin-bottom: 15vh;
+    `
     const ContainerButtoms = styled.div`
         flex-direction: row;
         display: flex;
         width: 50vw;
-        height: 13vh;
+        height: 15vh;
         padding: 5px;
         padding-left: 30px;
         padding-right: 30px;
@@ -73,6 +76,7 @@ const NavRPG = () => {
         background-color: #131313;
     `
     const Buttom = styled.button`
+        margin-top: 5px;
         color: #000000;
         border: none;
         padding: 10px;
@@ -85,8 +89,8 @@ const NavRPG = () => {
     position: absolute;
         width: 80px;
         height: 80px;
-        right: 19vw;
-        bottom: 55%;
+        right: 22vw;
+        bottom: 70%;
         z-index: 100;
         image-rendering: pixelated;
     `
@@ -98,121 +102,126 @@ const NavRPG = () => {
                     <h2>Hori</h2>
 
                 </Perfil>
-                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                <ContainerButtoms>
-                    <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
+                <ContainerBtn>
+                    <ContainerButtoms>
+                        <h4 className='animationText'>{sampleLocation.pathname.toString() === '/' ?
 
-                        <TypeWriterEffect
-                            textStyle={{
-                                fontFamily: 'PF Tempesta Seven Condensed',
-                                color: '#44ff44',
-                                fontWeight: 500,
-                                fontSize: '1.2em',
-                            }}
-                            startDelay={1500}
-                            cursorColor="#44ff44"
-                            multiText={[
-                                'You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)',
-                            ]}
-                            multiTextDelay={1000}
-                            typeSpeed={60}
-                        />
-                        :
-                        sampleLocation.pathname.toString() === '/About' ?
                             <TypeWriterEffect
                                 textStyle={{
                                     fontFamily: 'PF Tempesta Seven Condensed',
                                     color: '#44ff44',
                                     fontWeight: 500,
-                                    fontSize: '1.3em',
+                                    fontSize: '1.2em',
                                 }}
                                 startDelay={1500}
                                 cursorColor="#44ff44"
                                 multiText={[
-                                    'Its in my personal zone, my about... in it you can know more about me!',
+                                    'You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)',
                                 ]}
                                 multiTextDelay={1000}
                                 typeSpeed={60}
                             />
-
                             :
-                            sampleLocation.pathname.toString() === '/About/House' ?
+                            sampleLocation.pathname.toString() === '/About' ?
                                 <TypeWriterEffect
                                     textStyle={{
                                         fontFamily: 'PF Tempesta Seven Condensed',
                                         color: '#44ff44',
                                         fontWeight: 500,
-                                        fontSize: '1.5em',
-                                        textAling: 'center'
+                                        fontSize: '1.3em',
                                     }}
                                     startDelay={1500}
                                     cursorColor="#44ff44"
                                     multiText={[
-                                        'This is the most personal area of ​​the web...',
-                                        'Welcome to my house!!'
+                                        'Its in my personal zone, my about... in it you can know more about me!',
                                     ]}
-                                    multiTextDelay={1500}
+                                    multiTextDelay={1000}
                                     typeSpeed={60}
                                 />
-                                :
-                                sampleLocation.pathname.toString() === '/Education' ?
 
+                                :
+                                sampleLocation.pathname.toString() === '/About/House' ?
                                     <TypeWriterEffect
                                         textStyle={{
                                             fontFamily: 'PF Tempesta Seven Condensed',
                                             color: '#44ff44',
                                             fontWeight: 500,
-                                            fontSize: '1.3em',
+                                            fontSize: '1.5em',
+                                            textAling: 'center'
                                         }}
                                         startDelay={1500}
                                         cursorColor="#44ff44"
                                         multiText={[
-                                            'As you can see, many of the technologies are oriented towards frontend development.',
-                                            'But I dont frown on new experiences.',
+                                            'This is the most personal area of ​​the web...',
+                                            'Welcome to my house!!'
                                         ]}
                                         multiTextDelay={1500}
                                         typeSpeed={60}
                                     />
                                     :
-                                    sampleLocation.pathname.toString() === '/Projects' ?
+                                    sampleLocation.pathname.toString() === '/Education' ?
 
                                         <TypeWriterEffect
                                             textStyle={{
                                                 fontFamily: 'PF Tempesta Seven Condensed',
                                                 color: '#44ff44',
                                                 fontWeight: 500,
-                                                fontSize: '1.4em',
-                                                textAling: 'center'
+                                                fontSize: '1.3em',
                                             }}
-                                            startDelay={1000}
+                                            startDelay={1500}
                                             cursorColor="#44ff44"
                                             multiText={[
-                                                'This area is a bit extensive! but here you can not only see my projects.',' but I also put a few of my most precious drawings :)'
+                                                'As you can see, many of the technologies are oriented towards frontend development.',
+                                                'But I dont frown on new experiences.',
                                             ]}
                                             multiTextDelay={1500}
                                             typeSpeed={60}
                                         />
                                         :
-                                        <TypeWriterEffect
-                                            textStyle={{
-                                                fontFamily: 'PF Tempesta Seven Condensed',
-                                                color: '#44ff44',
-                                                fontWeight: 500,
-                                                fontSize: '2em',
-                                                textAling: 'center'
-                                            }}
-                                            startDelay={1000}
-                                            cursorColor="#44ff44"
-                                            multiText={[
-                                                'Traveling....',
-                                            ]}
-                                            multiTextDelay={1000}
-                                            typeSpeed={60}
-                                        />
-                                    }</h4>
-                                    <AltVOZ src={AltVoz} alt="" />
-                </ContainerButtoms>
-                
+                                        sampleLocation.pathname.toString() === '/Projects' ?
+
+                                            <TypeWriterEffect
+                                                textStyle={{
+                                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                                    color: '#44ff44',
+                                                    fontWeight: 500,
+                                                    fontSize: '1.4em',
+                                                    textAling: 'center'
+                                                }}
+                                                startDelay={1000}
+                                                cursorColor="#44ff44"
+                                                multiText={[
+                                                    'This area is a bit extensive! but here you can not only see my projects.', ' but I also put a few of my most precious drawings :)'
+                                                ]}
+                                                multiTextDelay={1500}
+                                                typeSpeed={60}
+                                            />
+                                            :
+                                            <TypeWriterEffect
+                                                textStyle={{
+                                                    fontFamily: 'PF Tempesta Seven Condensed',
+                                                    color: '#44ff44',
+                                                    fontWeight: 500,
+                                                    fontSize: '2em',
+                                                    textAling: 'center'
+                                                }}
+                                                startDelay={1000}
+                                                cursorColor="#44ff44"
+                                                multiText={[
+                                                    'Traveling....',
+                                                ]}
+                                                multiTextDelay={1000}
+                                                typeSpeed={60}
+                                            />
+                        }</h4>
+                        <AltVOZ src={AltVoz} alt="" />
+                    </ContainerButtoms>
+                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                </ContainerBtn>
+
+
                 <PerfilNutrie>
                     <PerfilImg src={sampleLocation.pathname.toString() === '/About/House' ? nutriaSinCasco : nutria} />
                     <h2>Nutria</h2>
