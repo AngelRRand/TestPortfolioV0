@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import house from '../../img/House2.png'
+import house from '../../img/160x90.png'
 
 
 const House = () => {
@@ -10,6 +10,7 @@ const House = () => {
     display: flex;
     align-items: center;
     justify-content: center;
+    image-rendering: pixelated;
   `
   const BackGround = styled.img`
     width: 100vw;
