@@ -21,7 +21,7 @@ const NavRPG = () => {
         width: 100vw;
         border-top: 2px solid #141414;
         height: 25vh;
-        background-color: #2b273b;
+        background-color: #414141;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -87,6 +87,8 @@ const NavRPG = () => {
         text-align: center;
         background-color: white;
         font-size: 1.2rem;
+        font-family: 'PF Tempesta Seven Condensed', sans-serif;
+        font-weight: 200;
         cursor: pointer;
     `
     const AltVOZ = styled.img`
