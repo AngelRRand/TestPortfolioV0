@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import house from '../../img/160x90.png'
+import house from '../../img/160x90v2.png'
 
 
 const House = () => {
