@@ -60,7 +60,8 @@ const NavRPG = () => {
         width: 65vw;
         height: 25vh;
         display: flex;
-        
+        justify-content: center;
+        align-items: center;
         
     `
     const ContainerTextNav = styled.div`
@@ -91,7 +92,7 @@ const NavRPG = () => {
         p{
             color: white;
             text-shadow: 0 0 10px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     `
     const Buttom = styled.div`
