@@ -59,12 +59,12 @@ const NavRPG = () => {
     const ContainerRouters = styled.div`
         width: 55vw;
         height: 25vh;
-        margin-bottom: 15vh;
+        display: flex;
     `
     const ContainerTextNav = styled.div`
         flex-direction: row;
         display: flex;
-        width: 55vw;
+        width: 40vw;
         height: 12vh;
         padding: 5px;
         padding-left: 30px;
@@ -78,13 +78,15 @@ const NavRPG = () => {
     const ContainerBtns = styled.div`
         display: flex;
         justify-content: space-around;
-        margin-top: 5px;
-        height: 10vh;
+        width: 20vw;
+        height: 45vh;
+        background-color: red;
+        
     `
     const ContainerBtn = styled.div`
     text-align: center;
-        div{
-            text-align: center;
+        p{
+            text-shadow: 0 0 10px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
         }
     `
     const Buttom = styled.div`
@@ -100,7 +102,7 @@ const NavRPG = () => {
         cursor: pointer;
     `
     const AltVOZ = styled.img`
-    position: absolute;
+        position: absolute;
         width: 80px;
         height: 80px;
         right: 23vw;
@@ -230,10 +232,18 @@ const NavRPG = () => {
                         }</h4>
                     </ContainerTextNav>
                     <ContainerBtns>
+                        <div>
+
                         <ContainerBtn>
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>Map</p>
                         </ContainerBtn>  
+                        <ContainerBtn>
+                            <Buttom onClick={() => goBack()}></Buttom>
+                            <p>Song</p>
+                        </ContainerBtn>  
+                        </div>
+                        <div>
                         <ContainerBtn>
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>To Galaxy</p>
@@ -242,6 +252,7 @@ const NavRPG = () => {
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>To Map</p>
                         </ContainerBtn>
+                        </div>
                     </ContainerBtns>
                 </ContainerRouters>
 
