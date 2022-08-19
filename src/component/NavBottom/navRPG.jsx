@@ -70,7 +70,8 @@ const NavRPG = () => {
         padding: 5px;
         padding-left: 30px;
         padding-right: 30px;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         border: 1px solid #1f1f1f;
         border-radius: 10px;
         text-align: center;
