@@ -223,9 +223,9 @@ const NavRPG = () => {
                     </ContainerTextNav>
                     <ContainerBtns>
 
-                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
-                        <Buttom onClick={() => goBack()}><p>Return?</p></Buttom>
+                        <Buttom onClick={() => goBack()}><p>Map</p></Buttom>
+                        <Buttom onClick={() => goBack()}><p>To Galaxy</p></Buttom>
+                        <Buttom onClick={() => goBack()}><p>To Map</p></Buttom>
                     </ContainerBtns>
                 </ContainerRouters>
 
