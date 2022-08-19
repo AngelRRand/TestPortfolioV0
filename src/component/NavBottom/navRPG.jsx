@@ -65,7 +65,7 @@ const NavRPG = () => {
         flex-direction: row;
         display: flex;
         width: 55vw;
-        height: 15vh;
+        height: 12vh;
         padding: 5px;
         padding-left: 30px;
         padding-right: 30px;
