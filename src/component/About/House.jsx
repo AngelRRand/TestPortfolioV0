@@ -24,9 +24,16 @@ const House = () => {
     z-index: 10;
   `
   const Nubes = styled.div`
-  width: 150vw;
+  width: 75vw;
   height: 85vh;
-  background-color: white;
+  background-color: #1d1b8f;
+  z-index: 50;
+  position: absolute;
+`
+const Nubes2 = styled.div`
+  width: 75vw;
+  height: 85vh;
+  background-color: #fd2121;
   z-index: 50;
   position: absolute;
 `
@@ -40,11 +47,20 @@ const House = () => {
         <motion.div
           initial={{ x: -500, y: -0 }}
           animate={{
-            x: 5000,
+            x: -5000,
             transition: { duration: 3.5, type: "tween" },
           }}
         >
           <Nubes />
+        </motion.div>
+        <motion.div
+          initial={{ x: 500, y: 0 }}
+          animate={{
+            x: 5000,
+            transition: { duration: 3.5, type: "tween" },
+          }}
+        >
+          <Nubes2 />
         </motion.div>
       </House>
     </>
