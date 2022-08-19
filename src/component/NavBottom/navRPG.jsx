@@ -51,10 +51,10 @@ const NavRPG = () => {
         right: 0px;
     `
     const PerfilImg = styled.img`
-        width: 15vw;
+        width: 13vw;
         image-rendering: pixelated;
         border: 3px solid #1f1f1f;
-        background-color: #f75a5a;
+        background-color: #ffffff9e;
     `
     const ContainerRouters = styled.div`
         width: 65vw;
@@ -65,7 +65,7 @@ const NavRPG = () => {
     const ContainerTextNav = styled.div`
         flex-direction: row;
         display: flex;
-        width: 40vw;
+        width: 50vw;
         height: 12vh;
         padding: 5px;
         padding-left: 30px;
