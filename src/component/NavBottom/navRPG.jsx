@@ -79,13 +79,13 @@ const NavRPG = () => {
     const ContainerBtns = styled.div`
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:center;
         width: 25vw;
         
     `
     const ContainerBtn = styled.div`
         text-align: center;
-    
+        margin: 0px 10px;
         p{
             color: white;
             text-shadow: 0 0 10px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
