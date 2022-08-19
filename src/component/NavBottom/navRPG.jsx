@@ -139,7 +139,7 @@ const NavRPG = () => {
                                         fontFamily: 'PF Tempesta Seven Condensed',
                                         color: '#44ff44',
                                         fontWeight: 500,
-                                        fontSize: '1.3em',
+                                        fontSize: '1.1em',
                                     }}
                                     startDelay={1500}
                                     cursorColor="#44ff44"
@@ -157,7 +157,7 @@ const NavRPG = () => {
                                             fontFamily: 'PF Tempesta Seven Condensed',
                                             color: '#44ff44',
                                             fontWeight: 500,
-                                            fontSize: '1.5em',
+                                            fontSize: '1.2em',
                                             textAling: 'center'
                                         }}
                                         startDelay={1500}
@@ -177,7 +177,7 @@ const NavRPG = () => {
                                                 fontFamily: 'PF Tempesta Seven Condensed',
                                                 color: '#44ff44',
                                                 fontWeight: 500,
-                                                fontSize: '1.3em',
+                                                fontSize: '1.2em',
                                             }}
                                             startDelay={1500}
                                             cursorColor="#44ff44"
@@ -196,7 +196,7 @@ const NavRPG = () => {
                                                     fontFamily: 'PF Tempesta Seven Condensed',
                                                     color: '#44ff44',
                                                     fontWeight: 500,
-                                                    fontSize: '1.4em',
+                                                    fontSize: '1.2em',
                                                     textAling: 'center'
                                                 }}
                                                 startDelay={1000}
