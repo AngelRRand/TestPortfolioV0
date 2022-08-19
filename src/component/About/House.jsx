@@ -54,7 +54,7 @@ const Nubes2 = styled.div`
           <Nubes />
         </motion.div>
         <motion.div
-          initial={{ x: 650, y: 0 }}
+          initial={{ x: 550, y: 0 }}
           animate={{
             x: 5000,
             transition: { duration: 3.5, type: "tween" },
