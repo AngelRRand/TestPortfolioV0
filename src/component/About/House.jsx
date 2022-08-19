@@ -45,7 +45,7 @@ const Nubes2 = styled.div`
           <BackGround src={house} alt="" />
         </ContainerHouse>
         <motion.div
-          initial={{ x: -500, y: -0 }}
+          initial={{ x: -350, y: -0 }}
           animate={{
             x: -5000,
             transition: { duration: 3.5, type: "tween" },
@@ -54,7 +54,7 @@ const Nubes2 = styled.div`
           <Nubes />
         </motion.div>
         <motion.div
-          initial={{ x: 500, y: 0 }}
+          initial={{ x: 650, y: 0 }}
           animate={{
             x: 5000,
             transition: { duration: 3.5, type: "tween" },
