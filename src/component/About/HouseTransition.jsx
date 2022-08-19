@@ -41,19 +41,27 @@ const House = () => {
     }
   `
   const Nubes = styled.div`
-  position: absolute;
-    width: 1000px;
-    height: 1000px;
+    width: 100vw;
+    height: 85vh;
     background-color: white;
   `
-  setTimeout(() => {
+  /* setTimeout(() => {
     go()
-  }, 5000);
+  }, 5000); */
   return (
     <>
 
     <AboutContainer>
       <motion.div
+        initial={{ x: 10000 }}
+        animate={{
+          x: 0,
+          transition: { duration: 6.5, type: "spring", },
+        }}
+      >
+        <Nubes/>
+      </motion.div>
+      {/* <motion.div
         initial={{ scale: 1 }}
         animate={{
           scale: 5,
@@ -68,7 +76,7 @@ const House = () => {
           <img src={planet} alt="" />
         </ContainerIMG>
         
-      </motion.div>
+      </motion.div> */}
     </AboutContainer>
     </>
   )
