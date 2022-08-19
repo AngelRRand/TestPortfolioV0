@@ -244,7 +244,7 @@ const NavRPG = () => {
                             
                         </ContainerBtn>
                         <ContainerBtn>
-                            <Buttom onClick={() => goBack()}><p>To Map</p></Buttom>
+                            <Buttom onClick={() => goBack()}><p>To Planet</p></Buttom>
                             
                         </ContainerBtn>
                         </div>
