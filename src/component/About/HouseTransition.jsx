@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
@@ -8,7 +8,7 @@ const House = () => {
   const navigate = useNavigate()
   const go = () => {
     navigate('/About/House')
-  }
+}
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -34,7 +34,7 @@ const House = () => {
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
     font-family: 'PF Tempesta Seven Compressed', sans-serif;
     img{
-      
+      position: absolute;
       width: 100%;
       height: 100%;
       image-rendering: pixelated;
@@ -56,33 +56,34 @@ const House = () => {
   return (
     <>
 
-      <AboutContainer>
-        <motion.div
-          initial={{ scale: 1 }}
-          animate={{
-            scale: 5,
-            x: 200,
-            y: -850,
-            transition: { duration: 6.5, type: "spring", },
-          }}
-        >
-
-          <ContainerIMG>
-            <h3>About</h3>
-            <img src={planet} alt="" />
-            <motion.div
-              initial={{ x: 10000 }}
-              animate={{
-                x: 0,
-                transition: { duration: 1.5, type: "tween", when: "afterChildren" },
-              }}
-            >
-              <Nubes />
-            </motion.div>
-          </ContainerIMG>
-
-        </motion.div>
-      </AboutContainer>
+    <AboutContainer>
+    <motion.div
+        initial={{ scale: 1,  }}
+        animate={{
+          scale: 5,
+          x: 200,
+          y: -850,
+          transition: { duration: 6.5, type: "spring", },
+        }}
+      >
+        
+        <ContainerIMG>
+          <h3>About</h3>
+          <img src={planet} alt="" />
+        </ContainerIMG>
+        
+      </motion.div>
+      <motion.div
+        initial={{ x: 10000 }}
+        animate={{
+          x: 0,
+          transition: { duration: 6.5, type: "tween", when: "afterChildren"},
+        }}
+      >
+        <Nubes/>
+      </motion.div>
+       
+    </AboutContainer>
     </>
   )
 }
