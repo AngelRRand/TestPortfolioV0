@@ -58,10 +58,8 @@ const NavRPG = () => {
     `
     const ContainerRouters = styled.div`
         width: 65vw;
-        height: 25vh;
+        height: 20vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
         
     `
     const ContainerTextNav = styled.div`
@@ -83,7 +81,6 @@ const NavRPG = () => {
         flex-direction: row;
         justify-content: space-around;
         width: 25vw;
-        height: 30vh;
         
     `
     const ContainerBtn = styled.div`
