@@ -57,9 +57,11 @@ const NavRPG = () => {
         background-color: #f75a5a;
     `
     const ContainerRouters = styled.div`
-        width: 55vw;
+        width: 65vw;
         height: 25vh;
         display: flex;
+        
+        
     `
     const ContainerTextNav = styled.div`
         flex-direction: row;
@@ -77,38 +79,33 @@ const NavRPG = () => {
     `
     const ContainerBtns = styled.div`
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        width: 20vw;
-        height: 45vh;
-        background-color: red;
+        width: 25vw;
+        height: 30vh;
         
     `
     const ContainerBtn = styled.div`
-    text-align: center;
+        text-align: center;
+    
         p{
+            color: white;
             text-shadow: 0 0 10px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+            font-size: 1rem;
         }
     `
     const Buttom = styled.div`
         color: #000000;
         padding: 10px;
         text-align: center;
-        background-color: white;
+        background-color: #1b1b1b;
         height: 5vh;
-        width: 5vw;
+        width: 7vw;
+        margin-top: 5px;
         font-size: 1rem;
         font-family: 'PF Tempesta Seven Condensed', sans-serif;
         font-weight: 200;
         cursor: pointer;
-    `
-    const AltVOZ = styled.img`
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        right: 23vw;
-        bottom: 75%;
-        z-index: 100;
-        image-rendering: pixelated;
     `
     return (
         <>
@@ -235,22 +232,22 @@ const NavRPG = () => {
                         <div>
 
                         <ContainerBtn>
-                            <Buttom onClick={() => goBack()}></Buttom>
-                            <p>Map</p>
+                            <Buttom onClick={() => goBack()}> <p>Map</p></Buttom>
+                           
                         </ContainerBtn>  
                         <ContainerBtn>
-                            <Buttom onClick={() => goBack()}></Buttom>
-                            <p>Song</p>
+                            <Buttom onClick={() => goBack()}><p>Song</p></Buttom>
+                            
                         </ContainerBtn>  
                         </div>
                         <div>
                         <ContainerBtn>
-                            <Buttom onClick={() => goBack()}></Buttom>
-                            <p>To Galaxy</p>
+                            <Buttom onClick={() => goBack()}><p>To Galaxy</p></Buttom>
+                            
                         </ContainerBtn>
                         <ContainerBtn>
-                            <Buttom onClick={() => goBack()}></Buttom>
-                            <p>To Map</p>
+                            <Buttom onClick={() => goBack()}><p>To Map</p></Buttom>
+                            
                         </ContainerBtn>
                         </div>
                     </ContainerBtns>
