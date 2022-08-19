@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import house from '../../img/160x90v2.png'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-
+import nubes from '../../img/nubes.png'
 const House = () => {
 
   const House = styled.div`
@@ -23,19 +23,19 @@ const House = () => {
     image-rendering: pixelated;
     z-index: 10;
   `
-  const Nubes = styled.div`
+  const Nubes = styled.img`
   width: 75vw;
   height: 85vh;
-  background-color: #1d1b8f;
   z-index: 50;
   position: absolute;
+  image-rendering: pixelated;
 `
-const Nubes2 = styled.div`
+const Nubes2 = styled.img`
   width: 75vw;
   height: 85vh;
-  background-color: #fd2121;
   z-index: 50;
   position: absolute;
+  image-rendering: pixelated;
 `
   return (
     <>
@@ -45,22 +45,22 @@ const Nubes2 = styled.div`
           <BackGround src={house} alt="" />
         </ContainerHouse>
         <motion.div
-          initial={{ x: -350, y: -0 }}
+          initial={{ x: -250, y: -0 }}
           animate={{
             x: -5000,
-            transition: { duration: 3.5, type: "tween" },
+            transition: { duration: 5.5, type: "tween" },
           }}
         >
-          <Nubes />
+          <Nubes src={nubes}/>
         </motion.div>
         <motion.div
-          initial={{ x: 550, y: 0 }}
+          initial={{ x: 250, y: 0 }}
           animate={{
             x: 5000,
-            transition: { duration: 3.5, type: "tween" },
+            transition: { duration: 5.5, type: "tween" },
           }}
         >
-          <Nubes2 />
+          <Nubes2 src={nubes}/>
         </motion.div>
       </House>
     </>
