@@ -77,8 +77,11 @@ const NavRPG = () => {
     `
     const ContainerBtns = styled.div`
         display: flex;
-         justify-content: space-around;
-         margin-top: 5px;
+        justify-content: space-around;
+        margin-top: 5px;
+    `
+    const ContainerBtn = styled.div`
+        
     `
     const Buttom = styled.div`
         color: #000000;
@@ -223,18 +226,18 @@ const NavRPG = () => {
                         }</h4>
                     </ContainerTextNav>
                     <ContainerBtns>
-                        <div>
+                        <ContainerBtn>
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>Map</p>
-                        </div>  
-                        <div>
+                        </ContainerBtn>  
+                        <ContainerBtn>
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>To Galaxy</p>
-                        </div>
-                        <div>
+                        </ContainerBtn>
+                        <ContainerBtn>
                             <Buttom onClick={() => goBack()}></Buttom>
                             <p>To Map</p>
-                        </div>
+                        </ContainerBtn>
                     </ContainerBtns>
                 </ContainerRouters>
 
