@@ -86,6 +86,7 @@ const NavRPG = () => {
         text-align: center;
         background-color: white;
         height: 5vh;
+        width: 5vw;
         font-size: 1rem;
         font-family: 'PF Tempesta Seven Condensed', sans-serif;
         font-weight: 200;
@@ -223,16 +224,16 @@ const NavRPG = () => {
                     </ContainerTextNav>
                     <ContainerBtns>
                         <div>
-                        <Buttom onClick={() => goBack()}><p>Map</p></Buttom>
-
+                            <Buttom onClick={() => goBack()}></Buttom>
+                            <p>Map</p>
+                        </div>  
+                        <div>
+                            <Buttom onClick={() => goBack()}></Buttom>
+                            <p>To Galaxy</p>
                         </div>
                         <div>
-                        <Buttom onClick={() => goBack()}><p>To Galaxy</p></Buttom>
-
-                        </div>
-                        <div>
-                        <Buttom onClick={() => goBack()}><p>To Map</p></Buttom>
-
+                            <Buttom onClick={() => goBack()}></Buttom>
+                            <p>To Map</p>
                         </div>
                     </ContainerBtns>
                 </ContainerRouters>
