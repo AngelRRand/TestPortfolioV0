@@ -41,7 +41,7 @@ const House = () => {
     }
   `
   const Nubes = styled.div`
-    width: 100vw;
+    width: 200vw;
     height: 85vh;
     background-color: white;
   `
