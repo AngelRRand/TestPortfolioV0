@@ -56,6 +56,52 @@ export const Home = () => {
     transform: translateX( 0px );
   }
 `;
+const rotate2 = keyframes`
+  0%
+  {
+    transform: translateX( 0px );
+  }
+  10%
+  {
+    transform: translateX( -1px );
+  }
+  20%
+  {
+    transform: translateX( -2px );
+  }
+  30%
+  {
+    transform: translateX( -3px );
+  }
+  40%
+  {
+    transform: translateX( -4px );
+  }
+  50%
+  {
+    transform: translateX( -5px );
+  }
+  60%
+  {
+    transform: translateX( -4px );
+  }
+  70%
+  {
+    transform: translateX( -3px );
+  }
+  80%
+  {
+    transform: translateX( -2px );
+  }
+  90%
+  {
+    transform: translateX( -1px );
+  }
+  100%
+  {
+    transform: translateX( 0px );
+  }
+`;
   const Home = styled.div`
   height: 150vh;
   
@@ -80,7 +126,15 @@ export const Home = () => {
   width: 100%;
   animation: ${rotate} 3s linear infinite;
   image-rendering: pixelated;
-  z-index: 100;
+  z-index: 10;
+`
+const IMGB = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: ${rotate2} 3s linear infinite;
+  image-rendering: pixelated;
+  z-index: 10;
 `
   const TemplateGrid = styled.div`
     display: grid;
@@ -221,7 +275,7 @@ img:first-child{
           <IMG src={Galaxy} alt="Galaxy" />
 
           <IMGT src={GalaxyT} />
-          <IMGT src={GalaxyB} />
+          <IMGB src={GalaxyB} />
         </ContainerIMG>
         <TemplateGrid>
 
