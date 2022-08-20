@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
+import catheadHover from '../../img/Planet/Terra/27Modif.gif'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
@@ -90,9 +91,9 @@ image-rendering: pixelated;
             <Cat>
             <img src={catBody} alt=''/> 
             <img src={cathead}/> 
+            <img src={catheadHover}/> 
 
             </Cat>
-          {/* <GatBodyHover src={catheadHover}/> */}
           </TemplateGrid>
         </motion.div>
           
