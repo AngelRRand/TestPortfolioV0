@@ -4,6 +4,7 @@ import house from '../../img/Planet/Terra/House.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
+import me from '../../img/Planet/Terra/cuarto96.gif'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
@@ -84,10 +85,23 @@ image-rendering: pixelated;
   }
   `
   const Me = styled.div`
-    background-color: red;
     width: 4.5vw;
     height: 4.5vw;
     grid-area: 11 / 11 / 11 / 10;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      display: block;
+      z-index: 80;
+      width: 25em;
+      height: 25em;
+      margin-left: 10px;
+    }
+    &:hover img{
+      display: block;
+    }
   `
   return (
     <>
@@ -105,7 +119,7 @@ image-rendering: pixelated;
         >
           <TemplateGrid>
             <Me>
-
+              <img src={me} alt=''/>
             </Me>
             <Cat>
               <img src={catBody} alt='cat' />
