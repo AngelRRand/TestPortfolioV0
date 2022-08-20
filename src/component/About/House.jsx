@@ -92,17 +92,18 @@ image-rendering: pixelated;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 80;
+    transition: all 0.5s ease;
     img{
-      display: none;
       z-index: 80;
       width: 25em;
       height: 25em;
       margin-left: 10px;
+      transform: scale(0);
+      transition: all 0.5s ease;
     }
-    &:hover img{
-      display: inline;
-      width: 35em;
-      height: 35em;
+    &:hover img:first-child{
+      transform: scale(1);
     }
   `
   return (
