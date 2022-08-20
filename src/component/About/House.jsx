@@ -18,12 +18,14 @@ const House = () => {
     align-items: center;
     justify-content: center;
     image-rendering: pixelated;
+    overflow: hidden;
   `
   const BackGround = styled.img`
     width: 100vw;
     height: 85vh;
     image-rendering: pixelated;
     z-index: 10;
+    
   `
   const Nubes = styled.img`
   width: 100vw;
@@ -32,7 +34,7 @@ const House = () => {
   position: absolute;
   image-rendering: pixelated;
 `
-const Nubes1 = styled.img`
+  const Nubes1 = styled.img`
 width: 100vw;
 height: 85vh;
 z-index: 50;
@@ -40,7 +42,7 @@ position: absolute;
 background-color: #fff9e1;
 image-rendering: pixelated;
 `
-const Nubes2 = styled.img`
+  const Nubes2 = styled.img`
   width: 100vw;
   height: 85vh;
   z-index: 50;
@@ -52,15 +54,7 @@ const Nubes2 = styled.img`
       <House>
 
         <ContainerHouse>
-        <motion.div
-          initial={{ scale: 1.2 }}
-          animate={{
-            scale: 1,
-            transition: { duration: 2.5, type: "tween" },
-          }}
-        >
-          <BackGround src={house} alt="" />
-        </motion.div>
+            <BackGround src={house} alt="" />
         </ContainerHouse>
         <motion.div
           initial={{ opacity: 1 }}
@@ -72,14 +66,14 @@ const Nubes2 = styled.img`
           <Nubes1 />
         </motion.div>
         <motion.div
-          initial={{ x: 0, y: 0}}
+          initial={{ x: 0, y: 0 }}
           animate={{
             x: -5000,
             transition: { duration: 15.5, type: "tween" },
           }}
         >
-          <Nubes src={nubesTop}/>
-        </motion.div> 
+          <Nubes src={nubesTop} />
+        </motion.div>
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{
@@ -87,16 +81,16 @@ const Nubes2 = styled.img`
             transition: { duration: 15.5, type: "tween" },
           }}
         >
-          <Nubes2 src={nubes}/>
+          <Nubes2 src={nubes} />
         </motion.div>
         <motion.div
           initial={{ y: -5 }}
           animate={{
             y: 0,
-            transition: { type: "tween", repeat:'Infinity', duration: 2, repeatType: "reverse",  }
+            transition: { type: "tween", repeat: 'Infinity', duration: 2, repeatType: "reverse", }
           }}
         >
-          <Nubes2 src={nubesback}/>
+          <Nubes2 src={nubesback} />
         </motion.div>
       </House>
     </>
