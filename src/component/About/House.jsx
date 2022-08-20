@@ -69,7 +69,7 @@ image-rendering: pixelated;
   grid-area: 16 / 14 / 15 / 15;
   img{
     position: absolute;
-    width: 6.5vw;
+    width: 4rem;
   }
   ` 
   return (
