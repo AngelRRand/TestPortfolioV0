@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import terra from '../../img/NavImg/tierra.png'
@@ -56,7 +56,7 @@ export const Home = () => {
     transform: translateX( 0px );
   }
 `;
-const rotate2 = keyframes`
+  const rotate2 = keyframes`
   0%
   {
     transform: translateX( 0px );
@@ -128,7 +128,7 @@ const rotate2 = keyframes`
   image-rendering: pixelated;
   z-index: 10;
 `
-const IMGB = styled.img`
+  const IMGB = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;

@@ -20,7 +20,6 @@ const House = () => {
     
     `
   const ContainerIMG = styled.div`
-  position: relative;
     width: 35vw;
     height: 65vh;
     image-rendering: pixelated;
@@ -47,28 +46,27 @@ const House = () => {
     background-color: white;
     z-index: 100;
   `
-  setTimeout(() => {
-    go()
-  }, 5000);
   return (
     <>
       
-      {/* <motion.div
-        initial={{ x: 10000, }}
-        animate={{
-          x: 0,
-          transition: { duration: 6.5, type: "tween" },
-        }}
-      >
-        <Nubes />
-      </motion.div> */}
+     
       <AboutContainer>
+      <motion.div
+          initial={{ opacity: 0, }}
+          animate={{
+            opacity: 0,
+            transition: { duration: 6.5, type: "spring",bounce: 0 },
+          }}
+        >
+        <Nubes/>
+
+        </motion.div>
         <motion.div
           initial={{ scale: 1, }}
           animate={{
-            scale: 5,
-            x: 200,
-            y: -850,
+            scale: 7,
+            x: 350,
+            y: -1150,
             transition: { duration: 6.5, type: "spring",bounce: 0 },
           }}
         >
