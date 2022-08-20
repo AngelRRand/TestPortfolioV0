@@ -102,8 +102,25 @@ image-rendering: pixelated;
       transform: scale(0);
       transition: all 0.5s ease;
     }
-    &:hover img:first-child{
+    div{
+      overflow: hidden;
+      transform: scale(0);
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      height: 90vh;
+      padding: 10px;
+      background-color: black;
+      z-index: 70;
+      transition: all 2s ease;
+    }
+    &:hover img{
       transform: scale(1);
+    }
+    &:hover div{
+      transform: scale(0.7);
+      opacity: 1;
     }
   `
   return (
@@ -123,6 +140,7 @@ image-rendering: pixelated;
           <TemplateGrid>
             <Me>
               <img src={me} alt=''/>
+              <div></div>
             </Me>
             <Cat>
               <img src={catBody} alt='cat' />
