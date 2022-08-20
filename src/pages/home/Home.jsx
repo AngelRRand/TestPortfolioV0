@@ -7,6 +7,7 @@ import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'
 import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
+import GalaxyT from '../../img/galaxyT.png'
 export const Home = () => {
 
   const Home = styled.div`
@@ -22,6 +23,14 @@ export const Home = () => {
   object-fit: cover;
   `
   const IMG = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  image-rendering: pixelated;
+  z-index: 10;
+`
+const IMGT = styled.img`
+  position: absolute;
   height: 100%;
   width: 100%;
   image-rendering: pixelated;
@@ -168,6 +177,7 @@ img:first-child{
         <ContainerIMG>
 
           <IMG src={Galaxy} alt="Galaxy" />
+          <IMGT src={GalaxyT}/>
         </ContainerIMG>
         <TemplateGrid>
 
