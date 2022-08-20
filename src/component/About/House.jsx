@@ -70,7 +70,8 @@ image-rendering: pixelated;
   grid-area: 16 / 14 / 15 / 15;
   img{
     position: absolute;
-    width: 4rem;
+    width: 4em;
+    height: 4em;
   }
   img:nth-child(3){
     display: none;
@@ -81,6 +82,12 @@ image-rendering: pixelated;
   &:hover img:nth-child(2){
     display: none;
   }
+  `
+  const Me = styled.div`
+    background-color: red;
+    width: 4.5vw;
+    height: 4.5vw;
+    grid-area: 11 / 11 / 11 / 10;
   `
   return (
     <>
@@ -97,11 +104,13 @@ image-rendering: pixelated;
           }}
         >
           <TemplateGrid>
-            <Cat>
-              <img src={catBody} alt='' />
-              <img src={cathead} />
-              <img src={catheadHover} />
+            <Me>
 
+            </Me>
+            <Cat>
+              <img src={catBody} alt='cat' />
+              <img src={cathead}  alt='cat'/>
+              <img src={catheadHover}  alt='cat'/>
             </Cat>
           </TemplateGrid>
         </motion.div>
