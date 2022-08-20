@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
 import nubesTop from '../../img/nubesTop.png'
+import nubesback from '../../img/nubesBackground.png'
 const House = () => {
 
   const House = styled.div`
@@ -52,10 +53,10 @@ const Nubes2 = styled.img`
 
         <ContainerHouse>
         <motion.div
-          initial={{ scale: 1.3 }}
+          initial={{ scale: 1.2 }}
           animate={{
             scale: 1,
-            transition: { duration: 4.5, type: "tween" },
+            transition: { duration: 2.5, type: "tween" },
           }}
         >
           <BackGround src={house} alt="" />
@@ -87,6 +88,15 @@ const Nubes2 = styled.img`
           }}
         >
           <Nubes2 src={nubes}/>
+        </motion.div>
+        <motion.div
+          initial={{ y: -2 }}
+          animate={{
+            y: 0,
+            transition: { type: "tween", repeat:'Infinity' },
+          }}
+        >
+          <Nubes2 src={nubesback}/>
         </motion.div>
       </House>
     </>
