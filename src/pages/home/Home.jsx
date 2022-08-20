@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import terra from '../../img/NavImg/tierra.png'
@@ -9,7 +9,32 @@ import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
 import GalaxyT from '../../img/galaxyT.png'
 export const Home = () => {
-
+  const rotate = keyframes`
+  0%
+  {
+    transform: translateX( 0px );
+  }
+  20%
+  {
+    transform: translateX( 1px);
+  }
+  40%
+  {
+    transform: translateX( 2px);
+  }
+  60%
+  {
+    transform: translateX( 3px );
+  }
+  80%
+  {
+    transform: translateX( 2px );
+  }
+  100%
+  {
+    transform: translateX( 1px );
+  }
+`;
   const Home = styled.div`
   height: 150vh;
   
@@ -32,6 +57,7 @@ export const Home = () => {
   position: absolute;
   height: 100%;
   width: 100%;
+  animation: ${rotate} 2s linear infinite;
   image-rendering: pixelated;
   z-index: 100;
 `
@@ -153,37 +179,27 @@ img:first-child{
   image-rendering: pixelated;
   z-index: 90; 
 `
-
   const Señal = styled.img`
     position: absolute;
     z-index: 80;
     width: calc(13px + 5vw);
 `
 
+
   return (
-    
     <motion.div
       initial={{ opacity: 0, }}
       animate={{
         opacity: 1,
         transition: { duration: 1.5, type: "spring" },
       }}>
+
       <Home className="home">
         <ContainerIMG>
 
           <IMG src={Galaxy} alt="Galaxy" />
 
-
-          <motion.div
-            initial={{ x: 10 }}
-            animate={{
-              x: 0,
-              transition: { type: "tween", repeat: 'Infinity', duration: 1, repeatType: "reverse", }
-            }}
-          >
-            <IMGT src={GalaxyT} />
-          </motion.div>
-          
+          <IMGT src={GalaxyT} />
         </ContainerIMG>
         <TemplateGrid>
 
