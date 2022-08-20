@@ -51,7 +51,15 @@ const Nubes2 = styled.img`
       <House>
 
         <ContainerHouse>
+        <motion.div
+          initial={{ scale: 1.3 }}
+          animate={{
+            scale: 1,
+            transition: { duration: 4.5, type: "tween" },
+          }}
+        >
           <BackGround src={house} alt="" />
+        </motion.div>
         </ContainerHouse>
         <motion.div
           initial={{ opacity: 1 }}
