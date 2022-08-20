@@ -102,23 +102,22 @@ image-rendering: pixelated;
       transform: scale(0);
       transition: all 0.5s ease;
     }
-    div{
+    h2{
       overflow: hidden;
       transform: scale(0);
       opacity: 0;
+      margin-left: 10px;
       position: absolute;
-      left: 0;
-      width: 100vw;
-      height: 90vh;
+      width: 25em;
+      height: 25em;
       padding: 10px;
-      background-color: black;
-      z-index: 70;
+      z-index: 90;
       transition: all 2s ease;
     }
     &:hover img{
       transform: scale(1);
     }
-    &:hover div{
+    &:hover h2{
       transform: scale(0.7);
       opacity: 1;
     }
@@ -140,7 +139,7 @@ image-rendering: pixelated;
           <TemplateGrid>
             <Me>
               <img src={me} alt=''/>
-              <div></div>
+                <h2>holaaaaaaaaaaaaaaaaaa</h2>
             </Me>
             <Cat>
               <img src={catBody} alt='cat' />
