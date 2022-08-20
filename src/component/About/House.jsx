@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import house from '../../img/160x90v2.png'
+import house from '../../img/Planet/Terra/House.gif'
+import catBody from '../../img/Planet/Terra/27.gif'
+import cathead from '../../img/Planet/Terra/27notModif.gif'
+import catheadHover from '../../img/Planet/Terra/27modif.gif'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
 import nubesTop from '../../img/nubesTop.png'
 import nubesback from '../../img/nubesBackground.png'
 const House = () => {
-
   const House = styled.div`
     overflow: hidden;
     width: 100vw;
@@ -49,13 +51,52 @@ image-rendering: pixelated;
   position: absolute;
   image-rendering: pixelated;
 `
+  const Gat27 = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 50;
+  position: absolute;
+  image-rendering: pixelated;
+  
+  `
+  /* const GatBody = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 50;
+  position: absolute;
+  image-rendering: pixelated;
+  &:hover {
+    display: none;
+  }
+  ` */
+  const GatBodyHover = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 50;
+  position: absolute;
+  image-rendering: pixelated;
+  
+  `
   return (
     <>
       <House>
 
         <ContainerHouse>
-            <BackGround src={house} alt="" />
+          <BackGround src={house} alt="" />
         </ContainerHouse>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 4.5, type: "tween" },
+          }}
+        >
+          <Gat27 src={catBody}/>
+          {/* <GatBody src={cathead}/> */}
+          <GatBodyHover src={catheadHover}/>
+        </motion.div>
+          
+        
         <motion.div
           initial={{ opacity: 1 }}
           animate={{
