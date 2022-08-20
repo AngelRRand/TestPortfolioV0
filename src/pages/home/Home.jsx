@@ -12,8 +12,7 @@ export const Home = () => {
 
   const Home = styled.div`
   height: 150vh;
-  display: flex;
-  justify-content: center;
+  
   `
   const ContainerIMG = styled.div`
   position: absolute;
@@ -29,7 +28,7 @@ export const Home = () => {
   image-rendering: pixelated;
   z-index: 10;
 `
-const IMGT = styled.img`
+  const IMGT = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
@@ -162,22 +161,29 @@ img:first-child{
 `
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { duration: 1.5, type: "spring" },
-      }}
-      exit={{
-        opacity: 0,
-        transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
-      }}>
-
-      <Home className="home">
+    
+    <Home className="home">
+        <motion.div
+          initial={{ opacity: 0, }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 1.5, type: "spring" },
+          }}>
         <ContainerIMG>
 
           <IMG src={Galaxy} alt="Galaxy" />
-          <IMGT src={GalaxyT}/>
+
+
+          <motion.div
+            initial={{ x: 10 }}
+            animate={{
+              x: 0,
+              transition: { type: "tween", repeat: 'Infinity', duration: 1, repeatType: "reverse", }
+            }}
+          >
+            <IMGT src={GalaxyT} />
+          </motion.div>
+          
         </ContainerIMG>
         <TemplateGrid>
 
@@ -198,8 +204,8 @@ img:first-child{
           </ItemEducation>
 
         </TemplateGrid>
+    </motion.div>
       </Home>
 
-    </motion.div>
   )
 }
