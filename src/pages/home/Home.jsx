@@ -33,7 +33,7 @@ export const Home = () => {
   height: 100%;
   width: 100%;
   image-rendering: pixelated;
-  z-index: 10;
+  z-index: 100;
 `
   const TemplateGrid = styled.div`
     display: grid;
@@ -162,13 +162,13 @@ img:first-child{
 
   return (
     
-    <Home className="home">
-        <motion.div
-          initial={{ opacity: 0, }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 1.5, type: "spring" },
-          }}>
+    <motion.div
+      initial={{ opacity: 0, }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 1.5, type: "spring" },
+      }}>
+      <Home className="home">
         <ContainerIMG>
 
           <IMG src={Galaxy} alt="Galaxy" />
@@ -204,8 +204,8 @@ img:first-child{
           </ItemEducation>
 
         </TemplateGrid>
-    </motion.div>
       </Home>
 
+    </motion.div>
   )
 }
