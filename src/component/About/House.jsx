@@ -93,14 +93,16 @@ image-rendering: pixelated;
     justify-content: center;
     align-items: center;
     img{
-      display: block;
+      display: none;
       z-index: 80;
       width: 25em;
       height: 25em;
       margin-left: 10px;
     }
     &:hover img{
-      display: block;
+      display: inline;
+      width: 35em;
+      height: 35em;
     }
   `
   return (
