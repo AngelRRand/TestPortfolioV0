@@ -90,10 +90,10 @@ const Nubes2 = styled.img`
           <Nubes2 src={nubes}/>
         </motion.div>
         <motion.div
-          initial={{ y: -2 }}
+          initial={{ y: -5 }}
           animate={{
             y: 0,
-            transition: { type: "tween", repeat:'Infinity' },
+            transition: { type: "tween", repeat:'Infinity', duration: 2, repeatType: "reverse",  }
           }}
         >
           <Nubes2 src={nubesback}/>
