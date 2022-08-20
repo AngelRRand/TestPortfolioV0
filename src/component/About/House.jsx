@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
-import cathead from '../../img/Planet/Terra/27notModif.gif'
-import catheadHover from '../../img/Planet/Terra/27modif.gif'
+import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
@@ -16,6 +15,7 @@ const House = () => {
     height: 85vh;
   `
   const ContainerHouse = styled.div`
+  
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -51,32 +51,27 @@ image-rendering: pixelated;
   position: absolute;
   image-rendering: pixelated;
 `
-  const Gat27 = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
-  
+    const TemplateGrid = styled.div`
+    position: absolute;
+    top: 0;
+    display: grid;
+    width: 80vw;
+    height:  100vh;
+    grid-template-columns: repeat(50, 3vw);
+    grid-template-rows: repeat(40, 4vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   `
-  /* const GatBody = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
+ const Cat = styled.div`
+  z-index: 70;
   image-rendering: pixelated;
-  &:hover {
-    display: none;
+  width: 2.5vw;
+  grid-area: 16 / 14 / 15 / 15;
+  img{
+    position: absolute;
+    width: 6.5vw;
   }
-  ` */
-  const GatBodyHover = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
-  
-  `
+  ` 
   return (
     <>
       <House>
@@ -91,9 +86,14 @@ image-rendering: pixelated;
             transition: { duration: 4.5, type: "tween" },
           }}
         >
-          <Gat27 src={catBody}/>
-          {/* <GatBody src={cathead}/> */}
-          <GatBodyHover src={catheadHover}/>
+          <TemplateGrid>
+            <Cat>
+            <img src={catBody} alt=''/> 
+            <img src={cathead}/> 
+
+            </Cat>
+          {/* <GatBodyHover src={catheadHover}/> */}
+          </TemplateGrid>
         </motion.div>
           
         
