@@ -4,6 +4,7 @@ import house from '../../img/160x90v2.png'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
+import nubesTop from '../../img/nubesTop.png'
 const House = () => {
 
   const House = styled.div`
@@ -24,14 +25,22 @@ const House = () => {
     z-index: 10;
   `
   const Nubes = styled.img`
-  width: 75vw;
+  width: 100vw;
   height: 85vh;
   z-index: 50;
   position: absolute;
   image-rendering: pixelated;
 `
+const Nubes1 = styled.img`
+width: 100vw;
+height: 85vh;
+z-index: 50;
+position: absolute;
+background-color: #fff9e1;
+image-rendering: pixelated;
+`
 const Nubes2 = styled.img`
-  width: 75vw;
+  width: 100vw;
   height: 85vh;
   z-index: 50;
   position: absolute;
@@ -45,19 +54,28 @@ const Nubes2 = styled.img`
           <BackGround src={house} alt="" />
         </ContainerHouse>
         <motion.div
-          initial={{ x: -250, y: -0 }}
+          initial={{ opacity: 1 }}
           animate={{
-            x: -5000,
-            transition: { duration: 5.5, type: "tween" },
+            opacity: 0,
+            transition: { duration: 4.5, type: "tween" },
           }}
         >
-          <Nubes src={nubes}/>
+          <Nubes1 />
         </motion.div>
         <motion.div
-          initial={{ x: 250, y: 0 }}
+          initial={{ x: 0, y: 0}}
+          animate={{
+            x: -5000,
+            transition: { duration: 15.5, type: "tween" },
+          }}
+        >
+          <Nubes src={nubesTop}/>
+        </motion.div> 
+        <motion.div
+          initial={{ x: 0, y: 0 }}
           animate={{
             x: 5000,
-            transition: { duration: 5.5, type: "tween" },
+            transition: { duration: 15.5, type: "tween" },
           }}
         >
           <Nubes2 src={nubes}/>
