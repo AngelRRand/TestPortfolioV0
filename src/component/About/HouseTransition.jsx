@@ -23,7 +23,6 @@ const House = () => {
     width: 35vw;
     height: 65vh;
     image-rendering: pixelated;
-    object-fit: contain;
     z-index: 10;
     color: white;
     text-align: center;
@@ -40,38 +39,41 @@ const House = () => {
     }
   `
   const Nubes = styled.div`
-    position: absolute;
-    width: 100vw;
-    height: 85vh;
-    background-color: white;
-    z-index: 100;
+    width: 200vw;
+height: 85vh;
+z-index: 50;
+position: absolute;
+background-color: #fff9e1;
   `
+  setTimeout(() => {
+    go()
+  }, 5000);
   return (
     <>
-      
-     
-      <AboutContainer>
-      <motion.div
-          initial={{ opacity: 0, }}
-          animate={{
-            opacity: 0,
-            transition: { duration: 6.5, type: "spring",bounce: 0 },
-          }}
-        >
-        <Nubes/>
 
-        </motion.div>
+
+      <AboutContainer>
         <motion.div
           initial={{ scale: 1, }}
           animate={{
             scale: 7,
             x: 350,
             y: -1150,
-            transition: { duration: 6.5, type: "spring",bounce: 0 },
+            transition: { duration: 6.5, type: "spring", bounce: 0 },
           }}
         >
 
           <ContainerIMG>
+            <motion.div
+              initial={{ opacity: 0, x:-1000 }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 15.5, type: "spring", bounce: 0 },
+              }}
+            >
+              <Nubes />
+
+            </motion.div>
             <h3>About</h3>
             <img src={planet} alt="" />
           </ContainerIMG>
