@@ -8,15 +8,48 @@ import planetLava from '../../img/NavImg/planetLava.png'
 import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
 import GalaxyT from '../../img/galaxyT.png'
+import GalaxyB from '../../img/galaxyB.png'
 export const Home = () => {
   const rotate = keyframes`
   0%
   {
     transform: translateX( 0px );
   }
-  50%
+  10%
+  {
+    transform: translateX( 1px );
+  }
+  20%
   {
     transform: translateX( 2px );
+  }
+  30%
+  {
+    transform: translateX( 3px );
+  }
+  40%
+  {
+    transform: translateX( 4px );
+  }
+  50%
+  {
+    transform: translateX( 5px );
+  }
+  60%
+  {
+    transform: translateX( 4px );
+  }
+  70%
+  {
+    transform: translateX( 3px );
+  }
+  80%
+  {
+    transform: translateX( 2px );
+  }
+  90%
+  {
+    transform: translateX( 1px );
   }
   100%
   {
@@ -45,7 +78,7 @@ export const Home = () => {
   position: absolute;
   height: 100%;
   width: 100%;
-  animation: ${rotate} 2s linear infinite;
+  animation: ${rotate} 3s linear infinite;
   image-rendering: pixelated;
   z-index: 100;
 `
@@ -188,6 +221,7 @@ img:first-child{
           <IMG src={Galaxy} alt="Galaxy" />
 
           <IMGT src={GalaxyT} />
+          <IMGT src={GalaxyB} />
         </ContainerIMG>
         <TemplateGrid>
 
