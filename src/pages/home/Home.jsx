@@ -14,25 +14,13 @@ export const Home = () => {
   {
     transform: translateX( 0px );
   }
-  20%
-  {
-    transform: translateX( 1px);
-  }
-  40%
-  {
-    transform: translateX( 2px);
-  }
-  60%
-  {
-    transform: translateX( 3px );
-  }
-  80%
+  50%
   {
     transform: translateX( 2px );
   }
   100%
   {
-    transform: translateX( 1px );
+    transform: translateX( 0px );
   }
 `;
   const Home = styled.div`
