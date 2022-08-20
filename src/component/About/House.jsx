@@ -52,7 +52,7 @@ image-rendering: pixelated;
   position: absolute;
   image-rendering: pixelated;
 `
-    const TemplateGrid = styled.div`
+  const TemplateGrid = styled.div`
     position: absolute;
     top: 0;
     display: grid;
@@ -63,7 +63,7 @@ image-rendering: pixelated;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
- const Cat = styled.div`
+  const Cat = styled.div`
   z-index: 70;
   image-rendering: pixelated;
   width: 2.5vw;
@@ -72,7 +72,16 @@ image-rendering: pixelated;
     position: absolute;
     width: 4rem;
   }
-  ` 
+  img:nth-child(3){
+    display: none;
+  }
+  &:hover img:nth-child(3){
+    display: inline;
+  }
+  &:hover img:nth-child(2){
+    display: none;
+  }
+  `
   return (
     <>
       <House>
@@ -89,15 +98,15 @@ image-rendering: pixelated;
         >
           <TemplateGrid>
             <Cat>
-            <img src={catBody} alt=''/> 
-            <img src={cathead}/> 
-            <img src={catheadHover}/> 
+              <img src={catBody} alt='' />
+              <img src={cathead} />
+              <img src={catheadHover} />
 
             </Cat>
           </TemplateGrid>
         </motion.div>
-          
-        
+
+
         <motion.div
           initial={{ opacity: 1 }}
           animate={{
