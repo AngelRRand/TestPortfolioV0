@@ -105,7 +105,7 @@ image-rendering: pixelated;
     z-index: 80;
     transition: all 0.5s ease;
     
-    div{
+    div:nth-child(1){
       z-index: 80;
       width: 25em;
       height: 30em;
@@ -116,12 +116,16 @@ image-rendering: pixelated;
       border: 2px solid black;
       text-align: center;
     }
-    img{
+    div:nth-child(2){
       width: 20em;
       height: 20em;
     }
-    img:nth-child(3){
-    display: none;
+    img:nth-child(1){
+      width: 20em;
+      height: 20em;
+    }
+    img:nth-child(2){
+      position: absolute;
     }
     h2{
       overflow: hidden;
@@ -166,8 +170,11 @@ image-rendering: pixelated;
             <Me>
               <Cart>
                 <h2>Habitacion</h2>
-                <img src={me} alt='me' />
-                <img src={coffe} alt="coffe" />
+                <div>
+                  <img src={me} alt='me' />
+                  <img src={coffe} alt="coffe" />
+
+                </div>
                 <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
               </Cart>
             </Me>
