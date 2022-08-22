@@ -108,12 +108,13 @@ image-rendering: pixelated;
     div{
       z-index: 80;
       width: 25em;
-      height: 25em;
+      height: 30em;
       transform: scale(0);
       transition: all 0.5s ease;
       justify-content: center;
       align-items: center;
       border: 2px solid black;
+      text-align: center;
     }
     img{
       width: 20em;
@@ -126,6 +127,9 @@ image-rendering: pixelated;
       z-index: 90;
       transition: all 2s ease;
       font-size: 1.2rem;
+      font-family: 'PF Tempesta Seven Condensed', sans-serif;
+    }
+    p{
       font-family: 'PF Tempesta Seven Condensed', sans-serif;
     }
     &:hover{
@@ -162,9 +166,9 @@ image-rendering: pixelated;
           <TemplateGrid>
             <Me>
               <Cart>
+                <h2>Habitacion</h2>
                 <img src={me} alt='' />
-                <h2>holaaaaaaaaaaaaaaaaaa</h2>
-
+                <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
               </Cart>
             </Me>
             <Cat>
