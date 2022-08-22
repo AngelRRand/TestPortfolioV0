@@ -115,6 +115,7 @@ image-rendering: pixelated;
       transition: all 0.5s ease;
       justify-content: center;
       align-items: center;
+      border: 2px solid black;
     }
     img{
       width: 20em;
