@@ -82,7 +82,9 @@ image-rendering: pixelated;
   &:hover img:nth-child(2){
     display: none;
   }
-  
+  &:hover div{
+    transform: scale(1);
+  }
   `
   const Dog = styled.div`
   z-index: 70;
@@ -159,12 +161,18 @@ image-rendering: pixelated;
     flex-direction: column;
   `
   const CartCat = styled.div`
-    background-color: white;
     padding: 10px;
-    display: flex;
     flex-direction: column;
-    width: 25em;
-      height: 30em;
+    width: 15em;
+    height: 10em;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    color: white;
+    font-family: 'PF Tempesta Seven Condensed', sans-serif;
   `
   return (
     <>
@@ -193,17 +201,13 @@ image-rendering: pixelated;
               </Cart>
             </Me>
             <Cat>
+              
               <img src={catBody} alt='cat' />
               <img src={cathead} alt='cat' />
               <img src={catheadHover} alt='cat' />
               <CartCat>
-                <h2>Habitacion</h2>
-                <div>
-                  <img src={me} alt='me' />
-                  <img src={coffe} alt="coffe" />
-
-                </div>
-                <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
+                <h2>Mi gato</h2>
+                <p>Su nombre es 27, siempre esta en la puerta de mi casa :D</p>
               </CartCat>
             </Cat>
             <Dog>
