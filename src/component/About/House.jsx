@@ -65,7 +65,7 @@ image-rendering: pixelated;
     grid-row-gap: 0px;
   `
   const Cat = styled.div`
-  z-index: 70;
+  z-index: 90;
   image-rendering: pixelated;
   width: 2.5vw;
   grid-area: 16 / 14 / 15 / 15;
@@ -130,8 +130,12 @@ image-rendering: pixelated;
       transition: all 2s ease;
       font-size: 1.2rem;
     }
+    &:hover{
+      z-index: 95;
+    }
     &:hover div{
       transform: scale(1);
+      z-index: 95;
     }
     &:hover h2{
       transform: scale(0.7);
