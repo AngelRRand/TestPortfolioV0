@@ -17,7 +17,6 @@ const House = () => {
     height: 85vh;
   `
   const ContainerHouse = styled.div`
-  
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -110,7 +109,6 @@ image-rendering: pixelated;
       z-index: 80;
       width: 25em;
       height: 25em;
-      margin-left: 10px;
       transform: scale(0);
       transition: all 0.5s ease;
       justify-content: center;
@@ -123,12 +121,12 @@ image-rendering: pixelated;
     }
     h2{
       overflow: hidden;
-      transform: scale(0);
       opacity: 0;
       padding: 10px;
       z-index: 90;
       transition: all 2s ease;
       font-size: 1.2rem;
+      font-family: 'PF Tempesta Seven Condensed', sans-serif;
     }
     &:hover{
       z-index: 95;
@@ -138,7 +136,6 @@ image-rendering: pixelated;
       z-index: 95;
     }
     &:hover h2{
-      transform: scale(0.7);
       opacity: 1;
     }
   `
