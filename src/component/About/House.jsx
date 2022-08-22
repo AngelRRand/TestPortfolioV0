@@ -82,6 +82,25 @@ image-rendering: pixelated;
   &:hover img:nth-child(2){
     display: none;
   }
+  div:nth-child(1){
+      z-index: 80;
+      width: 25em;
+      height: 30em;
+      transform: scale(0);
+      transition: all 0.5s ease;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      text-align: center;
+  }
+  div:nth-child(2){
+      width: 20em;
+      height: 20em;
+  }
+  &:hover div{
+      transform: scale(1);
+      z-index: 95;
+    }
   `
   const Dog = styled.div`
   z-index: 70;
@@ -187,6 +206,15 @@ image-rendering: pixelated;
               <img src={catBody} alt='cat' />
               <img src={cathead} alt='cat' />
               <img src={catheadHover} alt='cat' />
+              <Cart>
+                <h2>Habitacion</h2>
+                <div>
+                  <img src={me} alt='me' />
+                  <img src={coffe} alt="coffe" />
+
+                </div>
+                <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
+              </Cart>
             </Cat>
             <Dog>
               <img src={catBody} alt='cat' />
