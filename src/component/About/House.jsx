@@ -125,7 +125,10 @@ image-rendering: pixelated;
       height: 20em;
     }
     img:nth-child(2){
+      width: 20em;
+      height: 20em;
       position: absolute;
+      left: 0;
     }
     h2{
       overflow: hidden;
