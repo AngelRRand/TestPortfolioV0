@@ -5,7 +5,7 @@ import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
 import me from '../../img/Planet/Terra/cuarto96.gif'
-import { Link } from 'react-router-dom';
+import coffe from '../../img/Planet/Terra/cafe.gif'
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
 import nubesTop from '../../img/nubesTop.png'
@@ -120,9 +120,11 @@ image-rendering: pixelated;
       width: 20em;
       height: 20em;
     }
+    img:nth-child(3){
+    display: none;
+    }
     h2{
       overflow: hidden;
-      opacity: 0;
       padding: 10px;
       z-index: 90;
       transition: all 2s ease;
@@ -138,9 +140,6 @@ image-rendering: pixelated;
     &:hover div{
       transform: scale(1);
       z-index: 95;
-    }
-    &:hover h2{
-      opacity: 1;
     }
   `
   const Cart = styled.div`
@@ -167,7 +166,8 @@ image-rendering: pixelated;
             <Me>
               <Cart>
                 <h2>Habitacion</h2>
-                <img src={me} alt='' />
+                <img src={me} alt='me' />
+                <img src={coffe} alt="coffe" />
                 <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
               </Cart>
             </Me>
