@@ -94,15 +94,6 @@ image-rendering: pixelated;
     width: 4em;
     height: 4em;
   }
-  img:nth-child(3){
-    display: none;
-  }
-  &:hover img:nth-child(3){
-    display: inline;
-  }
-  &:hover img:nth-child(2){
-    display: none;
-  }
   `
   const Me = styled.div`
     width: 4.5vw;
