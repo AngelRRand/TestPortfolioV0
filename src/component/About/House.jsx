@@ -84,6 +84,26 @@ image-rendering: pixelated;
     display: none;
   }
   `
+  const Dog = styled.div`
+  z-index: 70;
+  image-rendering: pixelated;
+  width: 2.5vw;
+  grid-area: 16 / 14 / 15 / 15;
+  img{
+    position: absolute;
+    width: 4em;
+    height: 4em;
+  }
+  img:nth-child(3){
+    display: none;
+  }
+  &:hover img:nth-child(3){
+    display: inline;
+  }
+  &:hover img:nth-child(2){
+    display: none;
+  }
+  `
   const Me = styled.div`
     width: 4.5vw;
     height: 4.5vw;
@@ -146,6 +166,9 @@ image-rendering: pixelated;
               <img src={cathead}  alt='cat'/>
               <img src={catheadHover}  alt='cat'/>
             </Cat>
+            <Dog>
+              <img src={catBody} alt='cat'/>
+            </Dog>
           </TemplateGrid>
         </motion.div>
 
