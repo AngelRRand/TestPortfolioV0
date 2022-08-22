@@ -83,7 +83,7 @@ image-rendering: pixelated;
     display: none;
   }
   &:hover div{
-    transform: scale(1);
+    opacity: 1;
   }
   `
   const Dog = styled.div`
@@ -163,15 +163,15 @@ image-rendering: pixelated;
   const CartCat = styled.div`
     padding: 10px;
     flex-direction: column;
-    width: 15em;
+    width: 25em;
     height: 10em;
     image-rendering: pixelated;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0);
+    opacity: 0;
     transition: all 0.5s ease;
-    color: white;
+    color: #ffffff;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
   `
   return (
