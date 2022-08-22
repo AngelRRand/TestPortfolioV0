@@ -123,12 +123,14 @@ image-rendering: pixelated;
     img:nth-child(1){
       width: 20em;
       height: 20em;
+      image-rendering: pixelated;
     }
     img:nth-child(2){
       width: 20em;
       height: 20em;
       position: absolute;
       left: 0;
+      image-rendering: pixelated;
     }
     h2{
       overflow: hidden;
