@@ -105,33 +105,43 @@ image-rendering: pixelated;
     align-items: center;
     z-index: 80;
     transition: all 0.5s ease;
-    img{
+    
+    div{
       z-index: 80;
       width: 25em;
       height: 25em;
       margin-left: 10px;
       transform: scale(0);
       transition: all 0.5s ease;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 20em;
+      height: 20em;
     }
     h2{
       overflow: hidden;
       transform: scale(0);
       opacity: 0;
-      margin-left: 10px;
-      position: absolute;
-      width: 25em;
-      height: 25em;
       padding: 10px;
       z-index: 90;
       transition: all 2s ease;
+      font-size: 1.2rem;
     }
-    &:hover img{
+    &:hover div{
       transform: scale(1);
     }
     &:hover h2{
       transform: scale(0.7);
       opacity: 1;
     }
+  `
+  const Cart = styled.div`
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
   `
   return (
     <>
@@ -149,16 +159,19 @@ image-rendering: pixelated;
         >
           <TemplateGrid>
             <Me>
-              <img src={me} alt=''/>
+              <Cart>
+                <img src={me} alt='' />
                 <h2>holaaaaaaaaaaaaaaaaaa</h2>
+
+              </Cart>
             </Me>
             <Cat>
               <img src={catBody} alt='cat' />
-              <img src={cathead}  alt='cat'/>
-              <img src={catheadHover}  alt='cat'/>
+              <img src={cathead} alt='cat' />
+              <img src={catheadHover} alt='cat' />
             </Cat>
             <Dog>
-              <img src={catBody} alt='cat'/>
+              <img src={catBody} alt='cat' />
             </Dog>
           </TemplateGrid>
         </motion.div>
