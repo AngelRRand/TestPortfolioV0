@@ -134,9 +134,14 @@ image-rendering: pixelated;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.5s ease;
     color: #ffffff;
+    transition: all 0.5s ease;
+    z-index: 100;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
+    text-align: center;
+    p{
+      padding: 10px;
+    }
   `
   return (
     <>
@@ -163,13 +168,14 @@ image-rendering: pixelated;
               </Cart>
             </Me>
             <Cat>
-              
+
               <img src={catBody} alt='cat' />
               <img src={cathead} alt='cat' />
               <img src={catheadHover} alt='cat' />
               <Cart>
                 <h2>Mi gato</h2>
-                <p>Su nombre es 27, siempre esta en la puerta de mi casa :D</p>
+                
+                <p>Su nombre es veintisiete, siempre esta en la puerta de mi casa :D</p>
               </Cart>
             </Cat>
           </TemplateGrid>
@@ -207,7 +213,7 @@ image-rendering: pixelated;
           initial={{ y: -5 }}
           animate={{
             y: 0,
-            transition: { type: "tween", repeat: 'Infinity', duration: 2, repeatType: "reverse", }
+            transition: { type: "tween", repeat: 'Infinity', duration: 5, repeatType: "reverse", }
           }}
         >
           <Nubes2 src={nubesback} />
