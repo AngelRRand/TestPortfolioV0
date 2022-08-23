@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
 import houseFlora from '../../img/Planet/Terra/HouseFlora.gif'
+import houseHojas from '../../img/Planet/Terra/HouseHojas.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
 import lightAuto from '../../img/Planet/Terra/LuzAuto.gif'
 import lightHover from '../../img/Planet/Terra/LuzHover.gif'
 import lightEffect from '../../img/Planet/Terra/LuzEffectHover.gif'
-import me from '../../img/Planet/Terra/cuarto96.gif'
-import coffe from '../../img/Planet/Terra/cafe.gif'
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
 import nubesTop from '../../img/nubesTop.png'
@@ -38,6 +37,13 @@ const House = () => {
   `
 
   const BackGroundFlora = styled.img`
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    image-rendering: pixelated;
+    z-index: 8;
+  `
+  const BackGroundHojas = styled.img`
     position: absolute;
     width: 100vw;
     height: 85vh;
@@ -173,6 +179,7 @@ image-rendering: pixelated;
           }}
         >
           <BackGroundFlora src={houseFlora} alt="" />
+          <BackGroundFlora src={houseHojas} alt="" />
         </motion.div>
           
           <BackGround src={house} alt="" /> 
