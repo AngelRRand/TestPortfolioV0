@@ -138,20 +138,6 @@ image-rendering: pixelated;
     color: #ffffff;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
   `
-  const CartCat = styled.div`
-    padding: 10px;
-    flex-direction: column;
-    width: 25em;
-    height: 10em;
-    image-rendering: pixelated;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.5s ease;
-    color: #ffffff;
-    font-family: 'PF Tempesta Seven Condensed', sans-serif;
-  `
   return (
     <>
       <House>
@@ -181,10 +167,10 @@ image-rendering: pixelated;
               <img src={catBody} alt='cat' />
               <img src={cathead} alt='cat' />
               <img src={catheadHover} alt='cat' />
-              <CartCat>
+              <Cart>
                 <h2>Mi gato</h2>
                 <p>Su nombre es 27, siempre esta en la puerta de mi casa :D</p>
-              </CartCat>
+              </Cart>
             </Cat>
           </TemplateGrid>
         </motion.div>
