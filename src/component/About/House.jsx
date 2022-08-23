@@ -89,79 +89,49 @@ image-rendering: pixelated;
     opacity: 1;
   }
   `
-  const Dog = styled.div`
-  z-index: 70;
-  image-rendering: pixelated;
-  width: 2.5vw;
-  grid-area: 16 / 14 / 15 / 15;
-  img{
-    position: absolute;
-    width: 4em;
-    height: 4em;
-  }
-  `
   const Me = styled.div`
     width: 4.5vw;
     height: 4.5vw;
     grid-area: 11 / 11 / 11 / 10;
+    z-index: 90;
+  image-rendering: pixelated;
+    img{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+  }
+  img:nth-child(1){
+    display: inline;
+  }
+  img:nth-child(3){
+    display: none;
+  }
+  &:hover img:nth-child(1){
+    display: none;
+  }
+  &:hover img:nth-child(2){
+    display: inline;
+  }
+  &:hover img:nth-child(3){
+    display: inline;
+  }
+  &:hover div{
+    opacity: 1;
+  }
+  `
+  const Cart = styled.div`
+    padding: 10px;
+    flex-direction: column;
+    width: 25em;
+    height: 10em;
     image-rendering: pixelated;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 80;
+    opacity: 0;
     transition: all 0.5s ease;
-    
-    div:nth-child(1){
-      z-index: 80;
-      width: 25em;
-      height: 30em;
-      transform: scale(0);
-      transition: all 0.5s ease;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid black;
-      text-align: center;
-    }
-    div:nth-child(2){
-      width: 20em;
-      height: 20em;
-    }
-    img:nth-child(1){
-      width: 20em;
-      height: 20em;
-      image-rendering: pixelated;
-    }
-    img:nth-child(2){
-      width: 20em;
-      height: 20em;
-      position: absolute;
-      left: 0;
-      image-rendering: pixelated;
-    }
-    h2{
-      overflow: hidden;
-      padding: 10px;
-      z-index: 90;
-      transition: all 2s ease;
-      font-size: 1.2rem;
-      font-family: 'PF Tempesta Seven Condensed', sans-serif;
-    }
-    p{
-      font-family: 'PF Tempesta Seven Condensed', sans-serif;
-    }
-    &:hover{
-      z-index: 95;
-    }
-    &:hover div{
-      transform: scale(1);
-      z-index: 95;
-    }
-  `
-  const Cart = styled.div`
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    color: #ffffff;
+    font-family: 'PF Tempesta Seven Condensed', sans-serif;
   `
   const CartCat = styled.div`
     padding: 10px;
@@ -211,9 +181,6 @@ image-rendering: pixelated;
                 <p>Su nombre es 27, siempre esta en la puerta de mi casa :D</p>
               </CartCat>
             </Cat>
-            <Dog>
-              <img src={catBody} alt='cat' />
-            </Dog>
           </TemplateGrid>
         </motion.div>
 
