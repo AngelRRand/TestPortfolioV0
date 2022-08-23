@@ -154,7 +154,7 @@ image-rendering: pixelated;
     text-align: center;
     background-color: #00000089;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 3px solid black;
     p{
       color: #ffffff;
       padding: 10px;
