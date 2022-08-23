@@ -198,11 +198,6 @@ image-rendering: pixelated;
               <img src={lightEffect} alt='cat' />
               <Cart>
                 <h2>Habitacion</h2>
-                <div>
-                  <img src={me} alt='me' />
-                  <img src={coffe} alt="coffe" />
-
-                </div>
                 <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
               </Cart>
             </Me>
