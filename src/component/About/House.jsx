@@ -43,7 +43,7 @@ const House = () => {
   const Nubes1 = styled.img`
 width: 100vw;
 height: 85vh;
-z-index: 50;
+z-index: 1000;
 position: absolute;
 background-color: #fff9e1;
 image-rendering: pixelated;
@@ -181,7 +181,6 @@ image-rendering: pixelated;
           </TemplateGrid>
         </motion.div>
 
-
         <motion.div
           initial={{ opacity: 1 }}
           animate={{
@@ -191,6 +190,7 @@ image-rendering: pixelated;
         >
           <Nubes1 />
         </motion.div>
+      
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{
