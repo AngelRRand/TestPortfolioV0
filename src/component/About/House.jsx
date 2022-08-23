@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
+import houseFlora from '../../img/Planet/Terra/HouseFlora.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
@@ -26,13 +27,25 @@ const House = () => {
     image-rendering: pixelated;
     overflow: hidden;
   `
+
   const BackGround = styled.img`
+  
     width: 100vw;
     height: 85vh;
     image-rendering: pixelated;
     z-index: 10;
     
   `
+
+  const BackGroundFlora = styled.img`
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    image-rendering: pixelated;
+    z-index: 8;
+  `
+
+
   const Nubes = styled.img`
   width: 100vw;
   height: 85vh;
@@ -148,7 +161,17 @@ image-rendering: pixelated;
       <House>
 
         <ContainerHouse>
-          <BackGround src={house} alt="" />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 4.5, type: "tween" },
+          }}
+        >
+          <BackGroundFlora src={houseFlora} alt="" />
+        </motion.div>
+          
+          <BackGround src={house} alt="" /> 
         </ContainerHouse>
         <motion.div
           initial={{ opacity: 0 }}
@@ -174,7 +197,7 @@ image-rendering: pixelated;
               <img src={catheadHover} alt='cat' />
               <Cart>
                 <h2>Mi gato</h2>
-                
+
                 <p>Su nombre es veintisiete, siempre esta en la puerta de mi casa :D</p>
               </Cart>
             </Cat>
@@ -190,7 +213,7 @@ image-rendering: pixelated;
         >
           <Nubes1 />
         </motion.div>
-      
+
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{
