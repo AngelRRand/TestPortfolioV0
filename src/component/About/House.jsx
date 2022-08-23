@@ -4,6 +4,9 @@ import house from '../../img/Planet/Terra/House.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
+import lightAuto from '../../img/Planet/Terra/LuzAuto.gif'
+import lightHover from '../../img/Planet/Terra/LuzHover.gif'
+import lightEffect from '../../img/Planet/Terra/LuzEffectHover.gif'
 import me from '../../img/Planet/Terra/cuarto96.gif'
 import coffe from '../../img/Planet/Terra/cafe.gif'
 import { motion } from "framer-motion";
@@ -190,6 +193,9 @@ image-rendering: pixelated;
         >
           <TemplateGrid>
             <Me>
+              <img src={lightAuto} alt='cat' />
+              <img src={lightHover} alt='cat' />
+              <img src={lightEffect} alt='cat' />
               <Cart>
                 <h2>Habitacion</h2>
                 <div>
