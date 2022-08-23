@@ -141,7 +141,7 @@ image-rendering: pixelated;
     padding: 10px;
     flex-direction: column;
     width: 25em;
-    height: 10em;
+    height: 8em;
     image-rendering: pixelated;
     display: flex;
     justify-content: center;
@@ -149,10 +149,14 @@ image-rendering: pixelated;
     opacity: 0;
     color: #ffffff;
     transition: all 0.5s ease;
-    z-index: 100;
+    z-index: 1000;
     font-family: 'PF Tempesta Seven Condensed', sans-serif;
     text-align: center;
+    background-color: #00000089;
+    border-radius: 10px;
+    border: 1px solid black;
     p{
+      color: #ffffff;
       padding: 10px;
     }
   `
