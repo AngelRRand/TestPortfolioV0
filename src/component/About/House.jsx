@@ -103,6 +103,11 @@ image-rendering: pixelated;
   img:nth-child(1){
     display: inline;
   }
+  img:nth-child(2){
+    width: 7em;
+    height: 7em;
+    display: inline;
+  }
   img:nth-child(3){
     display: none;
   }
