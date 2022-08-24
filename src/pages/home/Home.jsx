@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'
+import planetNet from '../../img/NavImg/planetNet.png'
 import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
 import GalaxyT from '../../img/galaxyT.png'
@@ -327,7 +328,7 @@ img:first-child{
             <Señal src={señal} alt="señal" />
           </ItemEducation>
           <ItemNetworks to='/Networks'>
-            <img src={planetIce} className='pointer' alt='About' />
+            <img src={planetNet} className='pointer' alt='About' />
             <Text >Networks</Text>
             <Señal src={señal} alt="señal" />
           </ItemNetworks>
