@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url(cursor.png), auto;
+  cursor: url(cursor.png), default;
   /* font-family: 'Josefin Sans', sans-serif; */
 }
-
+a
 /* Firefox */
 * {
   scrollbar-width: thin;
