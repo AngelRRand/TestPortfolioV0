@@ -210,7 +210,7 @@ img:first-child{
 
 `
   const ItemEducation = styled(NavLink)`
-  grid-area: 22 / 4 / 21 / 8;
+  grid-area: 25 / 6 / 26 / 7;
   cursor: pointer;
   display: flex;
   color: #000000;
