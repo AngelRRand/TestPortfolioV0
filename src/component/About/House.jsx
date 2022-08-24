@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
 import houseFlora from '../../img/Planet/Terra/HouseFlora.gif'
-import houseHojas from '../../img/Planet/Terra/HouseHojas.gif'
+import houseHojas from '../../img/Planet/Terra/Hojas.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
