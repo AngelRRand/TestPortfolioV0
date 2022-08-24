@@ -242,7 +242,7 @@ img:first-child{
 
 `
   const ItemNetworks = styled(NavLink)`
-grid-area: 18 / 5 / 19 / 6;
+grid-area: 20 / 5 / 21 / 6;
 cursor: pointer;
 display: flex;
 color: #000000;
