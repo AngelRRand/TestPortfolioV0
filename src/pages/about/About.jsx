@@ -123,15 +123,15 @@ const About = () => {
         <TempladeGrid>
           <Me to='/About/HouseTransition'>
             <Text >House</Text>
-            <img src={señal} alt="" />
+            <img className='pointer' src={señal} alt="" />
           </Me>
           <Spain to='/education'>
             <Text >Dream</Text>
-            <img src={señal} alt="" />
+            <img className='pointer' src={señal} alt="" />
           </Spain>
           <CR to='/education'>
             <Text >Art</Text>
-            <img src={señal} alt="" />
+            <img className='pointer' src={señal} alt="" />
           </CR>
         </TempladeGrid>
 

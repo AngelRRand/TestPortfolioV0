@@ -37,3 +37,6 @@ body {
   cursor: url(cursor.png), default;
   background-color: #0b0a1a
 }
+.pointer{
+  cursor: url(cursorPointer.png), default
+}
