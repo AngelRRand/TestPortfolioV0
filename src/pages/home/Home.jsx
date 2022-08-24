@@ -338,7 +338,15 @@ img:nth-child(2){
           </ItemEducation>
           <ItemNetworks to='/Networks'>
             <img src={planetNet} className='pointer' alt='About' />
+            <motion.div
+              initial={{ y: -58 }}
+              animate={{
+                y: -59,
+                transition: { type: "tween", repeat: 'Infinity', duration: 1.5, repeatType: "reverse", }
+              }}
+            >
             <img src={planetNetGit} className='pointer' alt='About' />
+            </motion.div>
             <Text >Networks</Text>
             <Señal src={señal} alt="señal" />
           </ItemNetworks>
