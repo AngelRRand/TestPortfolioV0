@@ -314,22 +314,22 @@ img:first-child{
           <ItemAbout to='/About'>
             <img className='pointer' src={terra} alt='About' />
             <Text>About</Text>
-            <Señal src={señal} alt="" />
+            <Señal src={señal} alt="señal" />
           </ItemAbout>
           <ItemProject to='/Projects'>
             <img src={planetLava} className='pointer' alt='About' />
             <Text >Projects</Text>
-            <Señal src={señal} alt="" />
+            <Señal src={señal} alt="señal" />
           </ItemProject>
           <ItemEducation to='/Education'>
             <img src={planetIce} className='pointer' alt='About' />
             <Text >Education</Text>
-            <Señal src={señal} alt="" />
+            <Señal src={señal} alt="señal" />
           </ItemEducation>
-          <ItemNetworks to='/Education'>
+          <ItemNetworks to='/Networks'>
             <img src={planetIce} className='pointer' alt='About' />
             <Text >Networks</Text>
-            <Señal src={señal} alt="" />
+            <Señal src={señal} alt="señal" />
           </ItemNetworks>
 
         </TemplateGrid>

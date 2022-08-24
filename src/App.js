@@ -52,11 +52,6 @@ function App() {
                 <Route path='/Projects' element={<Projects />} />
                 <Route path='/Networks' element={<Networks />} />
 
-                <Route path='*' element={
-                  <main>
-                    <p>No se encontro la ruta buscada</p>
-                  </main>
-                } />
               </Routes>
             </AnimatePresence>
           </Pages>
