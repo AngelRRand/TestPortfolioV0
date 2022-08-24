@@ -294,6 +294,11 @@ img:first-child{
             <Text >Education</Text>
             <Señal  src={señal} alt="" />
           </ItemEducation>
+          <ItemEducation to='/Education'>
+            <img src={planetIce} className='pointer' alt='About' />
+            <Text >Education</Text>
+            <Señal  src={señal} alt="" />
+          </ItemEducation>
 
         </TemplateGrid>
       </Home>
