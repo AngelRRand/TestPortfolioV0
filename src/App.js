@@ -11,6 +11,7 @@ import estrellas from './img/Starts.gif'
 import { useLocation } from "react-router-dom";
 import HouseTransition from './component/About/HouseTransition.jsx';
 import House from './component/About/House';
+import Networks from './pages/networks/Networks';
 
 
 
@@ -49,7 +50,7 @@ function App() {
                 <Route path='/About/House' element={<House/>}/>
                 <Route path='/Education' element={<Education />} />
                 <Route path='/Projects' element={<Projects />} />
-                <Route path='/Networks' element={<Projects />} />
+                <Route path='/Networks' element={<Networks />} />
 
                 <Route path='*' element={
                   <main>
