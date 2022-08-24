@@ -6,6 +6,7 @@ import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
 import planetLava from '../../img/NavImg/planetLava.png'
 import planetNet from '../../img/NavImg/planetNet.png'
+import planetNetGit from '../../img/NavImg/planetNetGit.png'
 import señal from '../../img/NavImg/Señal.gif'
 import Galaxy from '../../img/galaxy.png'
 import GalaxyT from '../../img/galaxyT.png'
@@ -255,15 +256,23 @@ flex-direction: column;
 text-align: center;
 align-items: center;
 z-index: 99;
-img:first-child{
+img:nth-child(1){
   background: transparent;
   width: 3.5rem;
   display: none;
-}
+  }
+img:nth-child(2){
+  position: absolute;
+  display: none;
+  width: 3.5rem;
+  }
 &:hover{
   transform: scale(2);
 }
-&:hover img:first-child{
+&:hover img:nth-child(1){
+  display: inline;
+}
+&:hover img:nth-child(2){
   display: inline;
 }
 &:hover img{
@@ -329,6 +338,7 @@ img:first-child{
           </ItemEducation>
           <ItemNetworks to='/Networks'>
             <img src={planetNet} className='pointer' alt='About' />
+            <img src={planetNetGit} className='pointer' alt='About' />
             <Text >Networks</Text>
             <Señal src={señal} alt="señal" />
           </ItemNetworks>
