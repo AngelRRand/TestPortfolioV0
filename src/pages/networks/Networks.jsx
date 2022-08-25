@@ -112,13 +112,18 @@ const Networks = () => {
   const Git = styled.a`
   display: flex;
   z-index: 60;
-  grid-area: 6 / 20 / 7 / 21;
+  grid-area: 6 / 19 / 7 / 20; 
   image-rendering: pixelated;
-    img{
-      width: 25vw;
-      height: 25vh;
-    }
   `
+  const GitImg = styled.img`
+    width: 30vw;
+    height: 30vh;
+  `
+   const Señal = styled.img`
+   position: absolute;
+   z-index: 80;
+   width: calc(13px + 2vw);
+`
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -142,8 +147,8 @@ const Networks = () => {
         </ContainerIMG>
         <TempladeGrid>
           <Git href='https://github.com/AngelRRand'  target="_blank">
-            <img className='pointer' src={señal} alt="" />
-            <img className='pointer' src={planetGit} alt="" />
+            <GitImg className='pointer' src={planetGit} alt="" />
+            <Señal src={señal} alt="señal" />
           </Git>
         </TempladeGrid>
       </NetworkContainer>
