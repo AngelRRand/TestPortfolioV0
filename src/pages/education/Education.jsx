@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import planetIce from '../../img/Planet/IcePlanetZOOM2.png'
+import planetIce from '../../img/Planet/IcePlanetZOOM2.png';
+import señal from '../../img/NavImg/Señal.gif'
 const Education = () => {
 
 
@@ -46,13 +47,40 @@ const Education = () => {
   grid-row-gap: 0px;
 `
   const Henry = styled(Link)`
-
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
   `
   const Udemy = styled(Link)`
-    
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
   `
   const Youtube = styled(Link)`
-    
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
   `
    const Text = styled.span`
    position: absolute;
@@ -90,13 +118,13 @@ const Education = () => {
         </ContainerIMG>
         <TempladeGrid>
           <Henry  to='/education'>
-
+            <Text >Henry</Text>
           </Henry>
           <Udemy  to='/education'>
-            
+            <Text >Udemy</Text>
           </Udemy>
           <Youtube  to='/education'>
-
+            <Text >Youtube</Text>
           </Youtube>
         </TempladeGrid>
 
