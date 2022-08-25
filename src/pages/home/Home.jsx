@@ -347,7 +347,7 @@ img:nth-child(2){
                 transition: { type: "tween", repeat: 'Infinity', duration: 1.5, repeatType: "reverse", }
               }}
             >
-            <img src={planetNetGit} className='pointer' alt='About' />
+              <img src={planetNetGit} className='pointer' alt='About' />
             </motion.div>
             <Text >Networks</Text>
             <Señal src={señal} alt="señal" />
