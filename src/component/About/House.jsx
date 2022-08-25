@@ -144,7 +144,7 @@ image-rendering: pixelated;
   const Cart = styled.div`
     padding: 10px;
     flex-direction: column;
-    width: 25em;
+    width: 20em;
     height: 8em;
     image-rendering: pixelated;
     display: flex;
@@ -190,12 +190,12 @@ image-rendering: pixelated;
         >
           <TemplateGrid>
             <Me>
-              <img src={lightAuto} alt='cat' />
-              <img src={lightHover} alt='cat' />
-              <img src={lightEffect} alt='cat' />
+              <img src={lightAuto} alt='light' />
+              <img src={lightHover} alt='light' />
+              <img src={lightEffect} alt='light' />
               <Cart>
-                <h2>Habitacion</h2>
-                <p>Delante de una ventana me encuentro en contanste contacto con la luz solar</p>
+                <h2>Room</h2>
+                <p>In front of a window I find myself in constant contact with the sunlight.</p>
               </Cart>
             </Me>
             <Cat>
@@ -204,9 +204,8 @@ image-rendering: pixelated;
               <img src={cathead} alt='cat' />
               <img src={catheadHover} alt='cat' />
               <Cart>
-                <h2>Mi gato</h2>
-
-                <p>Su nombre es veintisiete, siempre esta en la puerta de mi casa :D</p>
+                <h2>My cat</h2>
+                <p>His name is twenty-seven, he is always at my house :D</p>
               </Cart>
             </Cat>
           </TemplateGrid>
