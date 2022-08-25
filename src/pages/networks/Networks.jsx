@@ -28,18 +28,14 @@ const Networks = () => {
   color:white;
   font-family: 'PF Tempesta Seven Condensed', sans-serif;
   
-  img:nth-child(1){
-    
+  img{
+    position: absolute;
+    background: transparent;
     width: 100%;
     height: 100%;
+    left: 0;
     image-rendering: pixelated;
-    z-index: 10;
-  }
-  img:nth-child(2){
-    width: 100%;
-    height: 100%;
-    image-rendering: pixelated;
-    z-index: 10;
+    z-index: 60;
   }
 `
   return (
@@ -58,15 +54,7 @@ const Networks = () => {
         <ContainerIMG>
           <h3>Networks</h3>
           <img src={planet} alt="" />
-          <motion.div
-            initial={{ y: 0 }}
-            animate={{
-              y: 10,
-              transition: { type: "tween", repeat: 'Infinity', duration: 1.5, repeatType: "reverse", }
-            }}
-          >
-            <img src={planetRock} className='pointer' alt='About' />
-          </motion.div>
+          <img src={planetRock} className='pointer' alt='About' />
         </ContainerIMG>
       </NetworkContainer>
     </motion.div>
