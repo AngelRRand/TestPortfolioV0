@@ -97,6 +97,17 @@ const Networks = () => {
   const Rock = styled.img`
     animation: ${rotate} 5s linear infinite;
   `
+  const TempladeGrid = styled.div`
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 35vw;
+    height: 65vh;
+    grid-template-columns: repeat(20, 2vw);
+    grid-template-rows: repeat(30, 2vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  `
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -113,8 +124,14 @@ const Networks = () => {
         <ContainerIMG>
           <h3>Networks</h3>
           <img src={planet} alt="" />
-          <Rock src={planetRock} className='pointer' alt='About' />
+          <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/' >
+
+            <Rock src={planetRock} className='pointer' alt='About' />
+          </a>
         </ContainerIMG>
+        <TempladeGrid>
+          
+        </TempladeGrid>
       </NetworkContainer>
     </motion.div>
   )
