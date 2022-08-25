@@ -343,8 +343,8 @@ img:nth-child(2){
             <motion.div
               initial={{ y: -58 }}
               animate={{
-                y: -59,
-                transition: { type: "tween", repeat: 'Infinity', duration: 1.5, repeatType: "reverse", }
+                y: -60,
+                transition: { type: "tween", repeat: 'Infinity', duration: 2, repeatType: "reverse", }
               }}
             >
               <img src={planetNetGit} className='pointer' alt='About' />
