@@ -122,9 +122,9 @@ const Networks = () => {
   `
   return (
     <motion.div
-      initial={{ scale: 0 }}
+      initial={{ x: -2000 }}
       animate={{
-        scale: 1,
+        x: 0,
         transition: { delay: 0.5, duration: 1.7, type: "spring", },
       }}
       exit={{
