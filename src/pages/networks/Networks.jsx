@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planet from '../../img/Planet/planetNetZoom.png';
 import planetRock from '../../img/Planet/planetNetZoomRock.png';
+import planetGit from '../../img/Planet/planetNetGit.gif';
 import señal from '../../img/NavImg/Señal.gif';
 
 const Networks = () => {
@@ -108,6 +109,16 @@ const Networks = () => {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
+  const Git = styled.a`
+  display: flex;
+  z-index: 60;
+  grid-area: 6 / 20 / 7 / 21;
+  image-rendering: pixelated;
+    img{
+      width: 25vw;
+      height: 25vh;
+    }
+  `
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -124,13 +135,16 @@ const Networks = () => {
         <ContainerIMG>
           <h3>Networks</h3>
           <img src={planet} alt="" />
-          <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/' >
+          <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/'  target="_blank" >
 
             <Rock src={planetRock} className='pointer' alt='About' />
           </a>
         </ContainerIMG>
         <TempladeGrid>
-          
+          <Git href='https://github.com/AngelRRand'  target="_blank">
+            <img className='pointer' src={señal} alt="" />
+            <img className='pointer' src={planetGit} alt="" />
+          </Git>
         </TempladeGrid>
       </NetworkContainer>
     </motion.div>
