@@ -118,17 +118,17 @@ const About = () => {
           <img src={planet} alt="" />
         </ContainerIMG>
         <TempladeGrid>
-          <Me to='/About/HouseTransition'>
+          <Me className='pointer'  to='/About/HouseTransition'>
             <Text >House</Text>
-            <img className='pointer' src={señal} alt="" />
+            <img src={señal} alt="" />
           </Me>
-          <Spain to='/education'>
+          <Spain className='pointer' to='/education'>
             <Text >Dream</Text>
-            <img className='pointer' src={señal} alt="" />
+            <img  src={señal} alt="" />
           </Spain>
-          <CR to='/education'>
+          <CR className='pointer' to='/education'>
             <Text >Art</Text>
-            <img className='pointer' src={señal} alt="" />
+            <img  src={señal} alt="" />
           </CR>
         </TempladeGrid>
 
