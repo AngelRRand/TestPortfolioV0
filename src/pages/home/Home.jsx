@@ -260,11 +260,13 @@ img:nth-child(1){
   background: transparent;
   width: 3.5rem;
   display: none;
+  image-rendering: pixelated;
   }
 img:nth-child(2){
   position: absolute;
   display: none;
   width: 3.5rem;
+  image-rendering: pixelated;
   }
 &:hover{
   transform: scale(2);
