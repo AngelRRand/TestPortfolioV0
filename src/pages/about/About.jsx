@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
 const About = () => {
