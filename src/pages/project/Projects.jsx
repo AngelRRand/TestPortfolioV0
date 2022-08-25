@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import planetLava from '../../img/Planet/PlanetLavaZOOM.png'
+import { Link } from 'react-router-dom';
+import planetLava from '../../img/Planet/PlanetLavaZOOM.png';
+import señal from '../../img/NavImg/Señal.gif';
 const Projects = () => {
 
   const ProjectsContainer = styled.div`
@@ -45,7 +47,7 @@ const Projects = () => {
     grid-row-gap: 0px;
   `
   const React = styled(Link)`
-    grid-area: 8 / 7 / 8 / 8;
+    grid-area: 13 / 12 / 14 / 13;
     cursor: pointer;
     display: flex;
     text-decoration: none;
@@ -58,7 +60,7 @@ const Projects = () => {
     z-index: 99;
   `
   const Javascript = styled(Link)`
-    grid-area: 10 / 12 / 11 / 13;
+    grid-area: 9 / 6 / 10 / 7;
     cursor: pointer;
     display: flex;
     text-decoration: none;
@@ -71,7 +73,7 @@ const Projects = () => {
     z-index: 99;
   `
   const ReactNative = styled(Link)`
-    grid-area: 21 / 8 / 22 / 9;
+    grid-area: 18 / 11 / 19 / 12;
     cursor: pointer;
     display: flex;
     text-decoration: none;
@@ -86,7 +88,8 @@ const Projects = () => {
   const Text = styled.span`
    position: absolute;
    font-size: calc(13px + 0.4vw);
-   color: #000000;
+   color: #ffffff;
+   text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
    transition: all 0.3s ease;
    background: transparent;
    text-align: center;
