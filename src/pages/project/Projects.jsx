@@ -44,7 +44,7 @@ const Projects = () => {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
-    const React = styled(Link)`
+  const React = styled(Link)`
     grid-area: 8 / 7 / 8 / 8;
     cursor: pointer;
     display: flex;
@@ -83,7 +83,7 @@ const Projects = () => {
     align-items: center;
     z-index: 99;
   `
-   const Text = styled.span`
+  const Text = styled.span`
    position: absolute;
    font-size: calc(13px + 0.4vw);
    color: #000000;
@@ -101,14 +101,14 @@ const Projects = () => {
     <ProjectsContainer>
 
       <motion.div
-        initial={{  scale: 0 }}
+        initial={{ scale: 0 }}
         animate={{
           scale: 1,
-          transition: { delay: 0.5, duration: 1.7,  type: "spring", },
+          transition: { delay: 0.5, duration: 1.7, type: "spring", },
         }}
         exit={{
           x: -500,
-          transition: { delay: 1.5,  ease: 'easeInOut' },
+          transition: { delay: 1.5, ease: 'easeInOut' },
         }}
       >
 
@@ -117,7 +117,18 @@ const Projects = () => {
           <img src={planetLava} alt="" />
         </ContainerIMG>
         <TempladeGrid>
-          
+          <React to='/education'>
+            <Text >React</Text>
+            <img className='pointer' src={señal} alt="" />
+          </React>
+          <Javascript to='/education'>
+            <Text >Javascript</Text>
+            <img className='pointer' src={señal} alt="" />
+          </Javascript>
+          <ReactNative to='/education'>
+            <Text >React Native</Text>
+            <img className='pointer' src={señal} alt="" />
+          </ReactNative>
         </TempladeGrid>
       </motion.div>
 
