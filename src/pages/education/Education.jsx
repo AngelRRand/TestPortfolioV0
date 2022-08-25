@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import './About.css'
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planetIce from '../../img/Planet/IcePlanetZOOM2.png'
 const Education = () => {
@@ -35,17 +35,40 @@ const Education = () => {
   }
 `
   const TempladeGrid = styled.div`
-justify-content: center;
-align-items: center;
-display: grid;
-width: 35vw;
-height: 65vh;
-grid-template-columns: repeat(20, 2vw);
-grid-template-rows: repeat(30, 2vh);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 35vw;
+  height: 65vh;
+  grid-template-columns: repeat(20, 2vw);
+  grid-template-rows: repeat(30, 2vh);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 `
+  const Henry = styled(Link)`
 
+  `
+  const Udemy = styled(Link)`
+    
+  `
+  const Youtube = styled(Link)`
+    
+  `
+   const Text = styled.span`
+   position: absolute;
+   font-size: calc(13px + 0.4vw);
+   color: #ffffff;
+   text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+   transition: all 0.3s ease;
+   background: transparent;
+   text-align: center;
+   font-family: 'PF Tempesta Seven', sans-serif;
+   font-family: 'PF Tempesta Seven Extended', sans-serif;
+   font-family: 'PF Tempesta Seven Condensed', sans-serif;
+   font-family: 'PF Tempesta Seven Compressed', sans-serif;
+   image-rendering: pixelated;
+   z-index: 90; 
+ `
   return (
     <motion.div
       initial={{ x: -1000, scale: 0 }}
@@ -62,11 +85,19 @@ grid-row-gap: 0px;
       <EducationContainer>
 
         <ContainerIMG>
-          <h3>Projects</h3>
+          <h3>Education</h3>
           <img src={planetIce} alt="" />
         </ContainerIMG>
         <TempladeGrid>
+          <Henry  to='/education'>
 
+          </Henry>
+          <Udemy  to='/education'>
+            
+          </Udemy>
+          <Youtube  to='/education'>
+
+          </Youtube>
         </TempladeGrid>
 
       </EducationContainer>
