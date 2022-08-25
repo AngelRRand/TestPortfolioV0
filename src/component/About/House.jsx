@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import house from '../../img/Planet/Terra/House.gif'
 import houseFlora from '../../img/Planet/Terra/HouseFlora.gif'
-import houseHojas from '../../img/Planet/Terra/Hojas.gif'
 import catBody from '../../img/Planet/Terra/27.gif'
 import cathead from '../../img/Planet/Terra/27NotModif.gif'
 import catheadHover from '../../img/Planet/Terra/27Modif.gif'
@@ -12,7 +11,6 @@ import lightEffect from '../../img/Planet/Terra/LuzEffectHover.gif'
 import { motion } from "framer-motion";
 import nubes from '../../img/nubes.png'
 import nubesTop from '../../img/nubesTop.png'
-import nubesback from '../../img/nubesBackground.png'
 const House = () => {
   const House = styled.div`
     overflow: hidden;
@@ -179,7 +177,6 @@ image-rendering: pixelated;
           }}
         >
           <BackGroundFlora src={houseFlora} alt="" />
-          <BackGroundFlora src={houseHojas} alt="" />
         </motion.div>
           
           <BackGround src={house} alt="" /> 
@@ -243,15 +240,7 @@ image-rendering: pixelated;
         >
           <Nubes2 src={nubes} />
         </motion.div>
-        <motion.div
-          initial={{ y: -5 }}
-          animate={{
-            y: 0,
-            transition: { type: "tween", repeat: 'Infinity', duration: 5, repeatType: "reverse", }
-          }}
-        >
-          <Nubes2 src={nubesback} />
-        </motion.div>
+        
       </House>
     </>
   )

@@ -47,7 +47,6 @@ const About = () => {
   `
   const Me = styled(Link)`
     grid-area: 30 / 7 / 31 / 9;
-    cursor: pointer;
     display: flex;
     text-decoration: none;
     image-rendering: pixelated;
@@ -60,7 +59,6 @@ const About = () => {
    `
   const Spain = styled(Link)`
    grid-area: 6 / 13 / 6 / 14;;
-   cursor: pointer;
    display: flex;
    text-decoration: none;
    image-rendering: pixelated;
@@ -73,7 +71,6 @@ const About = () => {
   `
   const CR = styled(Link)`
   grid-area: 23 / 5 / 24 / 6;
-  cursor: pointer;
   display: flex;
   text-decoration: none;
   image-rendering: pixelated;
