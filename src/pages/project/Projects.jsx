@@ -33,7 +33,7 @@ const Projects = () => {
     z-index: 10;
   }
 `
-const TempladeGrid = styled.div`
+  const TempladeGrid = styled.div`
     justify-content: center;
     align-items: center;
     display: grid;
@@ -44,6 +44,59 @@ const TempladeGrid = styled.div`
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
+    const React = styled(Link)`
+    grid-area: 8 / 7 / 8 / 8;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+  `
+  const Javascript = styled(Link)`
+    grid-area: 10 / 12 / 11 / 13;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+  `
+  const ReactNative = styled(Link)`
+    grid-area: 21 / 8 / 22 / 9;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    image-rendering: pixelated;
+    transition: all 0.5s ease;
+    background: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+  `
+   const Text = styled.span`
+   position: absolute;
+   font-size: calc(13px + 0.4vw);
+   color: #000000;
+   transition: all 0.3s ease;
+   background: transparent;
+   text-align: center;
+   font-family: 'PF Tempesta Seven', sans-serif;
+   font-family: 'PF Tempesta Seven Extended', sans-serif;
+   font-family: 'PF Tempesta Seven Condensed', sans-serif;
+   font-family: 'PF Tempesta Seven Compressed', sans-serif;
+   image-rendering: pixelated;
+   z-index: 90; 
+ `
   return (
     <ProjectsContainer>
 
