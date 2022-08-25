@@ -2,10 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import planet from '../../img/Planet/PlanetZOOM.png';
+import planet from '../../img/Planet/planetNetZoom.png';
 import señal from '../../img/NavImg/Señal.gif';
 
 const Networks = () => {
+
+  const NetworkContainer = styled.div`
+    overflow: hidden;
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    `
+
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -17,7 +28,11 @@ const Networks = () => {
         x: "-100vh",
         transition: { delay: 1.5,  ease: 'easeInOut' },
       }}
-    ></motion.div>
+    >
+      <NetworkContainer>
+        
+      </NetworkContainer>
+    </motion.div>
   )
 }
 
