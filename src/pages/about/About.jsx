@@ -126,7 +126,7 @@ const About = () => {
             <Text >Dream</Text>
             <img  src={señal} alt="" />
           </Spain>
-          <CR className='pointer' to='/education'>
+          <CR className='pointer' to='/About/Art'>
             <Text >Art</Text>
             <img  src={señal} alt="" />
           </CR>

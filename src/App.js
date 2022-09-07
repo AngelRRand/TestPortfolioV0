@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
 import HouseTransition from './component/About/HouseTransition.jsx';
 import House from './component/About/House';
 import Networks from './pages/networks/Networks';
-
+import Art from './component/About/Art'
 
 
 function App() {
@@ -48,6 +48,7 @@ function App() {
                 <Route path='/About' element={<About />} />
                 <Route path='/About/HouseTransition' element={<HouseTransition/>}/>
                 <Route path='/About/House' element={<House/>}/>
+                <Route path='/About/Art' element={<Art/>}/>
                 <Route path='/Education' element={<Education />} />
                 <Route path='/Projects' element={<Projects />} />
                 <Route path='/Networks' element={<Networks />} />
