@@ -14,7 +14,17 @@ const Art = () => {
   width: 100vw;
   height: 85vh;
 `
-
+  const TemplateGrid = styled.div`
+    position: absolute;
+    top: 0;
+    display: grid;
+    width: 80vw;
+    height:  100vh;
+    grid-template-columns: repeat(50, 3vw);
+    grid-template-rows: repeat(40, 4vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  `
 
 
   return (
