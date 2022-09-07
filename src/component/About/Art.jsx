@@ -34,6 +34,28 @@ const Art = () => {
   image-rendering: pixelated;
   z-index: 8;
 `
+  const Nubes = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 50;
+  position: absolute;
+  image-rendering: pixelated;
+`
+  const Nubes1 = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 1000;
+  position: absolute;
+  background-color: #fff9e1;
+  image-rendering: pixelated;
+`
+  const Nubes2 = styled.img`
+  width: 100vw;
+  height: 85vh;
+  z-index: 50;
+  position: absolute;
+  image-rendering: pixelated;
+`
 
 
   return (
