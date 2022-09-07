@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import nubes from '../../img/nubes.png'
-import nubesTop from '../../img/nubesTop.png'
+import TransitionTerra from '../Nav/TransitionTerra';
 import house from '../../img/Planet/Terra/House/House.gif'
 import houseFlora from '../../img/Planet/Terra/House/HouseFlora.gif'
 import catBody from '../../img/Planet/Terra/House/27.gif'
@@ -11,6 +10,7 @@ import catheadHover from '../../img/Planet/Terra/House/27Modif.gif'
 import lightAuto from '../../img/Planet/Terra/House/LuzAuto.gif'
 import lightHover from '../../img/Planet/Terra/House/LuzHover.gif'
 import lightEffect from '../../img/Planet/Terra/House/LuzEffectHover.gif'
+import Background from '../Nav/Background';
 
 const House = () => {
   const House = styled.div`
@@ -18,50 +18,6 @@ const House = () => {
     width: 100vw;
     height: 85vh;
   `
-  const ContainerHouse = styled.div`
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    image-rendering: pixelated;
-    overflow: hidden;
-  `
-  const BackGround = styled.img`
-  
-    width: 100vw;
-    height: 85vh;
-    image-rendering: pixelated;
-    z-index: 10;
-    
-  `
-  const BackGroundFlora = styled.img`
-    position: absolute;
-    width: 100vw;
-    height: 85vh;
-    image-rendering: pixelated;
-    z-index: 8;
-  `
-  const Nubes = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
-`
-  const Nubes1 = styled.img`
-width: 100vw;
-height: 85vh;
-z-index: 1000;
-position: absolute;
-background-color: #fff9e1;
-image-rendering: pixelated;
-`
-  const Nubes2 = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
-`
   const TemplateGrid = styled.div`
     position: absolute;
     top: 0;
@@ -157,19 +113,10 @@ image-rendering: pixelated;
   return (
       <House>
 
-        <ContainerHouse>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 4.5, type: "tween" },
-          }}
-        >
-          <BackGroundFlora src={houseFlora} alt="" />
-        </motion.div>
-          
-          <BackGround src={house} alt="" /> 
-        </ContainerHouse>
+        <Background
+          bg={house}
+          bgGif={houseFlora}
+        />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -200,34 +147,7 @@ image-rendering: pixelated;
           </TemplateGrid>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{
-            opacity: 0,
-            transition: { duration: 4.5, type: "tween" },
-          }}
-        >
-          <Nubes1 />
-        </motion.div>
-
-        <motion.div
-          initial={{ x: 0, y: 0 }}
-          animate={{
-            x: -5000,
-            transition: { duration: 15.5, type: "tween" },
-          }}
-        >
-          <Nubes src={nubesTop} />
-        </motion.div>
-        <motion.div
-          initial={{ x: 0, y: 0 }}
-          animate={{
-            x: 5000,
-            transition: { duration: 15.5, type: "tween" },
-          }}
-        >
-          <Nubes2 src={nubes} />
-        </motion.div>
+        <TransitionTerra/>
         
       </House>
   )

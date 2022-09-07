@@ -315,9 +315,7 @@ img:nth-child(2){
 
       <Home className="home">
         <ContainerIMG>
-
           <IMG src={Galaxy} alt="Galaxy" />
-
           <IMGT src={GalaxyT} />
           <IMGB src={GalaxyB} />
         </ContainerIMG>

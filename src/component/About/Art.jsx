@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import background from '../../img/Planet/Terra/Art/ArtBackground.png'
 import backgroundGif from '../../img/Planet/Terra/Art/ArtPajaros.gif'
 import TransitionTerra from '../Nav/TransitionTerra';
+import Background from '../Nav/Background';
 
 
 const Art = () => {
@@ -13,44 +14,16 @@ const Art = () => {
   width: 100vw;
   height: 85vh;
 `
-  const ContainerArt = styled.div`
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  image-rendering: pixelated;
-  overflow: hidden;
-`
-  const BackGround = styled.img`
-  width: 100vw;
-  height: 85vh;
-  image-rendering: pixelated;
-  z-index: 10;
-`
-  const BackGroundGif = styled.img`
-  position: absolute;
-  width: 100vw;
-  height: 85vh;
-  image-rendering: pixelated;
-  z-index: 8;
-`
+
 
 
   return (
     <Container>
 
-      <ContainerArt>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 4.5, type: "tween" },
-          }}
-        >
-          <BackGroundGif src={backgroundGif} alt="" />
-        </motion.div>
-
-        <BackGround src={background} alt="" />
-      </ContainerArt>
+      <Background
+        bg={background}
+        bgGif={backgroundGif}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -80,7 +53,7 @@ const Art = () => {
           </Cat>
         </TemplateGrid> */}
       </motion.div>
-      <TransitionTerra/>
+      <TransitionTerra />
     </Container>
   )
 }
