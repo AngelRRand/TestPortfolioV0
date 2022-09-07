@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import nubes from '../../img/nubes.png'
-import nubesTop from '../../img/nubesTop.png'
 import background from '../../img/Planet/Terra/Art/ArtBackground.png'
 import backgroundGif from '../../img/Planet/Terra/Art/ArtPajaros.gif'
+import TransitionTerra from '../Nav/TransitionTerra';
 
 
 const Art = () => {
@@ -33,28 +32,6 @@ const Art = () => {
   height: 85vh;
   image-rendering: pixelated;
   z-index: 8;
-`
-  const Nubes = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
-`
-  const Nubes1 = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 1000;
-  position: absolute;
-  background-color: #fff9e1;
-  image-rendering: pixelated;
-`
-  const Nubes2 = styled.img`
-  width: 100vw;
-  height: 85vh;
-  z-index: 50;
-  position: absolute;
-  image-rendering: pixelated;
 `
 
 
@@ -103,36 +80,7 @@ const Art = () => {
           </Cat>
         </TemplateGrid> */}
       </motion.div>
-
-      <motion.div
-        initial={{ opacity: 1 }}
-        animate={{
-          opacity: 0,
-          transition: { duration: 4.5, type: "tween" },
-        }}
-      >
-        <Nubes1 />
-      </motion.div>
-
-      <motion.div
-        initial={{ x: 0, y: 0 }}
-        animate={{
-          x: -5000,
-          transition: { duration: 15.5, type: "tween" },
-        }}
-      >
-        <Nubes src={nubesTop} />
-      </motion.div>
-      <motion.div
-        initial={{ x: 0, y: 0 }}
-        animate={{
-          x: 5000,
-          transition: { duration: 15.5, type: "tween" },
-        }}
-      >
-        <Nubes2 src={nubes} />
-      </motion.div>
-
+      <TransitionTerra/>
     </Container>
   )
 }
