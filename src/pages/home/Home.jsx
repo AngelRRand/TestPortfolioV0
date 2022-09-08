@@ -316,8 +316,6 @@ img:nth-child(2){
 
   return (
     <Pages>
-
-
       <motion.div
         initial={{ opacity: 0, }}
         animate={{

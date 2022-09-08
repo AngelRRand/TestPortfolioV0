@@ -131,7 +131,6 @@ const Networks = () => {
 `
   return (
     <Pages>
-
       <motion.div
         initial={{ scale: 0 }}
         animate={{
@@ -159,7 +158,6 @@ const Networks = () => {
           </TempladeGrid>
         </NetworkContainer>
       </motion.div>
-
     </Pages>
   )
 }
