@@ -79,7 +79,7 @@ const About = () => {
    z-index: 99;
   `
   const CR = styled(Link)`
-  grid-area: 23 / 5 / 24 / 6;
+  grid-area: 18 / 5 / 22 / 7;
   display: flex;
   text-decoration: none;
   image-rendering: pixelated;
