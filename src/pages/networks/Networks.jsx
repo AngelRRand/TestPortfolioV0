@@ -120,34 +120,47 @@ const Networks = () => {
     height: 30vh;
     z-index: 200;
   `
+  const Pages = styled.div`
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: calc(2rem + 2vw);
+  }
+`
   return (
-    <motion.div
-      initial={{ scale: 0 }}
-      animate={{
-        scale: 1,
-        transition: { delay: 0.5, duration: 1.7, type: "spring", },
-      }}
-      exit={{
-        scale: 5,
-        transition: { delay: 1.5, ease: 'easeInOut' },
-      }}
-    >
-      <NetworkContainer>
-        <ContainerIMG>
-          <h3>Networks</h3>
-          <img src={planet} alt="" />
-          <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/'  target="_blank" >
+    <Pages>
 
-            <Rock src={planetRock} className='pointer' alt='About' />
-          </a>
-        </ContainerIMG>
-        <TempladeGrid>
-          <Git href='https://github.com/AngelRRand'  target="_blank">
-            <GitImg className='pointer' src={planetGit} alt="" />
-          </Git>
-        </TempladeGrid>
-      </NetworkContainer>
-    </motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{
+          scale: 1,
+          transition: { delay: 0.5, duration: 1.7, type: "spring", },
+        }}
+        exit={{
+          scale: 5,
+          transition: { delay: 1.5, ease: 'easeInOut' },
+        }}
+      >
+        <NetworkContainer>
+          <ContainerIMG>
+            <h3>Networks</h3>
+            <img src={planet} alt="" />
+            <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/' target="_blank" >
+
+              <Rock src={planetRock} className='pointer' alt='About' />
+            </a>
+          </ContainerIMG>
+          <TempladeGrid>
+            <Git href='https://github.com/AngelRRand' target="_blank">
+              <GitImg className='pointer' src={planetGit} alt="" />
+            </Git>
+          </TempladeGrid>
+        </NetworkContainer>
+      </motion.div>
+
+    </Pages>
   )
 }
 

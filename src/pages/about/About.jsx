@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
 const About = () => {
+  const Pages = styled.div`
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: calc(2rem + 2vw);
+  }
+`
   const AboutContainer = styled.div`
     overflow: hidden;
     height: 85vh;
@@ -98,6 +107,7 @@ const About = () => {
  `
   
   return (
+<Pages>
 
     <motion.div
       initial={{ scale: 0 }}
@@ -106,7 +116,7 @@ const About = () => {
         transition: { delay: 0.5, duration: 1.7,  type: "spring", },
       }}
       exit={{
-        x: "-100vh",
+        scale: 0,
         transition: { delay: 1.5,  ease: 'easeInOut' },
       }}
     >
@@ -134,6 +144,8 @@ const About = () => {
 
       </AboutContainer>
     </motion.div>
+
+</Pages>
   )
 }
 

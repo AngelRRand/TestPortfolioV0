@@ -108,6 +108,15 @@ export const Home = () => {
   height: 150vh;
   
   `
+  const Pages = styled.div`
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: calc(2rem + 2vw);
+  }
+`
   const ContainerIMG = styled.div`
   position: absolute;
   top: 0;
@@ -306,55 +315,58 @@ img:nth-child(2){
 
 
   return (
-    
-    <motion.div
-      initial={{ opacity: 0, }}
-      animate={{
-        opacity: 1,
-        transition: { duration: 1.5, type: "spring" },
-      }}>
+    <Pages>
 
-      <Home className="home">
-        <ContainerIMG>
-          <IMG src={Galaxy} alt="Galaxy" />
-          <IMGT src={GalaxyT} />
-          <IMGB src={GalaxyB} />
-        </ContainerIMG>
-        <TemplateGrid>
 
-          <ItemAbout to='/About'>
-            <img className='pointer' src={terra} alt='About' />
-            <Text>About</Text>
-            <Señal src={señal} alt="señal" />
-          </ItemAbout>
-          <ItemProject to='/Projects'>
-            <img src={planetLava} className='pointer' alt='About' />
-            <Text >Projects</Text>
-            <Señal src={señal} alt="señal" />
-          </ItemProject>
-          <ItemEducation to='/Education'>
-            <img src={planetIce} className='pointer' alt='About' />
-            <Text >Education</Text>
-            <Señal src={señal} alt="señal" />
-          </ItemEducation>
-          <ItemNetworks to='/Networks'>
-            <img src={planetNet} className='pointer' alt='About' />
-            <motion.div
-              initial={{ y: -58 }}
-              animate={{
-                y: -60,
-                transition: { type: "tween", repeat: 'Infinity', duration: 2, repeatType: "reverse", }
-              }}
-            >
-              <img src={planetNetGit} className='pointer' alt='About' />
-            </motion.div>
-            <Text >Networks</Text>
-            <Señal src={señal} alt="señal" />
-          </ItemNetworks>
+      <motion.div
+        initial={{ opacity: 0, }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 1.5, type: "spring" },
+        }}>
 
-        </TemplateGrid>
-      </Home>
+        <Home className="home">
+          <ContainerIMG>
+            <IMG src={Galaxy} alt="Galaxy" />
+            <IMGT src={GalaxyT} />
+            <IMGB src={GalaxyB} />
+          </ContainerIMG>
+          <TemplateGrid>
 
-    </motion.div>
+            <ItemAbout to='/About'>
+              <img className='pointer' src={terra} alt='About' />
+              <Text>About</Text>
+              <Señal src={señal} alt="señal" />
+            </ItemAbout>
+            <ItemProject to='/Projects'>
+              <img src={planetLava} className='pointer' alt='About' />
+              <Text >Projects</Text>
+              <Señal src={señal} alt="señal" />
+            </ItemProject>
+            <ItemEducation to='/Education'>
+              <img src={planetIce} className='pointer' alt='About' />
+              <Text >Education</Text>
+              <Señal src={señal} alt="señal" />
+            </ItemEducation>
+            <ItemNetworks to='/Networks'>
+              <img src={planetNet} className='pointer' alt='About' />
+              <motion.div
+                initial={{ y: -58 }}
+                animate={{
+                  y: -60,
+                  transition: { type: "tween", repeat: 'Infinity', duration: 2, repeatType: "reverse", }
+                }}
+              >
+                <img src={planetNetGit} className='pointer' alt='About' />
+              </motion.div>
+              <Text >Networks</Text>
+              <Señal src={señal} alt="señal" />
+            </ItemNetworks>
+
+          </TemplateGrid>
+        </Home>
+
+      </motion.div>
+    </Pages>
   )
 }

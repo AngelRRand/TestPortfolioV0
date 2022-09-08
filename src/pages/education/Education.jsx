@@ -5,7 +5,15 @@ import { motion } from "framer-motion";
 import planetIce from '../../img/Planet/IcePlanetZOOM2.png';
 import señal from '../../img/NavImg/Señal.gif'
 const Education = () => {
-
+  const Pages = styled.div`
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: calc(2rem + 2vw);
+  }
+`
 
   const EducationContainer = styled.div`
     overflow: hidden;
@@ -100,6 +108,8 @@ const Education = () => {
    z-index: 90; 
  `
   return (
+    <Pages>
+
     <motion.div
       initial={{ x: -1000, scale: 0 }}
       animate={{
@@ -108,7 +118,7 @@ const Education = () => {
         transition: { duration: 2.5, type: "spring", delayChildren: 10.5 },
       }}
       exit={{
-        x: -500,
+        scale: 0,
         transition: { duration: 0.5, type: "spring", ease: "easeInOut" },
       }}
     >
@@ -135,6 +145,8 @@ const Education = () => {
 
       </EducationContainer>
     </motion.div>
+
+    </Pages>
   )
 }
 

@@ -17,15 +17,7 @@ import Art from './component/About/Art'
 function App() {
   const location = useLocation();
 
-  const Pages = styled.div`
-  display: flex;
-  height: 85vh;
-  justify-content: center;
-  align-items: center;
-  h1{
-    font-size: calc(2rem + 2vw);
-  }
-`
+  
   const IMGAbolute = styled.img`
   image-rendering: pixelated;
   overflow-x: hidden;
