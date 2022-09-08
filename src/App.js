@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
-import { Route, Routes, Location } from 'react-router-dom';
-import About from './pages/about/About';
+import { useLocation, Route, Routes } from "react-router-dom";
+import { AnimatePresence } from 'framer-motion';
 import { Home } from './pages/home/Home';
 import Education from './pages/education/Education';
 import Projects from './pages/project/Projects';
 import styled from 'styled-components';
-import { AnimatePresence } from 'framer-motion';
-import NavRPG from './component/Nav/navRPG';
 import estrellas from './img/Starts.gif'
-import { useLocation } from "react-router-dom";
+import About from './pages/about/About';
+import NavRPG from './component/Nav/navRPG';
 import HouseTransition from './component/About/HouseTransition.jsx';
 import House from './component/About/House';
 import Networks from './pages/networks/Networks';
@@ -40,23 +39,21 @@ function App() {
 `
   return (
     <Fragment>
-        <IMGAbolute src={estrellas} />
-          <Pages>
-            <AnimatePresence exitBeforeEnter>
-              <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<Home />} />
-                <Route path='/About' element={<About />} />
-                <Route path='/About/HouseTransition' element={<HouseTransition/>}/>
-                <Route path='/About/House' element={<House/>}/>
-                <Route path='/About/Art' element={<Art/>}/>
-                <Route path='/Education' element={<Education />} />
-                <Route path='/Projects' element={<Projects />} />
-                <Route path='/Networks' element={<Networks />} />
+      <IMGAbolute src={estrellas} />
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/About/HouseTransition' element={<HouseTransition />} />
+          <Route path='/About/House' element={<House />} />
+          <Route path='/About/Art' element={<Art />} />
+          <Route path='/Education' element={<Education />} />
+          <Route path='/Projects' element={<Projects />} />
+          <Route path='/Networks' element={<Networks />} />
 
-              </Routes>
-            </AnimatePresence>
-          </Pages>
-        <NavRPG></NavRPG>
+        </Routes>
+      </AnimatePresence>
+      <NavRPG></NavRPG>
 
     </Fragment>
   );

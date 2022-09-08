@@ -306,6 +306,7 @@ img:nth-child(2){
 
 
   return (
+    
     <motion.div
       initial={{ opacity: 0, }}
       animate={{

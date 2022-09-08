@@ -128,7 +128,7 @@ const Networks = () => {
         transition: { delay: 0.5, duration: 1.7, type: "spring", },
       }}
       exit={{
-        x: "-100vh",
+        scale: 5,
         transition: { delay: 1.5, ease: 'easeInOut' },
       }}
     >
