@@ -132,7 +132,7 @@ const About = () => {
             <Text >House</Text>
             <img src={señal} alt="" />
           </Me>
-          <Spain className='pointer' to='/education'>
+          <Spain className='pointer' to='/About/Dream'>
             <Text >Dream</Text>
             <img  src={señal} alt="" />
           </Spain>
