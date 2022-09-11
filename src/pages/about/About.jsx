@@ -122,10 +122,10 @@ const About = () => {
             scale: 7,
             x: 350,
             y: -1150,
-            transition: { duration: 0.5, type: "spring", bounce: 0 },
+            transition: { duration: 6.5, type: "spring", bounce: 0 },
           } : transition === 2 ?
           {
-            scale: 1,
+            scale: 7,
             x: 450,
             y: -950,
             transition: { delay: 6.5, type: "spring", bounce: 0 },
