@@ -105,47 +105,47 @@ const About = () => {
    image-rendering: pixelated;
    z-index: 90; 
  `
-  
+
   return (
-<Pages>
+    <Pages>
 
-    <motion.div
-      initial={{ scale: 0 }}
-      animate={{
-        scale: 1,
-        transition: { delay: 0.5, duration: 1.7,  type: "spring", },
-      }}
-      exit={{
-        scale: 0,
-        transition: { delay: 1.5,  ease: 'easeInOut' },
-      }}
-    >
-      <AboutContainer >
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{
+          scale: 1,
+          transition: { delay: 0.5, duration: 1.7, type: "spring", },
+        }}
+        exit={{
+          scale: 0,
+          transition: { delay: 1.5, ease: 'easeInOut' },
+        }}
+      >
+        <AboutContainer >
 
 
-        <ContainerIMG>
-          <h3>About</h3>
-          <img src={planet} alt="" />
-        </ContainerIMG>
-        <TempladeGrid>
-          <Me className='pointer'  to='/About/HouseTransition'>
-            <Text >House</Text>
-            <img src={señal} alt="" />
-          </Me>
-          <Spain className='pointer' to='/About/Dream'>
-            <Text >Dream</Text>
-            <img  src={señal} alt="" />
-          </Spain>
-          <CR className='pointer' to='/About/Art'>
-            <Text >Art</Text>
-            <img  src={señal} alt="" />
-          </CR>
-        </TempladeGrid>
+          <ContainerIMG>
+            <h3>About</h3>
+            <img src={planet} alt="" />
+          </ContainerIMG>
+          <TempladeGrid>
+            <Me className='pointer' to='/About/HouseTransition'>
+              <Text >House</Text>
+              <img src={señal} alt="" />
+            </Me>
+            <Spain className='pointer' to='/About/Dream'>
+              <Text >Dream</Text>
+              <img src={señal} alt="" />
+            </Spain>
+            <CR className='pointer' to='/About/Art'>
+              <Text >Art</Text>
+              <img src={señal} alt="" />
+            </CR>
+          </TempladeGrid>
 
-      </AboutContainer>
-    </motion.div>
+        </AboutContainer>
+      </motion.div>
 
-</Pages>
+    </Pages>
   )
 }
 

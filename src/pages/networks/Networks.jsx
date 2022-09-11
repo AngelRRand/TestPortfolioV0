@@ -143,7 +143,7 @@ const Networks = () => {
           <ContainerIMG>
             <h3>Networks</h3>
             <img src={planet} alt="" />
-            <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/' target="_blank" >
+            <a href='https://www.linkedin.com/in/horacio-rodriguez-cba/' target="_blank" without rel="noreferrer" >
 
               <Rock src={planetRock} className='pointer' alt='About' />
             </a>
