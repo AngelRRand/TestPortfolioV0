@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 import background from '../../img/Planet/Terra/Dream/Dream.png'
-import backgroundGif from '../../img/Planet/Terra/Dream/Dream.png'
+import backgroundGif from '../../img/Planet/Terra/Dream/DreamGif.gif'
 import TransitionTerra from '../Nav/TransitionTerra';
 import Background from '../Nav/Background';
 const Dream = () => {
