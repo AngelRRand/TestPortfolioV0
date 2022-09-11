@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planet from '../../img/Planet/PlanetZOOM.png'
 import señal from '../../img/NavImg/Señal.gif'
 const About = () => {
+
+  const [transition, setTransition] = useState(0);
+
   const Pages = styled.div`
   display: flex;
   height: 85vh;
@@ -105,7 +108,6 @@ const About = () => {
    image-rendering: pixelated;
    z-index: 90; 
  `
-
   return (
     <Pages>
 
@@ -115,10 +117,28 @@ const About = () => {
           scale: 1,
           transition: { delay: 0.5, duration: 1.7, type: "spring", },
         }}
-        exit={{
-          scale: 0,
-          transition: { delay: 1.5, ease: 'easeInOut' },
-        }}
+        exit={transition === 1 ?
+          {
+            scale: 7,
+            x: 350,
+            y: -1150,
+            transition: { duration: 6.5, type: "spring", bounce: 0 },
+          } : transition === 2 ?
+          {
+            scale: 7,
+            x: 450,
+            y: -950,
+            transition: { delay: 6.5, type: "spring", bounce: 0 },
+          } :  transition === 3 ?
+          {
+            scale: 1,
+            transition: { delay: 1.5, ease: 'easeInOut' },
+          } :
+          {
+            scale: 0,
+            transition: { delay: 1.5, ease: 'easeInOut' },
+          }
+        }
       >
         <AboutContainer >
 
@@ -128,18 +148,22 @@ const About = () => {
             <img src={planet} alt="" />
           </ContainerIMG>
           <TempladeGrid>
-            <Me className='pointer' to='/About/HouseTransition'>
+
+            <Me className='pointer' to='/About/House' onClick={()=>setTransition(1)}>
               <Text >House</Text>
               <img src={señal} alt="" />
             </Me>
-            <Spain className='pointer' to='/About/Dream'>
+
+            <Spain className='pointer' to='/About/Dream' onClick={()=>setTransition(2)}>
               <Text >Dream</Text>
               <img src={señal} alt="" />
             </Spain>
-            <CR className='pointer' to='/About/Art'>
+
+            <CR className='pointer' to='/About/Art' onClick={()=>setTransition(3)}>
               <Text >Art</Text>
               <img src={señal} alt="" />
             </CR>
+            
           </TempladeGrid>
 
         </AboutContainer>
