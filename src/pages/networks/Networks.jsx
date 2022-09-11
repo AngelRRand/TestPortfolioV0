@@ -1,11 +1,8 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import planet from '../../img/Planet/planetNetZoom.png';
 import planetRock from '../../img/Planet/planetNetZoomRock.png';
 import planetGit from '../../img/Planet/planetNetGit.gif';
-import señal from '../../img/NavImg/Señal.gif';
 
 const Networks = () => {
   const rotate = keyframes`

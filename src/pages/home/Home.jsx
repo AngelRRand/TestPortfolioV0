@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 import terra from '../../img/NavImg/tierra.png'
 import planetIce from '../../img/NavImg/planetIce.png'
