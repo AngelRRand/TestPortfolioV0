@@ -14,6 +14,7 @@ const About = () => {
   height: 85vh;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   h1{
     font-size: calc(2rem + 2vw);
   }
@@ -119,14 +120,14 @@ const About = () => {
     },
     dream: {
       scale: 7,
-      x: 450,
-      y: -950,
+      x: -500,
+      y: 1000,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     },
     art: {
       scale: 7,
       x: 750,
-      y: -250,
+      y: -450,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     }
   }
@@ -138,7 +139,7 @@ const About = () => {
         initial={{ scale: 0 }}
         animate={{
           scale: 1,
-          transition: { delay: 0.5, duration: 1.7, type: "spring", },
+          transition: { duration: 1.7, type: "spring", },
         }}
         exit={
           transition
