@@ -8,6 +8,7 @@ const About = () => {
 
   const [transition, setTransition] = useState();
 
+
   const Pages = styled.div`
   display: flex;
   height: 85vh;
@@ -57,7 +58,7 @@ const About = () => {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   `
-  const Me = styled(Link)`
+  const Me = styled.div`
     grid-area: 30 / 7 / 31 / 9;
     display: flex;
     text-decoration: none;
@@ -69,7 +70,7 @@ const About = () => {
     align-items: center;
     z-index: 99;
    `
-  const Spain = styled(Link)`
+  const Spain = styled.div`
    grid-area: 6 / 13 / 6 / 14;;
    display: flex;
    text-decoration: none;
@@ -81,7 +82,7 @@ const About = () => {
    align-items: center;
    z-index: 99;
   `
-  const CR = styled(Link)`
+  const CR = styled.div`
   grid-area: 18 / 5 / 22 / 7;
   display: flex;
   text-decoration: none;
@@ -109,20 +110,27 @@ const About = () => {
    z-index: 90; 
  `
 
-  var transitions ={
-    me:{
+  var transitions = {
+    me: {
       scale: 7,
       x: 350,
       y: -1150,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     },
-    dream:{
+    dream: {
       scale: 7,
       x: 450,
       y: -950,
-      transition: { delay: 6.5, type: "spring", bounce: 0 },
+      transition: { duration: 6.5, type: "spring", bounce: 0 },
+    },
+    dream: {
+      scale: 7,
+      x: 450,
+      y: -950,
+      transition: { duration: 6.5, type: "spring", bounce: 0 },
     }
   }
+  
   return (
     <Pages>
 
@@ -135,7 +143,7 @@ const About = () => {
         exit={
           transition
         }
-        
+
       >
         <AboutContainer >
 
@@ -146,20 +154,26 @@ const About = () => {
           </ContainerIMG>
           <TempladeGrid>
 
-            <Me className='pointer' to='/About/House'>
-              <Text >House</Text>
-              <img src={señal} alt="" />
+            <Me onClick={() => setTransition(transitions.me)}>
+              <Link className='pointer' to='/About/House'>
+                <Text >House</Text>
+                <img src={señal} alt="" />
+              </Link>
             </Me>
 
-            <Spain className='pointer' to='/About/Dream'>
+          <Spain onClick={() => setTransition(transitions.dream)}>
+            <Link className='pointer' to='/About/Dream'>
               <Text >Dream</Text>
               <img src={señal} alt="" />
-            </Spain>
+            </Link>
+          </Spain>
 
-            <CR className='pointer' to='/About/Art'>
+          <CR onClick={() => setTransition(transitions.dream)}>
+            <Link className='pointer' to='/About/Art'>
               <Text >Art</Text>
               <img src={señal} alt="" />
-            </CR>
+            </Link>
+          </CR>
 
           </TempladeGrid>
 
