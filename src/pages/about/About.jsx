@@ -121,7 +121,7 @@ const About = () => {
     dream: {
       scale: 7,
       x: -500,
-      y: 1000,
+      y: 1100,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     },
     art: {
@@ -136,10 +136,10 @@ const About = () => {
     <Pages>
 
       <motion.div
-        initial={{ scale: 0 }}
+        initial={{ scale: 0.5 }}
         animate={{
-          scale: 1,
-          transition: { duration: 1.7, type: "spring", },
+          scale: 1, 
+          transition: { duration: 0.5, type: "spring", },
         }}
         exit={
           transition
