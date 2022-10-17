@@ -123,10 +123,10 @@ const About = () => {
       y: -950,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     },
-    dream: {
+    art: {
       scale: 7,
-      x: 450,
-      y: -950,
+      x: 750,
+      y: -250,
       transition: { duration: 6.5, type: "spring", bounce: 0 },
     }
   }
@@ -168,7 +168,7 @@ const About = () => {
             </Link>
           </Spain>
 
-          <CR onClick={() => setTransition(transitions.dream)}>
+          <CR onClick={() => setTransition(transitions.art)}>
             <Link className='pointer' to='/About/Art'>
               <Text >Art</Text>
               <img src={señal} alt="" />
