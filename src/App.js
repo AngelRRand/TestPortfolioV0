@@ -44,7 +44,6 @@ function App() {
           <Route path='/Education' element={<Education />} />
           <Route path='/Projects' element={<Projects />} />
           <Route path='/Networks' element={<Networks />} />
-
         </Routes>
       </AnimatePresence>
       <NavRPG></NavRPG>
