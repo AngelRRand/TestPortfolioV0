@@ -12,6 +12,13 @@ button{
 p, h1, h2, h3, h4, h5, h6{
   cursor: url(cursorText.png), default
 }
+body {
+  cursor: url(cursor.png), default;
+  background-color: #0b0a1a
+}
+.pointer{
+  cursor: url(cursorPointer.png), default
+}
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -33,10 +40,3 @@ p, h1, h2, h3, h4, h5, h6{
   border: 2px solid #ffffff;
 }
 
-body {
-  cursor: url(cursor.png), default;
-  background-color: #0b0a1a
-}
-.pointer{
-  cursor: url(cursorPointer.png), default
-}
